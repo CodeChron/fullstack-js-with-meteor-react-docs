@@ -10,4 +10,5 @@
 * [Update List to link to note details](update_list_to_link_to_note_details.md)
 * [Add a back button on note the note details page](add_a_back_button_on_note_the_note_details_page.md)
 * [Click to edit the note title](click_to_edit_the_note_title.md)
+* Click to add or update note content
 
