@@ -53,6 +53,21 @@ export const AppLayout = ({header, content}) =>
 ```
 
 
+# Remove files used to manually render our app
+FlowRouter handles this for us.
+
+_delete_ the following files:
+```/imports/startup/client/main.html ```
+```/imports/startup/client/main.js ```
+
+You might consider creating a "tmp" directory that is a peer of your app directory and moving them there, just temporarily, until routes are working properly.
+
+# Import routes on startup
+
+``` /imports/startup/client/index.js ```
+
+
+
 
 
 
