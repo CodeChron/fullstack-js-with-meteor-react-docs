@@ -1,2 +1,2 @@
-# Click to add or update note content
+# Add note content with auto-save
 
