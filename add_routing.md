@@ -30,9 +30,6 @@ export const App = ({content}) => <div>{content()}<Alert /></div>
 Discuss the {content} prop.
 
 
-
-
-
 ## Add a homepage (root) route
 
 ``` /client/routes.jsx ```
