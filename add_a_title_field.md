@@ -1,4 +1,4 @@
-# Add a title field (and a data schema)
+# Db updates
 - clear out existing notes
 - create a data schema
 - add a title field
