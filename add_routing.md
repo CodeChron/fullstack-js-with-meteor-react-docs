@@ -14,6 +14,9 @@ There are many ways to add routing.  We'll use one of the more popular packages:
 
 
 #Create a routes file and add a homepage route
+
+Our homepage will display basically the same content as we currently see in the app, but it will be explicitly defined as being on the homepage and accessible via a specific URL ("/")
+
 ``` /imports/routes.jsx ```
 
 ```js
@@ -66,53 +69,8 @@ You might consider creating a "tmp" directory that is a peer of your app directo
 
 ``` /imports/startup/client/index.js ```
 
-
-
-
-
-
-
-
-
-## Add a homepage
-Our homepage will display basically the same content as we currently see in the app, but it will be explicitly defined as being on the homepage and accessible via a specific URL ("/")
-
-
-
-
-## Add a base layout
-I prefer to just think of this as the app container. Everything we place here will be global to the entire app.
-If you have multiple layouts, you can choose to name this "main_layout' or the like.
-
-```
-import React from 'react'
-
-export const App = ({content}) => <div>{content()}<Alert /></div>
-```
-Discuss the {content} prop.
-
-
-## Add a homepage (root) route
-
-``` /client/routes.jsx ```
-
 ```js
-import React from 'react'
-import {mount} from 'react-mounter'
-
-import {App} from './app'
-import {AppHeader} from './layouts/app_header'
-import {NotesList} from './containers/notes_list'
-
-
-FlowRouter.route('/', {
-  name: 'homepage',
-  action() {
-    mount(App, {
-      header: () =>  <AppHeader />,
-      content: () => <NotesList />
-    })
-  }
-})
-
+import '../../routes.jsx'
 ```
+
+In your browser, you should now see the same content as before.  However, we now have capability to add more pages.
