@@ -13,8 +13,49 @@ There are many ways to add routing.  We'll use one of the more popular packages:
 ``` npm i react-mounter --save ```
 
 
-#Create a routes page
-``` /imports/client/startup/routes.jsx ```
+#Create a routes file and add a homepage route
+``` /imports/routes.jsx ```
+
+```js
+import { FlowRouter } from 'meteor/kadira:flow-router'
+import React from 'react'
+import { mount } from 'react-mounter'
+
+import { AppLayout } from './layouts/app_layout'
+import { AppHeaderLayout } from './layouts/app_header_layout'
+import NotesContainer from './containers/notes_container'
+
+FlowRouter.route('/', {
+  name: 'homepage',
+  action() {
+    mount(AppContainer, {
+      header: () => <AppHeaderLayout />,
+      content: () => <NotesContainer />
+    })
+  }
+})
+```
+
+# Update AppLayout to pass in our header and content params
+
+``` /imports/components/layouts/app_layout.jsx ```
+
+```js
+import React from 'react'
+
+export const AppLayout = ({header, content}) =>
+  <div id="app-container">
+    {header()}
+    <div id="main-content" className="container">
+      {content()}
+    </div>
+  </div>
+```
+
+
+
+
+
 
 
 
