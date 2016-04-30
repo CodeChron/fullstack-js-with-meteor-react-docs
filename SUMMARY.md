@@ -6,5 +6,5 @@
 * [Add Note Details](add_note_details_page.md)
 * [Add Routing](add_routing.md)
 * [Add a title field](add_a_title_field.md)
-* Redirect to Note Details on Create Note
+* [Redirect to Note Details on Create Note](redirect_to_note_details_on_create_note.md)
 
