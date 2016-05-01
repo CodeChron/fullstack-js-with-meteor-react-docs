@@ -23,10 +23,15 @@ meteor:PRIMARY>
 - What are some options for creating a schema in Meteor?
 
 
-- add a title field
-- remove insecure (do not allow create on the client side)
-- update db calls to use Meteor.call and Meteor.methods
-- remove autopublish
-- add pub/sub and loadin comp
+## Add a title field
+
+## Remove the "insecure" package (do not allow create on the client side)
+## Update db calls to use Meteor.call and Meteor.methods
+## Remove the 'autopublish' package
+
+# Add publications and subscriptions
+
+# Add a loading component
+
 
 
