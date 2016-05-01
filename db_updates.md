@@ -1,8 +1,6 @@
 # DB Updates
 _possibly separate these out into individual chapters_
 
-## Add a db schema
-
 ## Clear out existing notes
 
 With the Meteor server running, open a new terminal window and type:
@@ -20,7 +18,12 @@ meteor:PRIMARY>
 ```
 ('notes' here matches what you type when you created the Mongo collection in ``` /imports/api/notes/notes.jsx ```)
   
-## Create a data schema
+## Create a collection schema
+
+
+Install the [Astronomy](https://github.com/jagi/meteor-astronomy/) package.
+
+```  meteor add jagi:astronomy ```
 
 - What is a data schema and should we have one?
 - What are some options for creating a schema in Meteor?
