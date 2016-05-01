@@ -20,7 +20,9 @@ meteor:PRIMARY>
 ## Create a data schema
 
 - What is a data schema and should we have one?
-- What are some options for creating a schema in 
+- What are some options for creating a schema in Meteor?
+
+
 - add a title field
 - remove insecure (do not allow create on the client side)
 - update db calls to use Meteor.call and Meteor.methods
