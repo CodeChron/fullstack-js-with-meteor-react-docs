@@ -20,7 +20,6 @@ meteor:PRIMARY>
   
 ## Create a collection schema
 
-
 Install the [Astronomy](https://github.com/jagi/meteor-astronomy/) package.
 
 ```  meteor add jagi:astronomy ```
@@ -28,6 +27,21 @@ Install the [Astronomy](https://github.com/jagi/meteor-astronomy/) package.
 - What is a data schema and should we have one?
 - What are some options for creating a schema in Meteor?
 
+``` /imports/api/notes/schema.js ```
+```js
+import { Notes } from './notes'
+import { Class } from 'meteor/jagi:astronomy'
+
+export const NoteSchema = Class.create({
+	name: 'Note',
+	collection: Notes,
+	fields: {
+    title: String,
+    content: String,
+    updatedAt: Date 
+  }
+})
+```
 
 ## Add a title field
 
