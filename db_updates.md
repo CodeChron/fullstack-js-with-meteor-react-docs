@@ -15,10 +15,10 @@ meteor:PRIMARY> db.notes.remove({})
 WriteResult({ "nRemoved" : 1 })
 meteor:PRIMARY> 
 ```
-  ('notes' here matches what you type when you created the Mongo collection in ``` /imports/api/notes/notes.jsx ```
+('notes' here matches what you type when you created the Mongo collection in ``` /imports/api/notes/notes.jsx ```)
   
-  
-- create a data schema
+## Create a data schema
+
 - add a title field
 - remove insecure (do not allow create on the client side)
 - update db calls to use Meteor.call and Meteor.methods
