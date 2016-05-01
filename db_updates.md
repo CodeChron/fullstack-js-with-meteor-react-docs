@@ -1,4 +1,7 @@
-# Db updates
+# DB Updates
+_possibly separate these out into individual chapters_
+
+## Add a db schema
 
 ## Clear out existing notes
 
