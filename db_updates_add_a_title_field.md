@@ -46,7 +46,10 @@ const NoteSchema = Class.create({
 ``` /imports/components/containers/notes_container.js ```
 ```js
 ...
-
+	const handleCreate = (title) => {
+    Meteor.call('/note/create', title, (err, result) => {
+     ...
+	}
 ...
 ```
 
