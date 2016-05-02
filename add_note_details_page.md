@@ -1,4 +1,4 @@
-# Add Note Details
+# Next: Add Note Details
 
 We want to be able to add more note content.  We'll do this be creating a unique page for each note. To do this, we are going to do the following:
 - Add a note title.  This will be what we'll click on to view note details.
