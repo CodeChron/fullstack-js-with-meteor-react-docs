@@ -10,7 +10,7 @@ You should now see that there are no notes being displayed.
 
 ![no-notes-published](https://cloud.githubusercontent.com/assets/819213/14958482/03118ef2-1059-11e6-855b-8e7d9f5cb9f7.png)
 
-This is because we need to explicitly publish our notes.
+Our notes are still in the database.  However, we now need to explicitly publish and subscribe to our notes.
 
 ## Add publications and subscriptions
 
