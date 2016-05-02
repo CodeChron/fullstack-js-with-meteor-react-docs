@@ -17,4 +17,5 @@
 * [Add note content with auto-save](click_to_add_or_update_note_content.md)
 * Next Major Feature: Make Notes Private
 * Feature Overview: Note Details
+* Feature Overview: Advanced New Note UI
 
