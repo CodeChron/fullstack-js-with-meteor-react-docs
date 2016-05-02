@@ -31,6 +31,9 @@ Meteor.publish('notes.all', function() {
 })
 ```
 
+Why the server directory?
+Why only publish certain fields?
+
 ## Subscribe to the notes publication
 
 # Add a loading component
