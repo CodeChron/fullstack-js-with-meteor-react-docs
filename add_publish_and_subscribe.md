@@ -14,6 +14,23 @@ Our notes are still in the database.  However, we now need to explicitly publish
 
 ## Add a Notes Publication
 
+``` /imports/api/notes/server/publications.js ```
+
+```js
+import { Meteor } from 'meteor/meteor'
+import { Notes } from '../notes'
+
+const
+  notesListFields = {
+    title: 1,
+    updatedAt: 1
+  }
+
+Meteor.publish('notes.all', function() {
+  return Notes.find({}, { fields: notesListFields})
+})
+```
+
 ## Subscribe to the notes publication
 
 # Add a loading component
