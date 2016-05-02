@@ -62,6 +62,41 @@ Meteor.methods({
 
 ```
 
+``` /imports/components/collections/notes_container.js ```
+
+```js
+...
+import { Meteor } from 'meteor/meteor'
+...
+
+export default createContainer(() => {
+
+	...
+
+	const handleCreate = (content) => {
+    Meteor.call('/note/create', content, (err, result) => {
+      if (!err) {
+        console.log('note: ' + result._id)
+      } else {
+        console.log('there was an error: ' + err.reason)
+      }
+    })
+	}
+
+	const handleDelete = (note) => {
+	  Meteor.call('/note/delete', note._id, (err, result) => {
+      if (err) {
+        console.log('there was an error: ' + err.reason)
+      }
+    })
+	}
+
+...
+}, List)
+
+
+```
+
 
 # Add a title field
 
