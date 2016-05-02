@@ -57,7 +57,6 @@ meteor:PRIMARY>
 ('notes' here matches what you type when you created the Mongo collection in ``` /imports/api/notes/notes.jsx ```)
 
 
-
 ## Require explicit publish and subscribe
 
 ## Remove the 'autopublish' package
