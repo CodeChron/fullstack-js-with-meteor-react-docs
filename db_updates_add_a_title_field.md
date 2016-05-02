@@ -18,8 +18,9 @@ meteor:PRIMARY> db.notes.remove({})
 WriteResult({ "nRemoved" : 1 })
 meteor:PRIMARY> 
 ```
-('notes' here matches what you type when you created the Mongo collection in ``` /imports/api/notes/notes.jsx ```)
 
+
+## Add a title field to the note schema
 
 ## Update the notes list to use the title instead of content
 
