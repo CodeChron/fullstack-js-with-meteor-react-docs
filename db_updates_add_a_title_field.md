@@ -40,7 +40,6 @@ const NoteSchema = Class.create({
 ...
 ```
 
-
 ## Update note creation to use the title instead of content
 
 ``` /imports/components/containers/notes_container.js ```
@@ -52,8 +51,6 @@ const NoteSchema = Class.create({
 	}
 ...
 ```
-
-
 
 ## Update the notes list to use the title instead of content
 
