@@ -12,7 +12,9 @@ You should now see that there are no notes being displayed.
 
 Our notes are still in the database.  However, we now need to explicitly publish and subscribe to our notes.
 
-## Add publications and subscriptions
+## Add a Notes Publication
+
+## Subscribe to the notes publication
 
 # Add a loading component
 
