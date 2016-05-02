@@ -31,10 +31,20 @@ export const Loader = () => <div className="loader">Loading...</div>
 ``` /imports/components/lists/list.jsx ```
 
 ```js
-import React from 'react'
-import './loader.css'
+...
+import { Loader } from '../loader/loader.jsx'
 
-export const Loader = () => <div className="loader">Loading...</div>
+export const List = (props) =>{
+
+   ...
+	return  props.subsReady?
+   ...
+    :
+    <Loader />
+}
+
+...
+
 ```
 
 
