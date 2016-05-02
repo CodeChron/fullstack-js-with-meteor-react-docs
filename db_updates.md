@@ -1,10 +1,17 @@
 # DB Updates
 _possibly separate these out into individual chapters_
 
+# Only allow db operations on the server side
+
+## Remove the "insecure" package
+```  meteor remove insecure ```
+
+Why is this step needed? Important?
+
 
 # Create a collection schema
 
-## Install the [Astronomy](https://github.com/jagi/meteor-astronomy/) package.
+ - Install the [Astronomy](https://github.com/jagi/meteor-astronomy/) package.
 
 ```  meteor add jagi:astronomy ```
 
@@ -13,30 +20,47 @@ _possibly separate these out into individual chapters_
 - What is a data schema and why should we have one?
 - What are some options for creating a schema in Meteor?
 
-``` /imports/api/notes/schema.js ```
+``` /imports/api/notes/notes.js ```
 ```js
-import { Notes } from './notes'
+...
 import { Class } from 'meteor/jagi:astronomy'
 
-export const NoteSchema = Class.create({
+const NoteSchema = Class.create({
 	name: 'Note',
 	collection: Notes,
 	fields: {
-    title: String,
     content: String,
     updatedAt: Date 
   }
 })
 ```
 
-# Only allow db operations on the server side
-
-
-## Remove the "insecure" package (do not allow create on the client side)
-
-
 ## Update db calls to use Meteor.call and Meteor.methods
 
+
+``` /imports/api/notes/notes.js ```
+```js
+...
+import { Meteor } from 'meteor/meteor'
+...
+Meteor.methods({
+
+	'/note/create': (content) => {
+		const note = new NoteSchema()
+    note.set({
+      content: content,
+      updatedAt: new Date()
+    })
+
+    note.save()
+    return note
+  },
+
+  '/note/delete': (id) => Notes.remove({_id: id})
+
+})
+
+```
 
 
 # Add a title field
