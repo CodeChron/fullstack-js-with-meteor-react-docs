@@ -15,4 +15,5 @@
 * [Click to edit the note title](click_to_edit_the_note_title.md)
 * [Add note content with auto-save](click_to_add_or_update_note_content.md)
 * [Replace Bootstrap with Custom CSS](replace_bootstrap_with_custom_css.md)
+* Display the note title in the app header (custom layout)
 
