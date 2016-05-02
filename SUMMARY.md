@@ -11,5 +11,5 @@
 * [Add a back button on note the note details page](add_a_back_button_on_note_the_note_details_page.md)
 * [Click to edit the note title](click_to_edit_the_note_title.md)
 * [Add note content with auto-save](click_to_add_or_update_note_content.md)
-* Db Updates: Use Meteor.methods
+* [Db Updates: Use Meteor.methods](db_updates_use_meteormethods.md)
 
