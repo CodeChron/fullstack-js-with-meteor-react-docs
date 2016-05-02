@@ -5,7 +5,6 @@
 * [Replace Bootstrap with Custom CSS](replace_bootstrap_with_custom_css.md)
 * [Add Note Details](add_note_details_page.md)
 * [Add Routing](add_routing.md)
-* [Db Updates](db_updates.md)
 * [Db Updates: Add a Schema](db_updates_add_a_schema.md)
 * [Db Updates: Use Meteor.methods](db_updates_use_meteormethods.md)
 * [Db Updates: Add a Title Field](db_updates_add_a_title_field.md)
