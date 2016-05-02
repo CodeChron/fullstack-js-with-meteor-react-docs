@@ -2,7 +2,7 @@
 _possibly separate these out into individual chapters_
 
 
-## Create a collection schema
+# Create a collection schema
 
 Install the [Astronomy](https://github.com/jagi/meteor-astronomy/) package.
 
@@ -27,17 +27,19 @@ export const NoteSchema = Class.create({
 })
 ```
 
-## Only allow db operations on the server side
-Update db calls to use Meteor.call and Meteor.methods
+# Only allow db operations on the server side
 
 
 ## Remove the "insecure" package (do not allow create on the client side)
 
+## Update db calls to use Meteor.call and Meteor.methods
 
-## Add a title field
 
 
-### Remove existing notes
+# Add a title field
+
+
+## Remove existing notes
 
 With the Meteor server running, open a new terminal window and type:
   ```meteor mongo ```
@@ -56,9 +58,11 @@ meteor:PRIMARY>
 
 
 
+## Require explicit publish and subscribe
+
 ## Remove the 'autopublish' package
 
-# Add publications and subscriptions
+## Add publications and subscriptions
 
 # Add a loading component
 
