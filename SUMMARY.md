@@ -12,4 +12,5 @@
 * [Click to edit the note title](click_to_edit_the_note_title.md)
 * [Add note content with auto-save](click_to_add_or_update_note_content.md)
 * [Db Updates: Use Meteor.methods](db_updates_use_meteormethods.md)
+* Db Updates: Add a Schema
 
