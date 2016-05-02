@@ -70,7 +70,30 @@ export default createContainer(() => {
 ``` /imports/components/lists/list.jsx ```
 
 ```js
+export const List = (props) =>{
 
+...
+	
+	return props.subsReady?
+	  <ul className="list-group">
+	    {displayFeature(props.addItem, listFeatures.addItem)}
+	    { 
+	    	props.collection.map((item) => {
+	 	      return <li key={item._id} className="list-group-item">{item.title} {displayFeature(props.deleteItem, listFeatures.deleteItem, item)}
+	 	      </li>
+	      })
+	    }
+    </ul>
+    :
+    null
+}
+
+List.propTypes = {
+	...
+	subsReady: React.PropTypes.bool.isRequired,
+	...
+}
+...
 ```
 
 
