@@ -49,7 +49,21 @@ Why only publish certain fields?
 ``` /imports/components/containers/notes_container.js ```
 
 ```js
+export default createContainer(() => {
 
+	const sub = Meteor.subscribe('notes.all')
+
+	const notes = sub.ready()? Notes.find({}, { sort: { updatedAt: -1 }}).fetch() : []
+  
+   ...
+   
+  return {
+   ...
+	  subsReady: sub.ready(),
+   ...
+  }
+
+}, List)
 ```
 
 
