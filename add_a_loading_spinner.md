@@ -7,7 +7,7 @@ There are a ton of options for doing this.
 
 
 ### Get the css
-Go to http://projects.lukehaas.me/css-loaders/ and grab a loader of your choiced.  Click on "View Source" and copy the css.
+Go to http://projects.lukehaas.me/css-loaders/ and pick a loader of your choice.  Click on "View Source" and copy the css.
 
 Paste the css into the following file:
 ``` /imports/components/loader/loader.css ```
