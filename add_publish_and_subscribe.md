@@ -34,6 +34,14 @@ Meteor.publish('notes.all', function() {
 Why the server directory?
 Why only publish certain fields?
 
+## Import to the server on startup
+ ``` /imports/startup/server/index.js ```
+ ```js 
+ ...
+ import '../../api/notes/server/publications'
+ ```
+ 
+
 ## Subscribe to the notes publication
 
 # Add a loading component
