@@ -1,5 +1,5 @@
 # Add Routing
-_Move this step to when we are ready to work in the redirect)
+_Move this step to when we are ready to work in the redirect_
 
 Routing is basically the ability to have multiple pages in your app, and to be able to display different content based on the URL in your browser.
 
