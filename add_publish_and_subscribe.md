@@ -59,7 +59,4 @@ Why only publish certain fields?
 
 ```
 
-# Add a loading component
-
-
 
