@@ -6,6 +6,8 @@ Why is this step needed?
 
 ```  meteor remove autopublish ```
 
+You should now see that there are no notes being displayed.  This is because we need to explicitly publish our notes.
+
 ## Add publications and subscriptions
 
 # Add a loading component
