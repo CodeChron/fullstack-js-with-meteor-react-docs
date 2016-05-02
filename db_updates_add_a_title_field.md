@@ -39,6 +39,6 @@ const NoteSchema = Class.create({
 
 ## Update the notes list to use the title instead of content
 
-## Set content to have a default value on create
+## 
 
 
