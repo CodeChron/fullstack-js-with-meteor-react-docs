@@ -58,10 +58,18 @@ const NoteSchema = Class.create({
 ## Update the notes list to use the title instead of content
 
 
-``` /imports/... ```
+``` /imports/components/lists/list.jsx ```
 ```js
 ...
-
+	return <ul className="list-group">
+	   ...
+	    { 
+	    	props.collection.map((item) => {
+	 	      return <li key={item._id} className="list-group-item">{item.title} 
+              ...
+	 	      </li>
+	      })
+	    }
 ...
 ```
 
