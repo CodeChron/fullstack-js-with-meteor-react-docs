@@ -4,11 +4,13 @@ _possibly separate these out into individual chapters_
 
 # Create a collection schema
 
-Install the [Astronomy](https://github.com/jagi/meteor-astronomy/) package.
+## Install the [Astronomy](https://github.com/jagi/meteor-astronomy/) package.
 
 ```  meteor add jagi:astronomy ```
 
-- What is a data schema and should we have one?
+## Add a data schema
+
+- What is a data schema and why should we have one?
 - What are some options for creating a schema in Meteor?
 
 ``` /imports/api/notes/schema.js ```
@@ -31,6 +33,7 @@ export const NoteSchema = Class.create({
 
 
 ## Remove the "insecure" package (do not allow create on the client side)
+
 
 ## Update db calls to use Meteor.call and Meteor.methods
 
