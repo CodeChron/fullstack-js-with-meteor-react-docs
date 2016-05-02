@@ -22,6 +22,21 @@ meteor:PRIMARY>
 
 ## Add a title field to the note schema
 
+``` /imports/api/notes/notes.js ```
+```js
+...
+
+const NoteSchema = Class.create({
+	name: 'Note',
+	collection: Notes,
+	fields: {
+    title: String,
+    ...
+  }
+})
+```
+
+
 ## Update the notes list to use the title instead of content
 
 ## Set content to have a default value on create
