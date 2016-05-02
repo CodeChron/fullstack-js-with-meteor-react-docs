@@ -35,6 +35,7 @@ Why the server directory?
 Why only publish certain fields?
 
 ## Import to the server on startup
+
  ``` /imports/startup/server/index.js ```
  ```js 
  ...
@@ -43,6 +44,20 @@ Why only publish certain fields?
  
 
 ## Subscribe to the notes publication
+
+
+``` /imports/components/containers/notes_container.js ```
+
+```js
+
+```
+
+
+``` /imports/components/lists/list.jsx ```
+
+```js
+
+```
 
 # Add a loading component
 
