@@ -14,5 +14,5 @@
 * [Click to edit the note title](click_to_edit_the_note_title.md)
 * [Add note content with auto-save](click_to_add_or_update_note_content.md)
 * [Db Updates: Add a Title Field](db_updates_add_a_title_field.md)
-* Add Publish and Subscribe
+* [Add Publish and Subscribe](add_publish_and_subscribe.md)
 
