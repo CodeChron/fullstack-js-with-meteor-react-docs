@@ -15,7 +15,6 @@
 * [Add a Back Button](add_a_back_button.md)
 * [Click to edit the note title](click_to_edit_the_note_title.md)
 * [Add note content with auto-save](click_to_add_or_update_note_content.md)
-* Next Major Feature: Make Notes Private
 * [Feature Overview: Advanced New Note UI](feature_overview_advanced_new_note_ui.md)
 * Feature Overview: Private Notes
 
