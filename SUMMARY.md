@@ -1,7 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [Overview](overview.md)
 * [Feature Overview: Note Details](feature_overview_note_details.md)
 * [Db Updates: Add a Schema](db_updates_add_a_schema.md)
 * [Db Updates: Use Meteor.methods](db_updates_use_meteormethods.md)
