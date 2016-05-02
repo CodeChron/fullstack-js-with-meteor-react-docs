@@ -2,7 +2,6 @@
 
 Why is this step needed?
 
-
 ## Remove the 'autopublish' package
 
 ## Add publications and subscriptions
