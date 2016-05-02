@@ -1,12 +1,9 @@
 # Db Updates: Use Meteor.methods
 
+Why is this step needed? Important?
 
 ## Remove the "insecure" package
 ```  meteor remove insecure ```
-
-Why is this step needed? Important?
-
-
 
 ## Update db calls to use Meteor.call and Meteor.methods
 
