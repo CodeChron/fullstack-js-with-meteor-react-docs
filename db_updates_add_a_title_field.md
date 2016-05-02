@@ -26,14 +26,3 @@ meteor:PRIMARY>
 ## Set content to have a default value on create
 
 
-## Require explicit publish and subscribe
-
-## Remove the 'autopublish' package
-
-## Add publications and subscriptions
-
-# Add a loading component
-
-
-
-
