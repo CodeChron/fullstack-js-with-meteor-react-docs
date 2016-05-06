@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [TODO](todo.md)
 * [Feature Overview: Note Details](feature_overview_note_details.md)
 * [Db Updates: Add a Schema](db_updates_add_a_schema.md)
 * [Db Updates: Use Meteor.methods](db_updates_use_meteormethods.md)
@@ -17,5 +18,4 @@
 * [Add note content with auto-save](click_to_add_or_update_note_content.md)
 * [Feature Overview: Private Notes](feature_overview_private_notes.md)
 * [Feature Overview: Advanced New Note UI](feature_overview_advanced_new_note_ui.md)
-* [TODO](todo.md)
 
