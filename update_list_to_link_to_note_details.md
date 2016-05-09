@@ -51,6 +51,18 @@ List.defaultProps = {
 
 You can test the link feature by temporarily setting ``` List.defaultProps ``` to ``` true ```.
 
+## 'Turn on' the link feature
+
+``` /imports/components/containers/notes_container.js ```
+```js
+...
+  return {
+    ...
+    linkItem: true
+  }
+ ...
+     
+```
 
 
 
