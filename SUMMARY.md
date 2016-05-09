@@ -9,6 +9,7 @@
 * [Add Publish and Subscribe](add_publish_and_subscribe.md)
 * [Add a loading spinner (DONE)](add_a_loading_spinner.md)
 * [Add Routing (Homepage)](add_routing.md)
+* Add Note Details Route
 * [Update List to link to note details](update_list_to_link_to_note_details.md)
 * [Redirect to Note Details on Create Note](redirect_to_note_details_on_create_note.md)
 * [Display the note title in the app header (custom layout)](display_the_note_title_in_the_app_header_custom_la.md)
@@ -17,5 +18,4 @@
 * [Add note content with auto-save](click_to_add_or_update_note_content.md)
 * [Feature Overview: Private Notes](feature_overview_private_notes.md)
 * [Feature Overview: Advanced New Note UI](feature_overview_advanced_new_note_ui.md)
-* Add Note Details Route
 
