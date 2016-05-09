@@ -10,7 +10,7 @@ There are a ton of options for doing this.
 Go to http://projects.lukehaas.me/css-loaders/ and pick a loader of your choice.  Click on "View Source" and copy the css.
 
 Paste the css into the following file:
-``` /imports/components/loader/loader.css ```
+``` /imports/stylesheets/vendor/loader.css ```
 
 
 ### Create the component
@@ -19,7 +19,7 @@ Paste the css into the following file:
 
 ```js
 import React from 'react'
-import './loader.css'
+import '../../stylesheets/vendor/loader.css'
 
 export const Loader = () => <div className="loader">Loading...</div>
 ```
