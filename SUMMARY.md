@@ -7,7 +7,7 @@
 * [Db Updates: Use Meteor.methods](db_updates_use_meteormethods.md)
 * [Db Updates: Add a Title Field](db_updates_add_a_title_field.md)
 * [Add Publish and Subscribe](add_publish_and_subscribe.md)
-* [Add a loading spinner](add_a_loading_spinner.md)
+* [Add a loading spinner (DONE)](add_a_loading_spinner.md)
 * [Add a Note Details Page](add_a_note_details_page.md)
 * [Add Routing (and add a Homepage)](add_routing.md)
 * [Update List to link to note details](update_list_to_link_to_note_details.md)
