@@ -16,7 +16,7 @@ We need to first remove this package, as we're going to replace it with a commun
 ```  meteor add fourseven:scss seba:minifiers-autoprefixer ```
 
 
-## Custom Styling
+## Add Custom Styling
 
 ``` /imports/stylesheets/main.scss ```
 
@@ -72,5 +72,12 @@ $font-size-page-title: 1.5em;
 }
 ```
 
+## Import styles on startup
 
+``` /imports/startup/client/index.js ```
+
+```js
+import '../../stylesheets/main'
+...
+```
 
