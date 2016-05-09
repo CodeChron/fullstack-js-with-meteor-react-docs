@@ -1,4 +1,4 @@
-sh# Custom App Header
+# Custom App Header
 
 ## Update the note header to have a custom 3 column layout
 
