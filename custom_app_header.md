@@ -95,4 +95,4 @@ export const AppHeaderLayout = (props) =>
 ```
 
 
-
+Your page title should now appear as centered in the app header
