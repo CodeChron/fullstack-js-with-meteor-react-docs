@@ -2,12 +2,12 @@
 
 # On create of a note, redirect to note details page
 
+_Also, refactored createContainer while adding this..._
+
+``` /imports/components/containers/notes_container.jsx ```
 
 ```js
-import { createContainer } from 'meteor/react-meteor-data'
-import { Notes } from '../../api/notes/notes'
-import { List } from '../lists/list'
-import { Meteor } from 'meteor/meteor'
+ ...
 import { FlowRouter } from 'meteor/kadira:flow-router'
 
 export default createContainer(() => {
@@ -17,11 +17,13 @@ export default createContainer(() => {
 
     notes = sub.ready()? Notes.find({}, { sort: { updatedAt: -1 }}).fetch() : [],
 
+    //add this
     redirectToNoteDetail = note => FlowRouter.go("noteDetail", {_id: note._id}),
 
     handleCreate = (title) => {
       Meteor.call('/note/create', title, (err, result) => {
         if (!err) {
+          //call it here
           redirectToNoteDetail(result)
         } else {
           console.log('there was an error: ' + err.reason)
