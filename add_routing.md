@@ -25,9 +25,9 @@ import { FlowRouter } from 'meteor/kadira:flow-router'
 import React from 'react'
 import { mount } from 'react-mounter'
 
-import { AppLayout } from './components/layouts/app_layout'
-import { AppHeaderLayout } from './components/layouts/app_header_layout'
-import NotesContainer from './components/containers/notes_container'
+import { AppLayout } from '../../components/layouts/app_layout'
+import { AppHeaderLayout } from '../../components/layouts/app_header_layout'
+import NotesContainer from '../../components/containers/notes_container'
 
 FlowRouter.route('/', {
   name: 'homepage',
@@ -71,7 +71,7 @@ You might consider creating a "tmp" directory that is a peer of your app directo
 ``` /imports/startup/client/index.js ```
 
 ```js
-import '../../routes.jsx'
+import './routes.jsx'
 ```
 
 # Our default view has now been converted to a homepage...
