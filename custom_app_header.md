@@ -81,3 +81,17 @@ import '../../stylesheets/main'
 ...
 ```
 
+
+## Apply three-column styling to app header
+
+
+``` /imports/components/layouts/app_header_layout.jsx ```
+
+```js
+import React from 'react'
+
+export const AppHeaderLayout = (props) =>
+<nav className="navbar navbar-default three-col-layout">
+ ...
+```
+
