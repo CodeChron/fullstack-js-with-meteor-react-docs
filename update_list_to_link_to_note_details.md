@@ -1,7 +1,12 @@
 # Update List to link to note details
+
+_TODO: update previous branches with this refactoring of optional feature?
+
+## Add listLink as an optional list feature
+
 - change the title field to be a link
 - get the path using FlowRouter
-- make listLinks an optional feature: linkItem: false, linkPath
+- make listLinks an optional feature
 
 
 Will mean either:
