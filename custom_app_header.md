@@ -10,7 +10,7 @@ This is not required for what we're doing but it will make writing styles less p
 
 ### Install packages
 
-We need to first remove this package, as we're going to replace it with a community package:
+We need to first remove a package, as we're going to replace it with a community version.
 
 ``` meteor remove standard-minifier-css ```
 ```  meteor add fourseven:scss seba:minifiers-autoprefixer ```
