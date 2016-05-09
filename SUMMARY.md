@@ -12,11 +12,11 @@
 * [Add Note Details Route](add_note_details_route.md)
 * [Update List to link to note details](update_list_to_link_to_note_details.md)
 * [Redirect to Note Details on Create Note (DONE)](redirect_to_note_details_on_create_note.md)
+* [Custom App Header](custom_app_header.md)
 * [Display title in note detail header](display_the_note_title_in_the_app_header_custom_la.md)
 * [Add a Back Button](add_a_back_button.md)
 * [Click to edit the note title](click_to_edit_the_note_title.md)
 * [Add note content with auto-save](click_to_add_or_update_note_content.md)
 * [Feature Overview: Private Notes](feature_overview_private_notes.md)
 * [Feature Overview: Advanced New Note UI](feature_overview_advanced_new_note_ui.md)
-* [Custom App Header](custom_app_header.md)
 
