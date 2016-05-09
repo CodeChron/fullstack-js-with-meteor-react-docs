@@ -9,15 +9,18 @@
 FlowRouter.route('/notes/:_id', {
   name: 'noteDetail',
   action(params) {
-    mount(AppContainer, {
+    mount(AppLayout, {
       header: () => <AppHeaderLayout />,
-      content: null
+      content: () => null
     })
   }
 })
-
 ```
+
+Here we are displaying a default app header and no content, just as a placeholder for our page.
 
 
 ## Test the route
-- Try inserting a note id into your url.  You can get this from the Mongo console.
+
+- Try inserting a note id into your url, eg. ``` http://localhost:3000/notes/NdNvRmEj2Rus3Nt3o ```
+-  You can get this from the Mongo console.
