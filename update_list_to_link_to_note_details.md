@@ -37,6 +37,16 @@ _TODO: update previous branches with this refactoring of optional feature?
 	    }
     </ul>
    ...
+     
+List.propTypes = {
+   ...
+	linkItem:  React.PropTypes.bool
+}
+
+List.defaultProps = {
+    ...
+	linkItem: false
+}
 ```
 
 
