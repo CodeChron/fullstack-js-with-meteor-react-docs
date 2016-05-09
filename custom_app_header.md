@@ -1,4 +1,4 @@
-# Custom App Header
+sh# Custom App Header
 
 ## Update the note header to have a custom 3 column layout
 
@@ -93,4 +93,6 @@ export const AppHeaderLayout = (props) =>
 <nav className="navbar navbar-default three-col-layout">
  ...
 ```
+
+
 
