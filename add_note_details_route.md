@@ -17,3 +17,7 @@ FlowRouter.route('/notes/:_id', {
 })
 
 ```
+
+
+## Test the route
+- Try inserting a note id into your url.  You can get this from the Mongo console.
