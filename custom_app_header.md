@@ -16,4 +16,61 @@ We need to first remove this package, as we're going to replace it with a commun
 ```  meteor add fourseven:scss seba:minifiers-autoprefixer ```
 
 
+## Custom Styling
+
+``` /imports/stylesheets/main.scss ```
+
+```scss
+// VARIABLES
+// ____________________________
+$app-header-height: 5em;
+$font-size-page-title: 1.5em;
+
+
+// LAYOUTS
+// ____________________________
+// Three column vertically and horizontally centered layout using Flexbox
+
+.three-col-layout {
+	display: flex;
+  flex-flow: row nowrap;
+  align-items:center;
+
+  .main-content {
+  	flex: 1;
+  }
+
+}
+
+// APP HEADER
+// ____________________________
+
+#app-header {
+	height: $app-header-height;
+
+	.page-title {
+		text-align: center;
+		font-size: $font-size-page-title;
+	}
+}
+
+
+// BUTTONS
+// ____________________________
+
+.icon-btn{
+  background-color: transparent;
+  border:none;
+  
+  margin:0;
+  padding: 0;
+  text-align: center;
+
+  &:focus {
+   outline: 0;
+  }
+}
+```
+
+
 
