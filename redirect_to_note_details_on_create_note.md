@@ -38,19 +38,7 @@ export default createContainer(() => {
         }
       })
   	}
-
-  return {
-  	handleSubmit: handleCreate,
-	  placeholder: "New Note",
-	  subsReady: sub.ready(),
-	  collection: notes,
-	  handleDelete: handleDelete,
-	  addItem: true,
-	  deleteItem: true,
-    linkItem: true
-  }
-
-}, List)
+   ...
 
 ```
 
