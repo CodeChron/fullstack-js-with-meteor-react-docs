@@ -72,6 +72,10 @@ $font-size-page-title: 1.5em;
 }
 ```
 
+## Convert loader styles to a scss partial
+
+1. Rename ``` /imports/stylesheets/vendor/loader.css ``` to ``` /imports/stylesheets/vendor/_loader.scss ```
+
 ## Import styles on startup
 
 ``` /imports/startup/client/index.js ```
