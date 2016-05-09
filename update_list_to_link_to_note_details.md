@@ -4,6 +4,16 @@ _TODO: update previous branches with this refactoring of optional feature?
 
 ## Add listLink as an optional list feature
 
+``` /imports/components/lists/list.jsx ```
+```js
+...
+ const listFeatures = {
+  ...
+  	linkItem: (item) => <a href={FlowRouter.path( "noteDetail" , {_id: item._id})}>{item.title}</a>  	
+	}
+	
+```
+
 - change the title field to be a link
 - get the path using FlowRouter
 - make listLinks an optional feature
