@@ -8,7 +8,7 @@
 * [Db Updates: Add a Title Field](db_updates_add_a_title_field.md)
 * [Add Publish and Subscribe](add_publish_and_subscribe.md)
 * [Add a loading spinner (DONE)](add_a_loading_spinner.md)
-* [Add Routing (Homepage/Note Details)](add_routing.md)
+* [Add Routing (Homepage)](add_routing.md)
 * [Update List to link to note details](update_list_to_link_to_note_details.md)
 * [Redirect to Note Details on Create Note](redirect_to_note_details_on_create_note.md)
 * [Display the note title in the app header (custom layout)](display_the_note_title_in_the_app_header_custom_la.md)
