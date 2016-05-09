@@ -49,7 +49,7 @@ List.defaultProps = {
 }
 ```
 
-## 'Turn on' the link feature
+You can test the link feature by temporarily setting ``` List.defaultProps ``` to ``` true ```.
 
 
 
