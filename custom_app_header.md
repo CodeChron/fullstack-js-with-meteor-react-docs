@@ -84,7 +84,6 @@ import '../../stylesheets/main'
 
 ## Apply three-column styling to app header
 
-
 ``` /imports/components/layouts/app_header_layout.jsx ```
 
 ```js
