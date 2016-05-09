@@ -74,7 +74,30 @@ $font-size-page-title: 1.5em;
 
 ## Convert loader styles to a scss partial
 
-1. Rename ``` /imports/stylesheets/vendor/loader.css ``` to ``` /imports/stylesheets/vendor/_loader.scss ```
+### Rename ``` /imports/stylesheets/vendor/loader.css ``` to ``` /imports/stylesheets/vendor/_loader.scss ```
+
+### Import the partial
+
+``` /imports/stylesheets/main.scss ```
+
+```scss
+// VENDOR
+// ____________________________
+@import "vendor/loader";
+...
+
+```
+
+## Remove the stylesheet import specific to the loader component
+
+``` /imports/components/loader/loader.jsx ```
+
+```js
+import React from 'react'
+
+export const Loader = () => <div className="loader">Loading...</div>
+```
+
 
 ## Import styles on startup
 
