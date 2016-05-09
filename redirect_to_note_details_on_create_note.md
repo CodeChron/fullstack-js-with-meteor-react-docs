@@ -56,7 +56,7 @@ export default createContainer(() => {
 
 _TODO: do this later - premature optimization?
 - get note count before create
-- set list limit to current count
+- set list limit to current count - via subscription
 - reset limit after redirect
 
 
