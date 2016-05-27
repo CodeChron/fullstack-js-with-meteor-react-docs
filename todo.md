@@ -1,4 +1,7 @@
 # TODO
+- Review workshop description: update to mention that it will be an intro to JS?
+- Work on intro to JS portion
+- Think about how to make course flexible
 - Update this repo based on changes from the other repo
 - Git branches/numbers should match chapters/numbers
 - Make the preview course public.
