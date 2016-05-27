@@ -9,6 +9,10 @@ Here we will create a single "Controller" component for managing:
 Add a NotesContainer
 Render NotesContainer as a top-level component (when we add users, we'll switch this to users container
 
+Add SingleFieldSubmit to AppLayout and handle create note via props.
+
+
+
 
 
 
