@@ -1,7 +1,8 @@
 # JS Basics
 
 ## The JS function
-- Function scope
+- Functions and scope
+- Closure
 - Function as first class object - can be passed as a variable, and more
 - Pure functions
 - Arrow functions
