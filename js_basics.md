@@ -6,4 +6,6 @@
 - Pure functions
 - Arrow functions
 
+Open for questions - what other questions do you have about JS?
+
 
