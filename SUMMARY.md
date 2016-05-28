@@ -20,4 +20,5 @@
 * [Feature Overview: Private Notes](feature_overview_private_notes.md)
 * [Feature Overview: Advanced New Note UI](feature_overview_advanced_new_note_ui.md)
 * [04: Create Notes (NEW)](04_create_notes.md)
+* Deploy to Heroku
 
