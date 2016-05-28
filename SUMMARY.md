@@ -22,4 +22,5 @@
 * [04: Create Notes (NEW)](04_create_notes.md)
 * [Deploy to Heroku](deploy_to_heroku.md)
 * [App Security](app_security.md)
+* Refactor and Optimize
 
