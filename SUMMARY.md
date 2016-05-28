@@ -23,4 +23,5 @@
 * [Deploy to Heroku](deploy_to_heroku.md)
 * [App Security](app_security.md)
 * [Refactor and Optimize](refactor_and_optimize.md)
+* JS Basics
 
