@@ -4,7 +4,7 @@
 - Return note_detail_data
 - Wrap into single_column_layout
 - pass note id param into route
-- get note title using route id
+- get note title using route :_id param
 
 
 
