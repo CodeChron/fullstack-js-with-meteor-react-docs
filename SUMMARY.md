@@ -21,4 +21,5 @@
 * [Feature Overview: Advanced New Note UI](feature_overview_advanced_new_note_ui.md)
 * [04: Create Notes (NEW)](04_create_notes.md)
 * [Deploy to Heroku](deploy_to_heroku.md)
+* App Security
 
