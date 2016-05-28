@@ -1,6 +1,6 @@
 # JS Basics
 
-- Discuss the JS function
+## The JS function
 - Function scope
 - Function as first class object - can be passed as a variable, and more
 - Pure functions
