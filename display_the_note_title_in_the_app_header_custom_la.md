@@ -1,12 +1,10 @@
 # Display the note title in the note detail header (custom layout)
 
-
-
-
-## Display the note title in the note details view
-
-To do this, we need to get data for this note.  We can do that using the note id, which we can find in the URL as a param.
-
+- Create a note_details_container
+- Return note_detail_data
+- Wrap into single_column_layout
+- pass note id param into route
+- get note title using route id
 
 
 
