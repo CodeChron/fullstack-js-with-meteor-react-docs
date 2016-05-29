@@ -1,4 +1,4 @@
-# 04: Create Note (NEW)
+# 04: Create Note
 
 _this follows step "3: add app header" in the preview tutorial_
 
