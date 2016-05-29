@@ -18,7 +18,6 @@
 * [Click to edit the note title](click_to_edit_the_note_title.md)
 * [Add note content with auto-save](click_to_add_or_update_note_content.md)
 * [Feature Overview: Private Notes](feature_overview_private_notes.md)
-* [Feature Overview: Advanced New Note UI](feature_overview_advanced_new_note_ui.md)
 * [04: Create Notes (NEW)](04_create_notes.md)
 * [Deploy to Heroku](deploy_to_heroku.md)
 * [App Security](app_security.md)
