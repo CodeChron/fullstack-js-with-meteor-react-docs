@@ -1,7 +1,7 @@
 # TODO
 - add full screen styling to content editor
 - get content viewer working
-- make notes private
+- **make notes private**
 - deploy to heroku
 - secure the app
 
