@@ -24,4 +24,5 @@
 * [App Security](app_security.md)
 * [Refactor and Optimize](refactor_and_optimize.md)
 * [JS Basics](js_basics.md)
+* Notes
 
