@@ -1,7 +1,9 @@
 # JS Basics
 
 ## The JS function
-- Functions and scope
+- "this" and scope
+- vars and hoisting
+- Functions 
 - Closure
 - Function as first class object - can be passed as a variable, and more
 - Pure functions
