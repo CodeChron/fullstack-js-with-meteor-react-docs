@@ -5,8 +5,6 @@
 - deploy to heroku
 - secure the app
 
-
-
 - - **Visualize passing data down through container via route into page**
 - Review workshop description: update to mention that it will be an intro to JS?
 - Work on intro to JS part
