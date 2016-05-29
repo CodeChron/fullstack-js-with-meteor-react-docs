@@ -1,5 +1,8 @@
 # TODO
-- **Visualize passing data down through container via route into page**
+- add full screen styling to content editor
+- get content viewer working
+- 
+- - **Visualize passing data down through container via route into page**
 - Review workshop description: update to mention that it will be an intro to JS?
 - Work on intro to JS part
 - Think about how to make course flexible
