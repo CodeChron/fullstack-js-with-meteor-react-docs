@@ -1,4 +1,4 @@
-# Feature Overview: Private Notes
+#  Make Notes Private
 
 - add user accounts - wrap blaze version?
 - add a owner id to notes
