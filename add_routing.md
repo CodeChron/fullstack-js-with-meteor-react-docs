@@ -59,7 +59,7 @@ FlowRouter.route('/', {
 })
 ```
 
-# Update AppLayout to pass in our header and content params
+## Update the App to render route regions
 
 ``` /imports/components/layouts/app_layout.jsx ```
 
@@ -76,24 +76,25 @@ export const AppLayout = ({header, content}) =>
 ```
 
 
-# Remove files used to manually render our app
+## Remove "manual" app rendering
+
 FlowRouter handles this for us.
 
 _delete_ the following files:
 ```/imports/startup/client/main.html ```
 ```/imports/startup/client/main.js ```
 
-You might consider creating a "tmp" directory that is a peer of your app directory and moving them there, just temporarily, until routes are working properly.
+## Import routes on startup
 
-# Import routes on startup
+Also, be sure to remove the old main.js import
 
 ``` /imports/startup/client/index.js ```
 
-```js
-import './routes.jsx'
-```
+In your browser, you should now see "Homepage content" instead of "React placeholder"
 
-# Our default view has now been converted to a homepage...
+If you trying going to a different URL, you will now see that you just get a blank page.
 
-In your browser, you should now see the same content as before.  However, we now have capability to add more pages.
+![foo-route](https://cloud.githubusercontent.com/assets/819213/15657042/499dc042-267b-11e6-9b77-c9fd0210f2e1.png)
+
+
 
