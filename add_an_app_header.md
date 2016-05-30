@@ -43,16 +43,16 @@ PageTitle.propTypes = {
 ```
 
 
-## Add the App Header to the App
+## Add the App Header to Homepage
 
-``` /imports/components/layouts/app_layout.jsx ```
+``` /imports/components/pages/homepage.jsx ```
 
 ```js
 ...
-import { AppHeaderLayout } from './layouts/app_header_layout'
-import { PageTitle } from './content/page_title'
+import { AppHeaderLayout } from '../layouts/app_header_layout'
+import { PageTitle } from '../content/page_title'
 
-export const App = () => {
+export const Homepage = () => {
 	const 
 	  appName = "My Notes App",
 	  pageTitle = <PageTitle title={appName} />
@@ -64,6 +64,7 @@ export const App = () => {
             </div>
           </div>
 }
+
 ```
 
 You should now see the app header appear in the browser.
