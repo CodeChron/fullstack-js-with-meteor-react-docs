@@ -1,4 +1,5 @@
 # TODO
+- LOGISTICS: will there be a whiteboard?  Assuming there will be a projector in the room.
 - add full screen styling to content editor
 - get content viewer working
 - **make notes private**
