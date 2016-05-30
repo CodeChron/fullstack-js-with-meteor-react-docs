@@ -58,7 +58,7 @@ Replace everything in the file ``` /imports/startup/client/main.js ``` with the 
 ```js
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { AppLayout } from '/imports/components/app'
+import { App } from '/imports/components/app'
 
 import './main.html'
 
