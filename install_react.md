@@ -27,3 +27,36 @@ export const AppLayout = () =>
 - What is the '=>' thing?
 - Isn't this just a plain JS function? Why are we not using React.createClass or React.Component?
 - Why are we using 'className' rather than class?
+
+
+## Replace Blaze with a React render target
+
+Add a location where we want to render our React components:
+
+``` /imports/startup/client/main.html ```
+
+```html
+<body>
+  <div id="app"></div>
+</body>
+```
+
+Tell Meteor to render our top-level ```AppLayout``` component at this location on startup:
+
+``` /imports/startup/client/main.js ```
+
+```js
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { AppLayout } from '/imports/components/layouts/app_layout'
+
+import './main.html'
+
+Meteor.startup(() =>
+	ReactDOM.render(<AppLayout />, document.getElementById("app"))
+)
+```
+
+You should now see this in your browser:
+
+![Dflt view with React added](https://raw.githubusercontent.com/CodeChron/fullstack-js-preview-docs/master/images/react-added-dflt.png)
