@@ -42,33 +42,30 @@ PageTitle.propTypes = {
 }
 ```
 
-### Avoiding hard-coded strings
-We'd likely want to move the "My Notes App" into some form of app info library,but this is ok for now.
 
-
-## Add  the App Header to the App Layout
+## Add the App Header to the App
 
 ``` /imports/components/layouts/app_layout.jsx ```
 
 ```js
 ...
-import { AppHeaderLayout } from './app_header_layout'
+import { AppHeaderLayout } from './layouts/app_header_layout'
+import { PageTitle } from './content/page_title'
 
-export const AppLayout = () =>
-  <div id="app-container">
-    <AppHeaderLayout />
-    <div id="main-content" className="container">
-      Main content
-    </div>
-  </div>
+export const App = () => {
+	const 
+	  appName = "My Notes App",
+	  pageTitle = <PageTitle title={appName} />
+      
+	return  <div id="app-container">
+              <AppHeaderLayout headerCenter={pageTitle} />
+            <div id="main-content" className="container">
+              Main content
+            </div>
+          </div>
+}
 ```
 
 You should now see the app header appear in the browser.
 
 ![App Header added](https://raw.githubusercontent.com/CodeChron/fullstack-js-preview-docs/master/images/add-app-header.png)
-
-Try adding a custom ``` pageTitle ```, eg
-
-``` <AppHeaderLayout pageTitle="My Custom Title" /> ``` 
-
-and you'll see the page title update.
