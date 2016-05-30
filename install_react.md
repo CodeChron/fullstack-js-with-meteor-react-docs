@@ -1,4 +1,4 @@
-# Add React
+# Add React 
 
 Starting with Meteor 1.3, we install React packages using npm.
 
