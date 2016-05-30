@@ -8,13 +8,17 @@ Even though we currently only will have a single page, we still want to add rout
 
 
 ## Install Flow-router
-After installing this we should see message from flow-router that there is no 'root route' or basically no homepage.  Let's therefore add a homepage as our first route.
 
 There are many ways to add routing.  We'll use one of the more popular packages: FlowRouter.
 
 ``` meteor add kadira:flow-router ```
 ``` npm i react-mounter --save ```
 
+After installing this we should see message from flow-router that there is no 'root route' or basically no homepage.  Let's therefore add a homepage as our first route.
+
+## Create a homepage component
+
+``` /imports/pages/homepage.jsx ```
 
 #Create a routes file and add a homepage
 
