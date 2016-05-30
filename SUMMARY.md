@@ -26,5 +26,5 @@
 * [Refactor and Optimize](refactor_and_optimize.md)
 * [JS Basics](js_basics.md)
 * [Notes](notes.md)
-* Add Styling with Bootstrap
+* [Add Styling with Bootstrap](add_styling_with_bootstrap.md)
 
