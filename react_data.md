@@ -4,3 +4,4 @@ Next, let's add support for using data in a Meteor app. There are [many ways](ht
 
 - Add the Meteor package: ```meteor add react-meteor-data```
 - Add the npm package: ```npm i react-addons-pure-render-mixin --save```
+
