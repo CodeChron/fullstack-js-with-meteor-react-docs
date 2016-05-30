@@ -8,6 +8,7 @@
 * [App Component Hierarchy](app_component_hierarchy.md)
 * [Add an App Header](add_an_app_header.md)
 * [Adding Data](adding_data.md)
+* [Data Schema](data_schema.md)
 * [TODO](todo.md)
 * [Feature Overview: Note Details](feature_overview_note_details.md)
 * [Db Updates: Add a Schema](db_updates_add_a_schema.md)
@@ -31,5 +32,4 @@
 * [Refactor and Optimize](refactor_and_optimize.md)
 * [JS Basics](js_basics.md)
 * [Notes](notes.md)
-* [Data Schema](data_schema.md)
 
