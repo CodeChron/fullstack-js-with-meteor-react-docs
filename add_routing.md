@@ -81,13 +81,17 @@ _delete_ the following files:
 
 ## Import routes on startup
 
-Also, be sure to remove the old main.js import
+Also, be sure to remove the old main.js import in this file
 
 ``` /imports/startup/client/index.js ```
 
+```js
+import '../../routes.jsx'
+```
+
 In your browser, you should now see "Homepage content" instead of "React placeholder"
 
-If you trying going to a different URL, you will now see that you just get a blank page.
+If you trying going to a different URL, you will now see that you just get a blank page and a message from Flow-Router.
 
 ![foo-route](https://cloud.githubusercontent.com/assets/819213/15657042/499dc042-267b-11e6-9b77-c9fd0210f2e1.png)
 
