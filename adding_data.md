@@ -3,7 +3,7 @@
 Before we can start creating notes, we need to add support for use of data, both in Meteor generally and also specifically for React within Meteor.
 
 ## Create a Mongo dB Notes Collection
-``` /imports/api/notes/notes.js ```
+``` /imports/collections/notes/notes.js ```
 
 ```js
 import { Mongo } from 'meteor/mongo'
