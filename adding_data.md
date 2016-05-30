@@ -28,3 +28,9 @@ import '/imports/startup/server/'
 ```
 
 ## Try inserting some data
+
+_show insertion of a 'foo' field with a 'bar' value_
+
+
+## Next: Add a Data Schema
+
