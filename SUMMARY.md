@@ -24,5 +24,5 @@
 * [Refactor and Optimize](refactor_and_optimize.md)
 * [JS Basics](js_basics.md)
 * [Notes](notes.md)
-* Setting up your project
+* [Setting up your project](setting_up_your_project.md)
 
