@@ -11,7 +11,6 @@
 * [Data Schema](data_schema.md)
 * [TODO](todo.md)
 * [Feature Overview: Note Details](feature_overview_note_details.md)
-* [Db Updates: Add a Schema](db_updates_add_a_schema.md)
 * [Db Updates: Use Meteor.methods](db_updates_use_meteormethods.md)
 * [Db Updates: Add a Title Field](db_updates_add_a_title_field.md)
 * [Add Publish and Subscribe](add_publish_and_subscribe.md)
