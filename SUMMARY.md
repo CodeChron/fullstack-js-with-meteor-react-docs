@@ -31,5 +31,5 @@
 * [Refactor and Optimize](refactor_and_optimize.md)
 * [JS Basics](js_basics.md)
 * [Notes](notes.md)
-* Data Schema
+* [Data Schema](data_schema.md)
 
