@@ -38,11 +38,7 @@ import React from 'react'
 export const PageTitle = (props) => <h1 className="navbar-brand">{props.pageTitle}</h1>
 
 PageTitle.propTypes = {
-	pageTitle: React.PropTypes.string
-}
-
-PageTitle.defaultProps = { 
-  pageTitle: "My Notes App"
+	pageTitle: React.PropTypes.string.isRequired
 }
 ```
 
