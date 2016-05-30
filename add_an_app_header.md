@@ -66,6 +66,8 @@ export const Homepage = () => {
 }
 ```
 
+We are adding the AppHeader only to the homepage because we will want to be able to pass in different data into this and other components depending on the page being viewed.
+
 You should now see the app header appear in the browser.
 
 ![App Header added](https://raw.githubusercontent.com/CodeChron/fullstack-js-preview-docs/master/images/add-app-header.png)
