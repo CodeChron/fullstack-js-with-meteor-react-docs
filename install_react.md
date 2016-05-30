@@ -1,4 +1,4 @@
-# Add React 
+# Add React
 
 Starting with Meteor 1.3, we install React packages using npm.
 
@@ -13,6 +13,7 @@ Starting with Meteor 1.3, we install React packages using npm.
 
 Replace everything in the file ``` /imports/startup/client/main.html ``` with the following:
 
+
 ```html
 <body>
   <div id="app"></div>
@@ -24,26 +25,16 @@ This will be our "render target" for React components.
 
 ## Add a top-level React component
 
-``` /imports/components/app ```
+``` /imports/components/layouts/app_layout.jsx ```
 ```js 
 import React from 'react'
 
-export const App = () =>
+export const AppLayout = () =>
   <div id="app-container">
     <div id="main-content" className="container">
       React placeholder
     </div>
   </div>
-```
-
-This is the same as if we had written:
-
-```js
-export const App = () => {
- return React.createElement('div', {id: "app-container"}, 
-    React.createElement('div', {id: "main-content", className: "container" }, "React placeholder")
- 	)
-}
 ```
 
 - What is the '=>' thing?
@@ -58,12 +49,12 @@ Replace everything in the file ``` /imports/startup/client/main.js ``` with the 
 ```js
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { App } from '/imports/components/app'
+import { AppLayout } from '/imports/components/layouts/app_layout'
 
 import './main.html'
 
 Meteor.startup(() =>
-	ReactDOM.render(<App />, document.getElementById("app"))
+	ReactDOM.render(<AppLayout />, document.getElementById("app"))
 )
 ```
 
