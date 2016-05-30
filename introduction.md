@@ -1,7 +1,9 @@
 # Introduction
 
 # Full-stack JS Workshop Preview
-In this tutorial, we’re going to build a web app using using Meteor and React. This will be a simplified version of a more advanced app we'll build in a [two-day workshop](https://www.eventbrite.com/e/full-stack-web-development-workshop-meteorjs-reactjs-tickets-24910341502) on full-stack web development with Meteor and React.
+In this workshop, we’re going to build a a basic web app using using Meteor and React.
+
+TODO: insert an overview of the main features and area of focus.
 
 ## The app we'll build
 
