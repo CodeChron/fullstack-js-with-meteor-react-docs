@@ -24,10 +24,6 @@ export const AppHeaderLayout = (props) => {
 AppHeaderLayout.propTypes = {
   headerCenter: React.PropTypes.object
 }
-
-AppHeaderLayout.defaultProps = { 
-  headerCenter: <PageTitle />
-}
 ```
 
 - What are props, propTypes, and defaultProps?
