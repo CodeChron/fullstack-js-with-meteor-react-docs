@@ -1,5 +1,6 @@
 # Summary
 
+* Introduction
 * [TODO](todo.md)
 * [Introduction](README.md)
 * [Feature Overview: Note Details](feature_overview_note_details.md)
@@ -24,5 +25,4 @@
 * [Refactor and Optimize](refactor_and_optimize.md)
 * [JS Basics](js_basics.md)
 * [Notes](notes.md)
-* Introduction
 
