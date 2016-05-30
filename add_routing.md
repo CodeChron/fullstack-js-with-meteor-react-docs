@@ -1,5 +1,8 @@
 # Add Routing
-_Move this step to when we are ready to work in the redirect_
+
+Even though we currently only will have a single page, we still want to add routing as early as possible.  Think of routing as part of the core plumbing of your app. You don't to add it as early as possible, even if you initially only have only one page in your app.
+
+If not, you might find yourself having to undo work you've done previously.  In our case, we will have to undo some of the tasks we did in the previous brannch.
 
 Routing is basically the ability to have multiple pages in your app, and to be able to display different content based on the URL in your browser.
 
