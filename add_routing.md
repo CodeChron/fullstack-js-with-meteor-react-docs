@@ -20,6 +20,19 @@ After installing this we should see message from flow-router that there is no 'r
 
 ``` /imports/pages/homepage.jsx ```
 
+
+```js
+import React from 'react'
+
+export const Homepage = () => 
+
+<div id="app-container">
+  <div id="main-content" className="container">
+    Homepage content
+  </div>
+</div>
+```
+
 #Create a routes file and add a homepage
 
 Our homepage will display basically the same content as we currently see in the app, but it will be explicitly defined as being on the homepage and accessible via a specific URL ("/")
