@@ -7,7 +7,7 @@ Routing should likely be added very early on in your app development. One reason
 Even though we currently only will have a single page, we still want to add routing, because we know we'll have multiple pages eventually.
 
 
-## Install Flow-router
+## Install the routing package
 
 There are many ways to add routing.  We'll use one of the more popular packages: FlowRouter.
 
