@@ -16,7 +16,7 @@ There are many ways to add routing.  We'll use one of the more popular packages:
 ``` npm i react-mounter --save ```
 
 
-#Create a routes file and add a homepage route
+#Create a routes file and add a homepage
 
 Our homepage will display basically the same content as we currently see in the app, but it will be explicitly defined as being on the homepage and accessible via a specific URL ("/")
 
