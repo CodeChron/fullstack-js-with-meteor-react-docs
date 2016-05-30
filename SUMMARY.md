@@ -26,7 +26,7 @@
 * [Click to edit the note title](click_to_edit_the_note_title.md)
 * [Add note content with auto-save](click_to_add_or_update_note_content.md)
 * [Feature Overview: Private Notes](feature_overview_private_notes.md)
-* [04: Create Notes](04_create_notes.md)
+* [Add a Single Field Submit Component](04_create_notes.md)
 * [Deploy to Heroku](deploy_to_heroku.md)
 * [App Security](app_security.md)
 * [Refactor and Optimize](refactor_and_optimize.md)
