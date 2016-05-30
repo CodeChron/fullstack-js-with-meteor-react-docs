@@ -63,13 +63,10 @@ FlowRouter.route('/', {
 ```js
 import React from 'react'
 
-export const App = ({ content }) => 
-  <div id="app-container">
-    <div id="main-content" className="container">
-      {content()}
-    </div>
-  </div>
+export const App = (props) => props.content()
 ```
+
+Here, we are calling the region function that we specified in the routes file.
 
 ## Remove "manual" app rendering
 
