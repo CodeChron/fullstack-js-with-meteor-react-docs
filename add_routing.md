@@ -75,7 +75,6 @@ export const AppLayout = ({header, content}) =>
   </div>
 ```
 
-
 ## Remove "manual" app rendering
 
 FlowRouter handles this for us.
