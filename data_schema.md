@@ -19,11 +19,11 @@ There are many ways to do this.  We'll use the [Astronomy](https://github.com/ja
 ...
 import { Class } from 'meteor/jagi:astronomy'
 
-const NoteSchema = Class.create({
+const Note = Class.create({
 	name: 'Note',
 	collection: Notes,
 	fields: {
-    content: String,
+    title: String,
     updatedAt: Date 
   }
 })
