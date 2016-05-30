@@ -19,7 +19,9 @@ There are many ways to do this.  We'll use the [Astronomy](https://github.com/ja
 ...
 import { Class } from 'meteor/jagi:astronomy'
 
-const Note = Class.create({
+const Notes = new Mongo.Collection('notes')
+
+export const Note = Class.create({
 	name: 'Note',
 	collection: Notes,
 	fields: {
@@ -28,6 +30,8 @@ const Note = Class.create({
   }
 })
 ```
+
+Note that we are now exporting our Note schema rather than the Notes collection.
 
 
 
