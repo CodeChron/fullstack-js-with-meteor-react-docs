@@ -21,7 +21,7 @@ The Notes collection we created needs to be available on the server side for dat
 import { Notes} from '/imports/api/notes/notes'
 ```
 
-``` /server/index.js ```
+``` /server/main.js ```
 
 ```js 
 import '/imports/startup/server/'
@@ -29,8 +29,16 @@ import '/imports/startup/server/'
 
 ## Try inserting some data
 
-_show insertion of a 'foo' field with a 'bar' value_
+We'll use the Mongo shell that ships with Meteor.
 
-
-## Next: Add a Data Schema
-
+```
+$ meteor mongo
+MongoDB shell version: 2.6.7
+connecting to: 127.0.0.1:4001/meteor
+meteor:PRIMARY> db.notes.insert({foo: "bar" })
+WriteResult({ "nInserted" : 1 })
+meteor:PRIMARY> db.notes.find()
+{ "_id" : ObjectId("574c81991fdb1f15bfbf0655"), "foo" : "bar" }
+meteor:PRIMARY> exit
+bye
+```
