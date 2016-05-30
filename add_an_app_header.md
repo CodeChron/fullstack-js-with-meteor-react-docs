@@ -64,7 +64,6 @@ export const Homepage = () => {
             </div>
           </div>
 }
-
 ```
 
 You should now see the app header appear in the browser.
