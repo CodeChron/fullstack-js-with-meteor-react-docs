@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [Setting up your project](setting_up_your_project.md)
 * [Move app files into the "imports" directory"](move_app_files_into_the_imports_directory.md)
+* [Add Styling with Bootstrap](add_styling_with_bootstrap.md)
 * [TODO](todo.md)
 * [Feature Overview: Note Details](feature_overview_note_details.md)
 * [Db Updates: Add a Schema](db_updates_add_a_schema.md)
@@ -26,5 +27,4 @@
 * [Refactor and Optimize](refactor_and_optimize.md)
 * [JS Basics](js_basics.md)
 * [Notes](notes.md)
-* [Add Styling with Bootstrap](add_styling_with_bootstrap.md)
 
