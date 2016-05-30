@@ -15,7 +15,6 @@
 * [Db Updates: Use Meteor.methods](db_updates_use_meteormethods.md)
 * [TODO](todo.md)
 * [Feature Overview: Note Details](feature_overview_note_details.md)
-* [Db Updates: Add a Title Field](db_updates_add_a_title_field.md)
 * [Add Publish and Subscribe](add_publish_and_subscribe.md)
 * [Add a loading spinner](add_a_loading_spinner.md)
 * [Add Note Details Route](add_note_details_route.md)
