@@ -25,5 +25,5 @@
 * [Refactor and Optimize](refactor_and_optimize.md)
 * [JS Basics](js_basics.md)
 * [Notes](notes.md)
-* Move app files into the "imports" directory"
+* [Move app files into the "imports" directory"](move_app_files_into_the_imports_directory.md)
 
