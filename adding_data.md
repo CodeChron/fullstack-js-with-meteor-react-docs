@@ -39,6 +39,8 @@ meteor:PRIMARY> db.notes.insert({foo: "bar" })
 WriteResult({ "nInserted" : 1 })
 meteor:PRIMARY> db.notes.find()
 { "_id" : ObjectId("574c81991fdb1f15bfbf0655"), "foo" : "bar" }
+meteor:PRIMARY> db.notes.remove({})
+WriteResult({ "nRemoved" : 1 })
 meteor:PRIMARY> exit
 bye
 ```
