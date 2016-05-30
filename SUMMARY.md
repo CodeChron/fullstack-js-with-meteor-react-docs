@@ -9,7 +9,7 @@
 * [Add an App Header](add_an_app_header.md)
 * [Adding Data](adding_data.md)
 * [Data Schema](data_schema.md)
-* React Data
+* [React Data](react_data.md)
 * [TODO](todo.md)
 * [Feature Overview: Note Details](feature_overview_note_details.md)
 * [Db Updates: Use Meteor.methods](db_updates_use_meteormethods.md)
