@@ -2,7 +2,7 @@
 
 Let's model our note data and also add some other helpers for making data handling easier.
 
-## Install a data model layer
+## Add a data model layer
 
 There are many ways to do this.  We'll use the [Astronomy](https://github.com/jagi/meteor-astronomy/) package.
 
