@@ -24,11 +24,11 @@ This will be our "render target" for React components.
 
 ## Add a top-level React component
 
-``` /imports/components/layouts/app_layout.jsx ```
+``` /imports/components/app ```
 ```js 
 import React from 'react'
 
-export const AppLayout = () =>
+export const App = () =>
   <div id="app-container">
     <div id="main-content" className="container">
       React placeholder
@@ -39,7 +39,7 @@ export const AppLayout = () =>
 This is the same as if we had written:
 
 ```js
-export const AppLayout = () => {
+export const App = () => {
  return React.createElement('div', {id: "app-container"}, 
     React.createElement('div', {id: "main-content", className: "container" }, "React placeholder")
  	)
@@ -58,12 +58,12 @@ Replace everything in the file ``` /imports/startup/client/main.js ``` with the 
 ```js
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { AppLayout } from '/imports/components/layouts/app_layout'
+import { AppLayout } from '/imports/components/app'
 
 import './main.html'
 
 Meteor.startup(() =>
-	ReactDOM.render(<AppLayout />, document.getElementById("app"))
+	ReactDOM.render(<App />, document.getElementById("app"))
 )
 ```
 
