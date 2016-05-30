@@ -22,3 +22,5 @@ Create the Meteor app and cd into it:
 - Type ``` meteor ``` to run the app locally.
 - Go to http://localhost:3000 to view your app.
 - Make sure you have both your client console and your server log visible while working. See [this blog post](http://coderchronicles.org/2016/04/08/getting-started-with-meteor-1-3-react-and-flowrouter/#Start_and_View_Meteor_in_Your_Browser) for a recommended local setup.
+- Open up a new terminal tab/window.
+- Open up your project in an editor of your choice.
