@@ -31,7 +31,14 @@ export const Note = Class.create({
 })
 ```
 
-Note that we are now exporting our Note schema rather than the Notes collection.
+Note that we are now exporting our Note schema rather than the Notes collection.  Let's now also be sure to import the schema rather than collection to the server:
+
+``` /imports/startup/server/index.js ```
+
+```js 
+import { Note } from '/imports/collections/notes'
+```
+
 
 
 
