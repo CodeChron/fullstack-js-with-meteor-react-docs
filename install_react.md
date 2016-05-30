@@ -9,8 +9,20 @@ Starting with Meteor 1.3, we install React packages using npm.
 - ["What is the --save option for?"](http://stackoverflow.com/questions/19578796/what-is-the-save-option-for-npm-install) 
 
 
+## Replace Blaze with a React render target
 
-## Add an app layout component
+Replace everything in the file ``` /imports/startup/client/main.html ``` with the following:
+
+```html
+<body>
+  <div id="app"></div>
+</body>
+```
+
+This will be our "render target" for React components.
+
+
+## Add a top-level React component
 
 ``` /imports/components/layouts/app_layout.jsx ```
 ```js 
@@ -24,26 +36,24 @@ export const AppLayout = () =>
   </div>
 ```
 
+This is the same as if we had written:
+
+```js
+export const AppLayout = () => {
+ return React.createElement('div', {id: "app-container"}, 
+    React.createElement('div', {id: "main-content", className: "container" }, "React placeholder")
+ 	)
+}
+```
+
 - What is the '=>' thing?
 - Isn't this just a plain JS function? Why are we not using React.createClass or React.Component?
 - Why are we using 'className' rather than class?
 
 
-## Replace Blaze with a React render target
+## Tell Meteor to render our top-level component on startup:
 
-Add a location where we want to render our React components:
-
-``` /imports/startup/client/main.html ```
-
-```html
-<body>
-  <div id="app"></div>
-</body>
-```
-
-Tell Meteor to render our top-level ```AppLayout``` component at this location on startup:
-
-``` /imports/startup/client/main.js ```
+Replace everything in the file ``` /imports/startup/client/main.js ``` with the following:
 
 ```js
 import React from 'react'
