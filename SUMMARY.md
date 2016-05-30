@@ -18,7 +18,6 @@
 * [Add Publish and Subscribe](add_publish_and_subscribe.md)
 * [Add a loading spinner](add_a_loading_spinner.md)
 * [Add Note Details Route](add_note_details_route.md)
-* [Update List to link to note details](update_list_to_link_to_note_details.md)
 * [Redirect to Note Details on Create Note](redirect_to_note_details_on_create_note.md)
 * [Custom App Header](custom_app_header.md)
 * [Display title in note detail header](display_the_note_title_in_the_app_header_custom_la.md)
