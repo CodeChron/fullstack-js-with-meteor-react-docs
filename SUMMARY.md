@@ -1,6 +1,5 @@
 # Summary
 
-* [Introduction](introduction.md)
 * [TODO](todo.md)
 * [Introduction](README.md)
 * [Feature Overview: Note Details](feature_overview_note_details.md)
