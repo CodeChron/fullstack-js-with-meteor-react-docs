@@ -4,9 +4,8 @@ React uses a hierarchical component architecture.  The React model encourages ta
 
 A key purpose of doing this is to think about what each component will be responsible for.
 
-TODO: update this hierarchy to match the finished app.
+**TODO: update this hierarchy to match the finished app.
+**
 
-
-![preview app component hierarchy](https://raw.githubusercontent.com/CodeChron/fullstack-js-preview-docs/master/images/my-notes-app.png)
 
 This is essential when building an app, to help with planning and think through your component hierarchy.  
