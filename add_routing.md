@@ -1,11 +1,10 @@
 # Add Routing
 
-
 Routing is basically the ability to have multiple pages in your app, and to be able to display different content based on the URL in your browser.
 
 Routing should likely be added very early on in your app development. One reason for this is that routing is very fundamental to an app's architecture, there are many aspects of your app that will be impacted by which route you currently are viewing.  Think of routing as part of the core plumbing of your app. You don't to add it as early as possible, even if you initially only have only one page in your app.  If not, you might find yourself having to undo work you've done previously.  In our case, we will have to undo some of the tasks we did in the previous branch.
 
-Even though we currently only will have a single page, we still want to add routing, because we know we'll have multiple pages eventually.  
+Even though we currently only will have a single page, we still want to add routing, because we know we'll have multiple pages eventually.
 
 
 ## Install Flow-router
