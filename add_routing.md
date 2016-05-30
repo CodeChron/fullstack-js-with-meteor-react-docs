@@ -18,7 +18,7 @@ After installing this we should see message from flow-router that there is no 'r
 
 ## Create a homepage component
 
-``` /imports/pages/homepage.jsx ```
+``` /imports/components/pages/homepage.jsx ```
 
 
 ```js
@@ -44,7 +44,7 @@ import { FlowRouter } from 'meteor/kadira:flow-router'
 import React from 'react'
 import { mount } from 'react-mounter'
 import { App } from './components/app'
-import { Homepage } from './pages/homepage'
+import { Homepage } from './components/pages/homepage'
 
 FlowRouter.route('/', {
   name: 'homepage',
