@@ -33,9 +33,9 @@ export const Homepage = () =>
 </div>
 ```
 
-#Create a routes file and add a homepage
+## Create a routes file and a homepage route
 
-Our homepage will display basically the same content as we currently see in the app, but it will be explicitly defined as being on the homepage and accessible via a specific URL ("/")
+Let's use the above component for our root route.
 
 ``` /imports/routes.jsx ```
 
