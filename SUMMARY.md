@@ -1,11 +1,11 @@
 # Summary
 
 * [Introduction](README.md)
+* [App Component Hierarchy](app_component_hierarchy.md)
 * [Setting up your project](setting_up_your_project.md)
 * [Move app files into the "imports" directory"](move_app_files_into_the_imports_directory.md)
 * [Add Styling with Bootstrap](add_styling_with_bootstrap.md)
 * [Add React](install_react.md)
-* [App Component Hierarchy](app_component_hierarchy.md)
 * [Add an App Header](add_an_app_header.md)
 * [Adding Data](adding_data.md)
 * [Data Schema](data_schema.md)
