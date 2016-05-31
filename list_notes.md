@@ -81,7 +81,11 @@ export const Homepage = (props) => {
 }
 ```
 
-You should now see notes appear in your browser.  If you try adding notes, you'll see they appear in the list. However, they are appearing at the bottom of the list. Let's make them appear on top.
+You should now see notes appear in your browser. 
+
+## Display new notes on top
+
+If you try adding notes, you'll see they appear in the list. However, they are appearing at the bottom of the list. Let's make them appear on top.  We'll do that by changing the sort order in which notes are returned.
 
 ``` /imports/components/containers/homepage_container.js ```
 
@@ -90,20 +94,13 @@ You should now see notes appear in your browser.  If you try adding notes, you'l
 
 export default createContainer(
 	() => {
-		
+		...
 		const 
 		  notes = Note.find({}, { sort: { updatedAt: -1}}).fetch()
 		  ,
 		  ...
-
-	  return {
-	  	collection: notes,
-	  	...
-	  }
-  },
-  App
 )
 ```
 
 
-## Display notes data in the list
+
