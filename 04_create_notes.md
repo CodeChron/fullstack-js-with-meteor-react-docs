@@ -77,6 +77,10 @@ export const Homepage = () => {
 
 ```
 
+The component now displays on the homepage, but if you try typing in something, you'll notice nothing happens and we get some warnings and errors in our client console.
+
+
+
 ## Notes - move to later section
 Here we will create a single "Controller" component for managing:
 - Creating a note
