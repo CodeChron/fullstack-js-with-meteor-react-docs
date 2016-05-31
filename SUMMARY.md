@@ -12,7 +12,7 @@
 * [Adding Data](adding_data.md)
 * [Data Schema](data_schema.md)
 * [Create notes](04_create_notes.md)
-* [React Data Containers](react_data.md)
+* [Handle Data (Containers)](react_data.md)
 * [Db Updates: Use Meteor.methods](db_updates_use_meteormethods.md)
 * [List Notes](list_notes.md)
 * [Add Publish and Subscribe](add_publish_and_subscribe.md)
