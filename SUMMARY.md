@@ -13,6 +13,7 @@
 * [Data Schema (NEXT)](data_schema.md)
 * [React Data Containers](react_data.md)
 * [List Notes](list_notes.md)
+* Delete a Note
 * [Add a Single Field Submit Component](04_create_notes.md)
 * [Db Updates: Use Meteor.methods](db_updates_use_meteormethods.md)
 * [Feature Overview: Note Details](feature_overview_note_details.md)
@@ -31,5 +32,4 @@
 * [Refactor and Optimize](refactor_and_optimize.md)
 * [JS Basics](js_basics.md)
 * [Notes](notes.md)
-* Delete a Note
 
