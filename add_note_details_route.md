@@ -33,18 +33,17 @@ export const NoteDetails = (props) => {
 ...
 import { NoteDetailsPage } from './components/pages/note_details_page'
 
-
-FlowRouter.route('/', {
-  name: 'homepage',
+FlowRouter.route('/notes/:_id', {
+  name: 'noteDetails',
   action() {
     mount(HomepageContainer, {
-      content: (props) => <Homepage {...props} />
+      content: (props) => <NoteDetailsPage {...props} />
     })
   }
 })
 ```
 
-Here we are displaying a default app header and no content, just as a placeholder for our page.
+Notice that we are using the HomepageContainer.  This is temporary until we actually start passing data into the note details page, at which point we'll create its own container.
 
 
 
