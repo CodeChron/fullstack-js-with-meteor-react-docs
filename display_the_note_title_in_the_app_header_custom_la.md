@@ -22,7 +22,7 @@ Meteor.publish('note.details', function(id) {
 })
 ```
 
-Here, we are requiring a specific id in order to subscribe to the publication. Also, note that even though we only want one note document, we don't use  ``` findOne ``` since a publication needs to return a cursor.
+Here, we are requiring a specific id in order to subscribe to the publication. Also, note that even though we only want one note document, we don't use  ``` findOne ``` since a publication needs to return a cursor and cannot return a specific document.
 
 ## Create a note details container
 
