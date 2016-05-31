@@ -102,7 +102,6 @@ export default createContainer(
 )
 ```
 
-
 ## Move the new note form into the list component
 
 Let's also move the new note form into the list component.  This will both look a little nicer and later we'll be able to make this an optional feature of a list.
