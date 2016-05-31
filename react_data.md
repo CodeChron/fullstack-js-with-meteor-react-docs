@@ -32,7 +32,8 @@ export default createContainer(
 		  }
 
 	  return {
-	  	handleSubmit: handleCreateNote
+	  	handleSubmit: handleCreateNote,
+        placeholder: "New Note..."
 	  }
   },
   App
