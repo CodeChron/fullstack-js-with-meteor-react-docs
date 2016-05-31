@@ -64,24 +64,16 @@ TODO: Be sure to discuss usage of this and bind(this)
 ``` /imports/components/pages/homepage.jsx ```
 
 ```js
-import React from 'react'
-import { AppHeaderLayout } from '../layouts/app_header_layout'
-import { PageTitle } from '../content/page_title'
+...
 import { SingleFieldSubmit } from '../forms/single_field_submit'
 
 export const Homepage = () => {
 
-	const 
-	  appName = "My Notes App",
-	  pageTitle = <PageTitle title={appName} />
-
-	return  <div id="app-container">
-            <AppHeaderLayout headerCenter={pageTitle} />
+  ...
             <div id="main-content" className="container">
               <SingleFieldSubmit />
             </div>
-          </div>
-}
+ ....
 
 ```
 
