@@ -78,11 +78,25 @@ FlowRouter.route('/notes/:_id', {
  
  
  ## Display the note title
+ 
+ ``` /imports/components/pages/note_details_page.jsx ```
 
-- Wrap into single_column_layout
-- pass note id param into route
-- get note title using route :_id param
+```js
+...
 
+export const NoteDetailsPage = (props) => {
+
+	const
+	  headerCenter = props.subsReady? <PageTitle title={props.note.title} /> : null
+	  
+	return  <div id="app-container">
+            <AppHeaderLayout headerCenter={headerCenter} />
+            <div id="main-content" className="container">
+            {"Note details content"}
+            </div>
+          </div>
+}
+```
 
 
 
