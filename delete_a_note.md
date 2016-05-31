@@ -28,9 +28,8 @@ IconBtn.propTypes = {
 }
 ```
 
-
  ## Add a DeleteBtn Component
- Now, we'll use the more generic IconBtn to create a delete-specific button component
+ Next, let's use our IconBtn to create a button specifically for deleting stuff.
  
  ``` /imports/components/buttons/delete_btn.jsx ```
  
@@ -68,28 +67,12 @@ DeleteBtn.defaultProps = {
 }
 ```
 
-- Why the need for ```{() => callFunction()}```? See http://stackoverflow.com/questions/33846682/react-onclick-fuction-fires-on-render (TL;DR "Because you want to pass a call to the function rather than the function directly.")
+Why the need for ```{() => callFunction()}```? See http://stackoverflow.com/questions/33846682/react-onclick-fuction-fires-on-render (TL;DR "Because you want to pass a call to the function rather than the function directly.")
  
-## Add DeleteBtn to the list
+ 
+## Add Support for deleting notes in our container
 
-``` /imports/components/lists/list.jsx ```
-
-```js
-...
-import { DeleteBtn } from '../buttons/delete_btn'
-
-export const List = (props) =>{
-   ...
-	    	props.collection.map((item) => {
-            return <li key={item._id} className="list-group-item">{item.content}
-	 	      <span className="pull-right"><DeleteBtn itemToDelete={item} {...props} /></span>
-	 	      </li>
-           ...
-```
-
-## Handle deletion of a note
-
-The actual db operation is handled via our notes container.
+The actual db operation is handled via our container.
 
 ``` /imports/containers/notes_container.jsx ```
 
@@ -110,6 +93,28 @@ export default createContainer(() => {
 
 }, List)
 ```
+
+## Add DeleteBtn to the list
+
+
+``` /imports/components/lists/list.jsx ```
+
+```js
+...
+import { DeleteBtn } from '../buttons/delete_btn'
+
+export const List = (props) =>{
+   ...
+	    	props.collection.map((item) => {
+            return <li key={item._id} className="list-group-item">{item.content}
+	 	      <span className="pull-right"><DeleteBtn itemToDelete={item} {...props} /></span>
+	 	      </li>
+           ...
+```
+
+## Handle deletion of a note
+
+
 
 - How are we able to write just ```handleDelete```?
 
