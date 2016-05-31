@@ -97,6 +97,7 @@ export const NoteDetailsPage = (props) => {
 }
 ```
 
+We need to wait for subscriptions to be ready before displaying the page title.  Here, we are simply displaying nothing until the subscription is ready. In the future we might want to update this to display a loading indicator.
 
 
 
