@@ -9,51 +9,34 @@ Next, let's add support for using data in a React/Meteor app. There are [many wa
 - Add the npm package: ```npm i react-addons-pure-render-mixin --save```
 
 
-## Create a Homepage data container
+## Create a container and data handler 
 Let's create a container component that will handle data for our homepage container.
 
 ``` /imports/components/containers/homepage_container.js ```
 
 ```js
 import { createContainer } from 'meteor/react-meteor-data'
-import { Note } from '../collections/notes'
+import { Note } from '../../collections/notes'
 import { Meteor } from 'meteor/meteor'
 import { App } from '../app'
 
 export default createContainer(
 	() => {
 		
-		const
-		  sub = Meteor.subscribe('notes.list.all'),
-			notes = sub.ready()? Note.find({}, { sort: { updatedAt: -1 }}).fetch() : []
-			,
-			redirectToNoteDetail = note => FlowRouter.go("noteDetail", {_id: note._id})
-			,
-		  handleCreateNote = (title) => {
-		    Meteor.call(
-		    	'/note/create',
-		    	title,
-		    	(err, result) => AppLib.db.handleDbResult(err, redirectToNoteDetail(result))
-		    )
+		const handleCreateNote = (title) => {
+			const note = new Note()
+
+			note.set({
+				title,
+			  updatedAt: new Date()
+			})
+
+			note.save()
+
 		  }
-		  ,
-		  handleDeleteNote = (note) => {
-		  	Meteor.call(
-		  		'/note/delete',
-		  		note._id,
-		  		(err, result) => handleDbResult(err)
-        )
-	    }
 
 	  return {
-		  notes,
-		  subsReady: sub.ready(),
-	  	handleSubmit: handleCreateNote,
-	  	handleDelete: handleDeleteNote,
-		  placeholder: "New Note",
-		  addItem: true,
-      deleteItem: true,
-      linkItem: true
+	  	handleSubmit: handleCreateNote
 	  }
   },
   App
