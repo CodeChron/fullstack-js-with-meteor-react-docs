@@ -123,7 +123,6 @@ export const Homepage = (props) => {
 
 ```
 
-
 Next, add it to the list component.
 
 ``` /imports/components/lists/list.jsx ```
@@ -145,10 +144,10 @@ export const List = (props) =>
 
 ## Refactor: use "copy props"
 
-You'll notice that we are seeing ``` handleSubmit={props.handleSubmit} ``` in at least a couple places.  This is a "smell" that we can refactor this.
+You'll notice that we are seeing ``` handleSubmit={props.handleSubmit} ``` in at least a couple places.  This means we are just passing along props from a parent component and is a "smell" that we can refactor this.
 
 
-Note that we also took the opportunity to refactor handling of props.  We are using the "copy props" spread operator, which simply passes along all props from the parent.
+We are using the "copy props" spread operator, which simply passes along all props from the parent.
 
 
 
