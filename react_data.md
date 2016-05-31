@@ -43,7 +43,8 @@ export default createContainer(
 )
 ```
 
-## Update our homepage route to use the data container
+
+## Update our homepage route to use the data container and pass along props from the container into a page
 
 ``` /imports/routes.jsx ```
 
