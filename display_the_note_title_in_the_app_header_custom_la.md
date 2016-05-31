@@ -55,7 +55,7 @@ export default createContainer(
 )
 ```
 
-Here, we are first getting the id for this note via the url (getParam.)  Then, we are subscribing to and finding the specific note once the subscribtion is ready. Finally, we are returning the note object, making it available for use in child components.
+Here, we are first getting the id for this note via the url (getParam.)  Then, we are subscribing to and finding the specific note once the subscribtion is ready. Finally, we are returning the note object, and a prop we can use to check if subs are ready, making them available for use in child components.
 
  ## Update our route to use the note details container
 
