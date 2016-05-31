@@ -26,7 +26,26 @@ Here, we are requiring a specific id in order to subscribe to the publication. A
 
 ## Create a note details container
 
-Since we are now going to be using data on this page, we need to wrap it in a container.  
+Since we are now going to be using data on this page, we need to wrap it in a container.
+
+
+``` /imports/componenents/containers/note_details_container.js ```
+
+```js
+...
+
+const
+  ...
+  noteDetailsFields = {
+    title: 1
+  }
+
+...
+
+Meteor.publish('note.details', function(id) {
+  return Note.find({_id: id }, { fields: noteDetailsFields})
+})
+```
 
  ## Update our route to use the note details container
  
