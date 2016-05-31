@@ -63,7 +63,7 @@ FlowRouter.route('/', {
 ```js
 import React from 'react'
 
-export const App = (props) => props.content()
+export const App = (props) => props.content(props)
 ```
 
 Here, we are calling the region function that we specified in the routes file.
