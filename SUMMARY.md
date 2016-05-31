@@ -12,7 +12,7 @@
 * [Adding Data](adding_data.md)
 * [Data Schema (NEXT)](data_schema.md)
 * [React Data Containers](react_data.md)
-* [Add a Single Field Submit Component](04_create_notes.md)
+* [Create notes](04_create_notes.md)
 * [List Notes](list_notes.md)
 * [Delete a Note](delete_a_note.md)
 * [Db Updates: Use Meteor.methods](db_updates_use_meteormethods.md)
