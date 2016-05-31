@@ -34,22 +34,25 @@ Our list requires an array of data to display.  Let's make that available via ou
 ``` /imports/components/containers/homepage_container.js ```
 
 ```js
-import React from 'react'
+import { createContainer } from 'meteor/react-meteor-data'
+import { Note } from '../../collections/notes'
+import { App } from '../app'
 
-export const List = (props) =>
-  <ul className="list-group">
-    { 
-    	props.collection.map((item) =>
-    		<li key={item._id} className="list-group-item">
-    		  {item.title}
-    		</li>
-      )
-	   }
-  </ul>
+export default createContainer(
+	() => {
+		
+		const 
+		  notes = Note.find().fetch()
+		  ,
+		  ...
 
-List.propTypes = {
-	collection: React.PropTypes.array.isRequired
-}
+	  return {
+	  	collection: notes,
+	  	...
+	  }
+  },
+  App
+)
 ```
 
 ## Add it to our homepage
