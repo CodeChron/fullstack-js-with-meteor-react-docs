@@ -22,7 +22,7 @@
 * [Add Note Details Route](add_note_details_route.md)
 * [Redirect to Note Details on Create Note](redirect_to_note_details_on_create_note.md)
 * [Display title in note detail header](display_the_note_title_in_the_app_header_custom_la.md)
-* [Add a 3-column layout to the app header](custom_app_header.md)
+* [Customize App Header Layout](custom_app_header.md)
 * [Add a Back Button](add_a_back_button.md)
 * [Click to edit the note title](click_to_edit_the_note_title.md)
 * [Add note content with auto-save](click_to_add_or_update_note_content.md)
