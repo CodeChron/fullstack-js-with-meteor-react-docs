@@ -44,25 +44,18 @@ Why only publish certain fields?
  
 ## Subscribe to the notes publication
 
-
 ``` /imports/components/containers/homepage_container.js ```
 
 ```js
 export default createContainer(() => {
 
-	const sub = Meteor.subscribe('notes.all')
-
-	const notes = sub.ready()? Notes.find({}, { sort: { updatedAt: -1 }}).fetch() : []
-  
+	const 
+	  sub = Meteor.subscribe('notes.list')
+	  ,
+	  notes = sub.ready()? Note.find({}, { sort: { updatedAt: -1}}).fetch() : []
+	 ,
    ...
-   
-  return {
-   ...
-	  subsReady: sub.ready(),
-   ...
-  }
-
-}, List)
+}, App)
 ```
 
 
