@@ -4,14 +4,22 @@ Next, we want to display the title for the current note in the header (instead o
 
 ## Add a note details publication
 
-``` /imports/components/containers/homepage_container.jsx ```
+``` /imports/collections/server/publications.js ```
 
 ```js
- ...
-import { FlowRouter } from 'meteor/kadira:flow-router'
+...
 
-   ...
+const
+  ...
+  noteDetailsFields = {
+    title: 1
+  }
 
+...
+
+Meteor.publish('note.details', function(id) {
+  return Note.find({_id: id }, { fields: noteDetailsFields})
+})
 ```
 
 ## Create a note details container
