@@ -7,6 +7,7 @@ First, we need to remove a package that Meteor includes by default, to allow for
 
 ```  meteor remove insecure ```
 
+Now, if you try creating a note, you'll notice it doesn't work.  This is because we need to move these operations to the server side.
 
 ## Update db calls to use Meteor.call and Meteor.methods
 
