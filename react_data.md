@@ -49,8 +49,21 @@ We now need to update our route to use this wrapping container rather than the a
 ``` /imports/routes.jsx ```
 
 ```js
+...
+import HomepageContainer from './components/containers/homepage_container'
+import { Homepage } from './components/pages/homepage'
 
+FlowRouter.route('/', {
+  name: 'homepage',
+  action() {
+    mount(HomepageContainer, {
+      content: (props) => <Homepage {...props} />
+    })
+  }
+})
 ```
+Note that we are _not_ using curly braces for the ``` HomepageContainer ```. This is because it uses ``` export default ``` meaning only one item is exported from the file, and we can name it on import.  We could have named this ``` BaconContainer ``` if we wanted.
+
 
 ## Install a utility for viewing db info in the browser
 
