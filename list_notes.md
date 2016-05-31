@@ -111,6 +111,17 @@ First, remove ```SingleFieldSubmit ``` (both the import statement and the compon
 
 ``` /imports/components/pages/homepage.jsx ```
 
+```js
+...
+export const Homepage = (props) => {
+    ...
+
+	return  <div id="app-container">
+     ...
+             <List collection={props.collection} handleSubmit={props.handleSubmit} />
+    ...
+
+```
 
 
 Next, add it to the list component.
@@ -124,7 +135,7 @@ import { SingleFieldSubmit } from '../forms/single_field_submit'
 export const List = (props) =>
   <ul className="list-group">
     <li className="list-group-item">
-      <SingleFieldSubmit {...props} />
+      <SingleFieldSubmit handleSubmit={props.handleSubmit}  />
     </li>
     ...
   </ul>
