@@ -64,6 +64,7 @@ FlowRouter.route('/', {
 ```
 Note that we are _not_ using curly braces for the ``` HomepageContainer ```. This is because it uses ``` export default ``` meaning only one item is exported from the file, and we can name it on import.  We could have named this ``` BaconContainer ``` if we wanted.
 
+Now, if you try entering some text, you'll notice that it just disappears after you hit return.  Let's make sure we actually inserted some data...
 
 ## Install a utility for viewing db info in the browser
 
