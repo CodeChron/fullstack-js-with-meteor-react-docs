@@ -1,4 +1,4 @@
-# Add Note Details Route
+# Add Note Details Page
 
 ## Add a note details placeholder page
 
