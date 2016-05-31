@@ -107,6 +107,31 @@ export default createContainer(
 
 Let's also move the new note form into the list component.  This will both look a little nicer and later we'll be able to make this an optional feature of a list.
 
+First, remove ```SingleFieldSubmit ``` (both the import statement and the component) from  ``` /imports/components/pages/homepage.jsx ```
+
+Next, add it to the list component.
+
+``` /imports/components/lists/list.jsx ```
+
+```js
+...
+import { SingleFieldSubmit } from '../forms/single_field_submit'
+
+export const List = (props) =>
+  <ul className="list-group">
+    <li className="list-group-item">
+      <SingleFieldSubmit {...props} />
+    </li>
+    ...
+  </ul>
+
+ ...
+```
+
+Note that we also took the opportunity to refactor handling of props.  We are using the "copy props" spread operator, which simply passes along all props from the parent.
+
+
+
 
 
 
