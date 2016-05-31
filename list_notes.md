@@ -146,6 +146,39 @@ export const List = (props) =>
 
 You'll notice that we are seeing ``` handleSubmit={props.handleSubmit} ``` in at least a couple places.  This means we are just passing along props from a parent component and is a "smell" that we can refactor this.
 
+``` /imports/components/pages/homepage.jsx ```
+
+```js
+...
+export const Homepage = (props) => {
+    ...
+
+	return  <div id="app-container">
+     ...
+             <List collection={props.collection} {...props} />
+    ...
+
+```
+
+Next, add it to the list component.
+
+``` /imports/components/lists/list.jsx ```
+
+```js
+...
+import { SingleFieldSubmit } from '../forms/single_field_submit'
+
+export const List = (props) =>
+  <ul className="list-group">
+    <li className="list-group-item">
+      <SingleFieldSubmit {...props}  />
+    </li>
+    ...
+  </ul>
+
+ ...
+```
+
 
 We are using the "copy props" spread operator, which simply passes along all props from the parent.
 
