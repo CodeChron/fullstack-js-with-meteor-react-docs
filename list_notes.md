@@ -118,7 +118,7 @@ export const Homepage = (props) => {
 
 	return  <div id="app-container">
      ...
-             <List collection={props.collection} handleSubmit={props.handleSubmit} />
+             <List collection={props.collection} handleSubmit={props.handleSubmit} placeholder={props.placeholder} />
     ...
 
 ```
@@ -134,7 +134,7 @@ import { SingleFieldSubmit } from '../forms/single_field_submit'
 export const List = (props) =>
   <ul className="list-group">
     <li className="list-group-item">
-      <SingleFieldSubmit handleSubmit={props.handleSubmit}  />
+      <SingleFieldSubmit handleSubmit={props.handleSubmit} placeholder={props.placeholder} />
     </li>
     ...
   </ul>
