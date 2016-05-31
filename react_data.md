@@ -25,14 +25,11 @@ export default createContainer(
 		
 		const handleCreateNote = (title) => {
 			const note = new Note()
-
 			note.set({
 				title,
 			  updatedAt: new Date()
 			})
-
 			note.save()
-
 		  }
 
 	  return {
@@ -43,8 +40,11 @@ export default createContainer(
 )
 ```
 
+Here we are "wrapping" the App component in a container for handling data.  We only have one handler so far, for creating a new note.
 
 ## Update our homepage route to use the data container and pass along props from the container into a page
+
+We now need to update our route to use this wrapping container rather than the app component directly.
 
 ``` /imports/routes.jsx ```
 
