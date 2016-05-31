@@ -82,7 +82,7 @@ First, we need to add a delete method on the server side.
 Meteor.methods({
 ...
 ,
-  '/note/delete': (id) => Note.remove(id)
+  '/note/delete': (note) => Note.remove(note._id)
 })
 
 ```
@@ -112,7 +112,7 @@ export default createContainer(() => {
 }, App)
 ```
 
-## Add DeleteBtn to the list
+## Add DeleteBtn to the List
 
 
 ``` /imports/components/lists/list.jsx ```
