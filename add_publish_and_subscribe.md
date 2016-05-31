@@ -14,7 +14,7 @@ Our notes are still in the database.  However, we now need to explicitly publish
 
 ## Add a Notes Publication
 
-``` /imports/api/notes/server/publications.js ```
+``` /imports/collections/server/publications.js ```
 
 ```js
 import { Meteor } from 'meteor/meteor'
