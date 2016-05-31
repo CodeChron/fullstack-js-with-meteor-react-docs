@@ -14,8 +14,8 @@ First, we need to remove a package that Meteor includes by default, to allow for
 
 ## Update db calls to use Meteor.call and Meteor.methods
 
+``` /imports/collections/notes.js ```
 
-``` /imports/api/notes/notes.js ```
 ```js
 ...
 import { Meteor } from 'meteor/meteor'
