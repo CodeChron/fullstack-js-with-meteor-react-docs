@@ -38,7 +38,3 @@ Note that we are now exporting our *Note* schema rather than the Notes collectio
 ```js 
 import { Note } from '/imports/collections/notes'
 ```
-
-
-
-
