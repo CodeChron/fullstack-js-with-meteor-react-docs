@@ -1,4 +1,4 @@
-# Db Updates: Use Meteor.methods
+# Make db operations secure
 
 Why is this step needed? Important?
 
