@@ -55,6 +55,31 @@ export default createContainer(
 )
 ```
 
-## Add it to our homepage
+## Add the list to the homepage
+
+``` /imports/components/pages/homepage.js ```
+
+```js
+...
+import { List } from '../lists/list'
+...
+
+export const Homepage = (props) => {
+
+  ...
+
+	return  <div id="app-container">
+            ...
+            <div id="main-content" className="container">
+              <SingleFieldSubmit
+                placeholder={"New Note..."}
+                handleSubmit={props.handleSubmit}
+              />
+             <List collection={props.collection} />
+            </div>
+          </div>
+}
+
+```
 
 ## Display notes data in the list
