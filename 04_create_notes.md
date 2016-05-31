@@ -2,8 +2,63 @@
 
 A good approach to implementing a feature is often to "follow the data."  Here, we'll do so first creating a form for creating a note and then adding a handler for inserting that note into our database.
 
+## Create a form that submits input when using the return key
+
+We want to be able to create a new note just by typing and hitting return.  Let's create a component specifically intended for that.
+
+``` /imports/components/forms/single_field_submit.jsx ```
+
+```js
+import React from 'react'
+
+export class SingleFieldSubmit extends React.Component {
+
+  constructor(props){
+    super(props)
+    this.state = {
+      inputValue: this.props.inputValue
+    }
+  }
+
+  updateInputValue(e){
+    this.setState({inputValue: e.target.value})
+  }
+
+  handleSubmit(e) {
+    e.preventDefault()
+    this.props.handleSubmit(this.state.inputValue)
+    this.setState({inputValue: ""})
+  }
+
+  render() {
+      return <form  className="form-inline" onSubmit={this.handleSubmit.bind(this)}>
+        <input
+          type="text"
+          className="form-control"
+          placeholder={this.props.placeholder}
+          value={this.state.inputValue}
+          onChange={this.updateInputValue.bind(this)}
+        />
+      </form>
+  }
+}
+SingleFieldSubmit.propTypes = {
+  handleSubmit: React.PropTypes.func.isRequired,
+  placeholder: React.PropTypes.string
+}
+
+SingleFieldSubmit.defaultProps = {
+  inputValue:  ""  ,
+  placeholder: "New..."
+}
+```
+
+-  Why are we using React.Component in this case?
+-  What's the purpose of the constructor?
+-  Why are we naming our component in this way?
 
 
+## Notes - move to later section
 Here we will create a single "Controller" component for managing:
 - Creating a note
 - Listing existing notes
@@ -13,7 +68,6 @@ Add a NotesContainer
 
 (when we add users, we'll switch this to users container)
 
-Add SingleFieldSubmit to AppLayout and handle create note via props.
 
 
 
