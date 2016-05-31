@@ -52,4 +52,4 @@ Try inserting a note id into your url. You can get this from the Mongo console o
 
 eg. ``` http://localhost:3000/notes/NdNvRmEj2Rus3Nt3o ```  
 
-If everything is hooked up properly you should see a default app header with no content.
+If everything is hooked up properly you should see the placeholder page we created.
