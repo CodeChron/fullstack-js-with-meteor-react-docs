@@ -13,7 +13,7 @@
 * [Data Schema](data_schema.md)
 * [Form for creating notes](04_create_notes.md)
 * [Handle Data (Containers)](react_data.md)
-* [Db Updates: Use Meteor.methods](db_updates_use_meteormethods.md)
+* [Make db operations secure](db_updates_use_meteormethods.md)
 * [List Notes](list_notes.md)
 * [Add Publish and Subscribe](add_publish_and_subscribe.md)
 * [Add a loading spinner](add_a_loading_spinner.md)
