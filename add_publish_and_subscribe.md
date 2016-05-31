@@ -39,7 +39,7 @@ Why only publish certain fields?
  ``` /imports/startup/server/index.js ```
  ```js 
  ...
- import '../../api/notes/server/publications'
+ import '/imports/collections/server/publications'
  ```
  
 ## Subscribe to the notes publication
