@@ -7,46 +7,20 @@
 ```js
 import React from 'react'
 import { AppHeaderLayout } from '../layouts/app_header_layout'
-import { EditableText } from '../content/editable_text'
-import { IconBtn } from '../buttons/icon_btn'
+import { PageTitle } from '../content/page_title'
 
-export const NoteDetailsPage = (props) => {
+export const NoteDetails = (props) => {
 
-	const
-    handleBackBtnClick = () => history.back(),
-    backBtn = <IconBtn
-                icon="glyphicon glyphicon-menu-left"
-                btnSize="btn-lg"
-                handleClick={handleBackBtnClick}
-              />
-    ,
-    pageTitleBlock = <h1 className="navbar-brand full-width">{props.note.title}</h1>
-    ,
-    noteContentBlock = <p>FOO</p>
-    ,
-    editablePageTitle = <EditableText
-                          viewBlock={pageTitleBlock}
-                          editableText={props.note.title}
-                          field={"title"}
-                          {...props}
-                        />
-    
+	const 
+	  title = "Note Details",
+	  pageTitle = <PageTitle title={title} />
 
-	return <div id="app-container">
-	  <AppHeaderLayout
-	  headerLeft={backBtn}
-	  headerCenter={editablePageTitle}
-	  />
-	  <div id="main-content" className="container">
-	    <EditableText
-                          viewBlock={noteContentBlock}
-                          editableText={""}
-                          field={"content"}
-                          multiline={true}
-                          {...props}
-                        />
-	  </div>
-	</div>
+	return  <div id="app-container">
+            <AppHeaderLayout headerCenter={pageTitle} />
+            <div id="main-content" className="container">
+            {"Note details content"}
+            </div>
+          </div>
 }
 
 ```
