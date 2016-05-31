@@ -25,7 +25,7 @@
 * [Customize App Header Layout](custom_app_header.md)
 * [Add a Back Button](add_a_back_button.md)
 * [Click to edit the note title](click_to_edit_the_note_title.md)
-* List items link to note details
+* [List items link to note details](list_items_link_to_note_details.md)
 * [Add note content with auto-save](click_to_add_or_update_note_content.md)
 * [Feature Overview: Private Notes](feature_overview_private_notes.md)
 * [Deploy to Heroku](deploy_to_heroku.md)
