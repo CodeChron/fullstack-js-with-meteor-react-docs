@@ -18,29 +18,45 @@ Let's create a container component that will handle data for our homepage contai
 import { createContainer } from 'meteor/react-meteor-data'
 import { Note } from '../collections/notes'
 import { Meteor } from 'meteor/meteor'
-import { App } from '../components/app'
+import { App } from '../app'
 
 export default createContainer(
 	() => {
 		
 		const
-		  noteId = FlowRouter.getParam('_id'),
-		  sub = Meteor.subscribe('note.details', noteId),
-			note = sub.ready()? Note.findOne({_id: noteId }) : {},
-			handleUpdates = (collection, field, value) =>  {		
-		    const doc = {}
-		    doc[field] = value
-		    collection.set(doc)
-		    Meteor.call('/note/save', collection, (err, result) => AppLib.db.handleDbResult(err, result))
-			}
+		  sub = Meteor.subscribe('notes.list.all'),
+			notes = sub.ready()? Note.find({}, { sort: { updatedAt: -1 }}).fetch() : []
+			,
+			redirectToNoteDetail = note => FlowRouter.go("noteDetail", {_id: note._id})
+			,
+		  handleCreateNote = (title) => {
+		    Meteor.call(
+		    	'/note/create',
+		    	title,
+		    	(err, result) => AppLib.db.handleDbResult(err, redirectToNoteDetail(result))
+		    )
+		  }
+		  ,
+		  handleDeleteNote = (note) => {
+		  	Meteor.call(
+		  		'/note/delete',
+		  		note._id,
+		  		(err, result) => handleDbResult(err)
+        )
+	    }
 
 	  return {
-		  note,
+		  notes,
 		  subsReady: sub.ready(),
-		  handleUpdates
+	  	handleSubmit: handleCreateNote,
+	  	handleDelete: handleDeleteNote,
+		  placeholder: "New Note",
+		  addItem: true,
+      deleteItem: true,
+      linkItem: true
 	  }
   },
-  AppLayout
+  App
 )
 ```
 
