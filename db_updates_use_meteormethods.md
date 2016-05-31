@@ -12,7 +12,7 @@ First, we need to remove a package that Meteor includes by default, to allow for
 ## Move db operations to server side
 
 
-## Update db calls to use Meteor.call and Meteor.methods
+## Update db calls Meteor.methods
 
 ``` /imports/collections/notes.js ```
 
@@ -35,37 +35,32 @@ Meteor.methods({
 })
 ```
 
-``` /imports/components/collections/notes_container.js ```
+## "Call" the method from our data container
+
+``` /imports/components/containers/homepage_container.js ```
 
 ```js
 ...
 import { Meteor } from 'meteor/meteor'
 ...
 
-export default createContainer(() => {
+export default createContainer(
+	() => {
+		
+		const handleCreateNote = (title) => {
+			Meteor.call('/note/create', title, (err, result) => {
+        if (err) {
+          console.log('error: ' + err.reason)
+        }
+      })
+	  }
 
-	...
-
-	const handleCreate = (content) => {
-    Meteor.call('/note/create', content, (err, result) => {
-      if (!err) {
-        console.log('note: ' + result._id)
-      } else {
-        console.log('there was an error: ' + err.reason)
-      }
-    })
-	}
-
-	const handleDelete = (note) => {
-	  Meteor.call('/note/delete', note._id, (err, result) => {
-      if (err) {
-        console.log('there was an error: ' + err.reason)
-      }
-    })
-	}
-
-...
-}, List)
+	  return {
+	  	handleSubmit: handleCreateNote
+	  }
+  },
+  App
+)
 
 
 ```
