@@ -60,7 +60,12 @@ export default createContainer(
 )
 ```
 
+## Install a utility for viewing db info in the browser
 
+Rather than have to keep opening a Mongo console, let's install a utlity for doing this directly in the browser.  [Mongol](https://github.com/msavin/Mongol) is great for this.
+
+Simply type ``` meteor add msavin:mongol ```
+After that, you can use Ctrl + m to display an in-browser console.
 
 
 ## Notes - move to later section
