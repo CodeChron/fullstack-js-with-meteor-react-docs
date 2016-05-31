@@ -53,10 +53,37 @@ SingleFieldSubmit.defaultProps = {
 }
 ```
 
+TODO: Be sure to discuss usage of this and bind(this)
 -  Why are we using React.Component in this case?
 -  What's the purpose of the constructor?
 -  Why are we naming our component in this way?
 
+
+## Add the form to the homepage
+
+``` /imports/components/pages/homepage.jsx ```
+
+```js
+import React from 'react'
+import { AppHeaderLayout } from '../layouts/app_header_layout'
+import { PageTitle } from '../content/page_title'
+import { SingleFieldSubmit } from '../forms/single_field_submit'
+
+export const Homepage = () => {
+
+	const 
+	  appName = "My Notes App",
+	  pageTitle = <PageTitle title={appName} />
+
+	return  <div id="app-container">
+            <AppHeaderLayout headerCenter={pageTitle} />
+            <div id="main-content" className="container">
+              <SingleFieldSubmit />
+            </div>
+          </div>
+}
+
+```
 
 ## Notes - move to later section
 Here we will create a single "Controller" component for managing:
