@@ -65,3 +65,8 @@ export default createContainer(
 )
 ```
 
+The call method has three parts:
+- Which db method are we using?
+- What data are we passing in?
+- How should we handle the result of the db operation?
+
