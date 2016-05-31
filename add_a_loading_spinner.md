@@ -1,6 +1,6 @@
 # Add a loading spinner
 
-Let's display an animation instead of just null.
+Let's display an animation while we wait for our subscription to be ready. This may not seem important when running locally, but when running on a slow network connection, it can be good to provide some feedback.
 There are a ton of options for doing this.  
 
 ## Create a loader component
