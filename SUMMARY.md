@@ -11,7 +11,7 @@
 * [Add an App Header](add_an_app_header.md)
 * [Adding Data](adding_data.md)
 * [Data Schema](data_schema.md)
-* [Create notes](04_create_notes.md)
+* [Form for creating notes](04_create_notes.md)
 * [Handle Data (Containers)](react_data.md)
 * [Db Updates: Use Meteor.methods](db_updates_use_meteormethods.md)
 * [List Notes](list_notes.md)
