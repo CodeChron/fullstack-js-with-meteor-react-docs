@@ -4,6 +4,16 @@ Next, we want to display the title for the current note in the header (instead o
 
 ## Add a note details publication
 
+``` /imports/components/containers/homepage_container.jsx ```
+
+```js
+ ...
+import { FlowRouter } from 'meteor/kadira:flow-router'
+
+   ...
+
+```
+
 ## Create a note details container
 
 Since we are now going to be using data on this page, we need to wrap it in a container.  
