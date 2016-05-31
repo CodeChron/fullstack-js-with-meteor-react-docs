@@ -1,6 +1,8 @@
-# 04: Create Note
+# Form for creating notes
 
-_this follows step "3: add app header" in the preview tutorial_
+A good approach to implementing a feature is often to "follow the data."  Here, we'll do so first creating a form for creating a note and then adding a handler for inserting that note into our database.
+
+
 
 Here we will create a single "Controller" component for managing:
 - Creating a note
