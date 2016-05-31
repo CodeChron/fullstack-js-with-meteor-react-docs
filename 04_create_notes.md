@@ -71,13 +71,16 @@ export const Homepage = () => {
 
   ...
             <div id="main-content" className="container">
-              <SingleFieldSubmit />
+              <SingleFieldSubmit
+                placeholder={"New Note..."}
+                handleSubmit={props.handleSubmit}
+              />
             </div>
  ....
 
 ```
 
-The component now displays on the homepage, but if you try typing in something, you'll notice nothing happens and we get some warnings and errors in our client console.
+If we remove the ```handleSubmit ```, the component displays on the homepage, but if you try typing in something, you'll notice nothing happens and we get some warnings and errors in our client console.
 
 
 
