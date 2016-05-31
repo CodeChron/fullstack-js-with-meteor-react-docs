@@ -5,15 +5,50 @@
 ``` /imports/components/pages/note_details.jsx ```
 
 ```js
-FlowRouter.route('/notes/:_id', {
-  name: 'noteDetail',
-  action(params) {
-    mount(AppLayout, {
-      header: () => <AppHeaderLayout />,
-      content: () => null
-    })
-  }
-})
+import React from 'react'
+import { AppHeaderLayout } from '../layouts/app_header_layout'
+import { EditableText } from '../content/editable_text'
+import { IconBtn } from '../buttons/icon_btn'
+
+export const NoteDetailsPage = (props) => {
+
+	const
+    handleBackBtnClick = () => history.back(),
+    backBtn = <IconBtn
+                icon="glyphicon glyphicon-menu-left"
+                btnSize="btn-lg"
+                handleClick={handleBackBtnClick}
+              />
+    ,
+    pageTitleBlock = <h1 className="navbar-brand full-width">{props.note.title}</h1>
+    ,
+    noteContentBlock = <p>FOO</p>
+    ,
+    editablePageTitle = <EditableText
+                          viewBlock={pageTitleBlock}
+                          editableText={props.note.title}
+                          field={"title"}
+                          {...props}
+                        />
+    
+
+	return <div id="app-container">
+	  <AppHeaderLayout
+	  headerLeft={backBtn}
+	  headerCenter={editablePageTitle}
+	  />
+	  <div id="main-content" className="container">
+	    <EditableText
+                          viewBlock={noteContentBlock}
+                          editableText={""}
+                          field={"content"}
+                          multiline={true}
+                          {...props}
+                        />
+	  </div>
+	</div>
+}
+
 ```
 
 ## Add a note details route
