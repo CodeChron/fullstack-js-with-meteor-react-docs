@@ -1,7 +1,7 @@
 # Add Note Details Route
 
 
-## Add a placeholder note details route
+## Add a note details route
 
 ``` /imports/startup/client/routes.jsx ```
 
@@ -18,6 +18,8 @@ FlowRouter.route('/notes/:_id', {
 ```
 
 Here we are displaying a default app header and no content, just as a placeholder for our page.
+
+## Add a note details placeholder page
 
 
 ## Test the route
