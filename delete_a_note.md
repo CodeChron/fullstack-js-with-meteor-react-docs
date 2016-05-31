@@ -74,7 +74,7 @@ Why the need for ```{() => callFunction()}```? See http://stackoverflow.com/ques
 
 The actual db operation is handled via our container.
 
-``` /imports/containers/notes_container.jsx ```
+``` /imports/containers/homepage_container.jsx ```
 
 ```js
 ...
