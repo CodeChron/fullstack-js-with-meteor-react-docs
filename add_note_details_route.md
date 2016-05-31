@@ -27,15 +27,18 @@ export const NoteDetails = (props) => {
 
 ## Add a note details route
 
-``` /imports/startup/client/routes.jsx ```
+``` /imports/routes.jsx ```
 
 ```js
-FlowRouter.route('/notes/:_id', {
-  name: 'noteDetail',
-  action(params) {
-    mount(AppLayout, {
-      header: () => <AppHeaderLayout />,
-      content: () => null
+...
+import { NoteDetailsPage } from './components/pages/note_details_page'
+
+
+FlowRouter.route('/', {
+  name: 'homepage',
+  action() {
+    mount(HomepageContainer, {
+      content: (props) => <Homepage {...props} />
     })
   }
 })
