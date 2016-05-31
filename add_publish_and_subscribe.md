@@ -1,6 +1,6 @@
 # Publish and Subscribe to Notes
 
-Why is this step needed?
+Currently we are automatically publishing data from the server.  That's fine for prototyping purposes, but for a real app, we want control what is published and what the client subscribes to.
 
 ## Remove the 'autopublish' package
 
