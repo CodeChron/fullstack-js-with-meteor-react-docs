@@ -42,11 +42,10 @@ Why only publish certain fields?
  import '../../api/notes/server/publications'
  ```
  
-
 ## Subscribe to the notes publication
 
 
-``` /imports/components/containers/notes_container.js ```
+``` /imports/components/containers/homepage_container.js ```
 
 ```js
 export default createContainer(() => {
