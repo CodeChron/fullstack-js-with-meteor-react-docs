@@ -1,9 +1,12 @@
 # Redirect to Note Details when creating a Note
 
+Next, when creating a new note, let's automatically display the note details, making it easy to start adding detailed content. (We haven't added detailed content yet, but we'll get to that in a bit.)
 
-_Also, refactored createContainer while adding this..._
+## Add a redirect function and call it when a note is created
 
-``` /imports/components/containers/notes_container.jsx ```
+This is something we'll want to handle in our Homepage container.
+
+``` /imports/components/containers/homepage_container.jsx ```
 
 ```js
  ...
