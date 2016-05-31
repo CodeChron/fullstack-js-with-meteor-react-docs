@@ -57,6 +57,14 @@ export default createContainer(
 Here, we are first getting the id for this note via the url (getParam.)  Then, we are subscribing to and finding the specific note once the subscribtion is ready. Finally, we are returning the note object, making it available for use in child components.
 
  ## Update our route to use the note details container
+
+Earlier, we made use of the Homepage containter to display our placeholder note details page.  Now that we need to display actual note details data, let's replace it with the note details container we created.
+
+``` /imports/routes.jsx ```
+
+```js
+
+```
  
  
  ## Display the note title
