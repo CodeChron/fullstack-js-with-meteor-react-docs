@@ -17,7 +17,6 @@ Let's create a container component that will handle data for our homepage contai
 ```js
 import { createContainer } from 'meteor/react-meteor-data'
 import { Note } from '../../collections/notes'
-import { Meteor } from 'meteor/meteor'
 import { App } from '../app'
 
 export default createContainer(
