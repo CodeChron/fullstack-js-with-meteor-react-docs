@@ -63,6 +63,16 @@ Earlier, we made use of the Homepage containter to display our placeholder note 
 ``` /imports/routes.jsx ```
 
 ```js
+...
+import NoteDetailsContainer from './components/containers/note_details_container'
+...
+
+FlowRouter.route('/notes/:_id', {
+ ...
+  action() {
+    mount(NoteDetailsContainer, {
+...
+})
 
 ```
  
