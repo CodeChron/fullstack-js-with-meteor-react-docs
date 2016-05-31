@@ -9,4 +9,9 @@ Next, let's add support for using data in a React/Meteor app. There are [many wa
 - Add the npm package: ```npm i react-addons-pure-render-mixin --save```
 
 
+## Create a Homepage data container
+Let's create a container component that will handle data for our homepage container.
+
+
+
 
