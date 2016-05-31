@@ -2,11 +2,13 @@
 
 Next, we want to display the title for the current note in the header (instead of the app name)
 
+## Add a note details publication
+
 ## Create a note details container
 
 Since we are now going to be using data on this page, we need to wrap it in a container.  
 
- ## Update our route to use the container
+ ## Update our route to use the note details container
  
  
  ## Display the note title
