@@ -12,6 +12,12 @@ Next, let's add support for using data in a React/Meteor app. There are [many wa
 ## Create a Homepage data container
 Let's create a container component that will handle data for our homepage container.
 
+``` /imports/components/containers/homepage_container.js ```
+
+```js
+
+```
+
 
 
 
