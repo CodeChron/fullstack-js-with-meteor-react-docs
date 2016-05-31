@@ -1,4 +1,4 @@
-# Add a React Data Container
+# Handle Data (Containers)
 
 We'll use the [container component](https://medium.com/@learnreact/container-components-c0e67432e005#.5se1cppmo) model for handling data in React.
 
