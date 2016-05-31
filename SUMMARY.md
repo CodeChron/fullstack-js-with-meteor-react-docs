@@ -10,7 +10,7 @@
 * [Add Routing (Homepage)](add_routing.md)
 * [Add an App Header](add_an_app_header.md)
 * [Adding Data](adding_data.md)
-* [Data Schema (NEXT)](data_schema.md)
+* [Data Schema](data_schema.md)
 * [React Data Containers](react_data.md)
 * [Create notes](04_create_notes.md)
 * [Db Updates: Use Meteor.methods](db_updates_use_meteormethods.md)
