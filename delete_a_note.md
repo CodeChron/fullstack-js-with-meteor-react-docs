@@ -72,7 +72,7 @@ Why the need for ```{() => callFunction()}```? See http://stackoverflow.com/ques
  
 ## Add Support for deleting notes
 
-First, we need to add a delete method.
+First, we need to add a delete method on the server side.
 
 ``` /imports/collections/notes.js```
 
@@ -87,9 +87,7 @@ Meteor.methods({
 
 ```
 
-  
-
-The actual db operation is handled via our container.
+Next, we add a delete handler to our container.
 
 ``` /imports/containers/homepage_container.jsx ```
 
@@ -98,17 +96,20 @@ The actual db operation is handled via our container.
 
 export default createContainer(() => {
  ...
-
-	const handleDelete = (note) => {
-		Notes.remove({_id: note._id})
-	}
-
+	  ,
+	  handleDeleteNote = (note) => {
+			Meteor.call('/note/delete', note, (err, result) => {
+        if (err) {
+          console.log('error: ' + err.reason)
+        }
+      })
+	  }		  
   return {
     ...
-	  handleDelete
+	  handleDelete: handleDeleteNote,
   }
 
-}, List)
+}, App)
 ```
 
 ## Add DeleteBtn to the list
