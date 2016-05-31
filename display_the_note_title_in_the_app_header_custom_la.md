@@ -34,8 +34,8 @@ Since we are now going to be using data on this page, we need to wrap it in a co
 ```js
 import { createContainer } from 'meteor/react-meteor-data'
 import { FlowRouter } from 'meteor/kadira:flow-router'
-import { Note } from '../../api/notes/notes'
-import { App } from '../layouts/app_layout'
+import { Note } from '../../collections/notes'
+import { App } from '../app'
 
 
 export default createContainer(
