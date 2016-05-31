@@ -60,6 +60,14 @@ export default createContainer(
 )
 ```
 
+## Update our homepage route to use the data container
+
+``` /imports/routes.jsx ```
+
+```js
+
+```
+
 ## Install a utility for viewing db info in the browser
 
 Rather than have to keep opening a Mongo console, let's install a utlity for doing this directly in the browser.  [Mongol](https://github.com/msavin/Mongol) is great for this.
