@@ -1,6 +1,5 @@
-# Redirect to Note Details on Create Note
+# Redirect to Note Details when creating a Note
 
-# On create of a note, redirect to note details page
 
 _Also, refactored createContainer while adding this..._
 
@@ -41,12 +40,5 @@ export default createContainer(() => {
    ...
 
 ```
-
-## Lock the note count before creating to prevent the note from appearing before redirect
-
-_TODO: do this later - premature optimization?_
-- get note count before create
-- set list limit to current count - via subscription
-- reset limit after redirect
 
 
