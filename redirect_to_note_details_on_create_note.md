@@ -17,8 +17,8 @@ export default createContainer(() => {
 	const
     ...
     ,
-    redirectToNoteDetail = (note) => FlowRouter.go("noteDetails", {_id: note._id}),
-
+    redirectToNoteDetail = (note) => FlowRouter.go("noteDetails", {_id: note._id})
+    ,
     handleCreate = (title) => {
       Meteor.call('/note/create', title, (err, result) => {
       if (err) {
