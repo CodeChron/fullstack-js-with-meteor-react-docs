@@ -5,6 +5,7 @@
 - **make notes private**
 - deploy to heroku
 - secure the app
+- add a small loading indicator
 
 - - **Visualize passing data down through container via route into page**
 - Review workshop description: update to mention that it will be an intro to JS?
