@@ -107,9 +107,11 @@ export default createContainer(
 
 Let's also move the new note form into the list component.  This will both look a little nicer and later we'll be able to make this an optional feature of a list.
 
-First, remove ```SingleFieldSubmit ``` (both the import statement and the component) from  ``` /imports/components/pages/homepage.jsx ```
+First, remove ```SingleFieldSubmit ``` (both the import statement and the component) from the homepage and instead pass along the submitHandler into list.
 
-Add a copy props to the list to pass on the submit handler.
+``` /imports/components/pages/homepage.jsx ```
+
+
 
 Next, add it to the list component.
 
@@ -129,6 +131,11 @@ export const List = (props) =>
 
  ...
 ```
+
+## Refactor: use "copy props"
+
+You'll notice that we are seeing ``` handleSubmit={props.handleSubmit} ``` in at least a couple places.  This is a "smell" that we can refactor this.
+
 
 Note that we also took the opportunity to refactor handling of props.  We are using the "copy props" spread operator, which simply passes along all props from the parent.
 
