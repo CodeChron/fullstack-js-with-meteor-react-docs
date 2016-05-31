@@ -22,21 +22,17 @@ import { Meteor } from 'meteor/meteor'
 ...
 Meteor.methods({
 
-	'/note/create': (content) => {
-		const note = new NoteSchema()
-    note.set({
-      content: content,
-      updatedAt: new Date()
-    })
-
-    note.save()
-    return note
-  },
-
-  '/note/delete': (id) => Notes.remove({_id: id})
+	'/note/create': (title) => {
+      const note = new Note()
+			note.set({
+			  title,
+			  updatedAt: new Date()
+			})
+			note.save()
+			return note
+  }
 
 })
-
 ```
 
 ``` /imports/components/collections/notes_container.js ```
