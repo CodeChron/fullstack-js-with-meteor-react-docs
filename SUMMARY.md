@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [TODO](todo.md)
 * [App Component Hierarchy](app_component_hierarchy.md)
 * [Setting up your project](setting_up_your_project.md)
 * [Move app files into the "imports" directory"](move_app_files_into_the_imports_directory.md)
@@ -13,7 +14,6 @@
 * [React Data Containers](react_data.md)
 * [Add a Single Field Submit Component](04_create_notes.md)
 * [Db Updates: Use Meteor.methods](db_updates_use_meteormethods.md)
-* [TODO](todo.md)
 * [Feature Overview: Note Details](feature_overview_note_details.md)
 * [Add Publish and Subscribe](add_publish_and_subscribe.md)
 * [Add a loading spinner](add_a_loading_spinner.md)
