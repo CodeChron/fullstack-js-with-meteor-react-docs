@@ -1,7 +1,16 @@
 # Display the note title in the note detail header (custom layout)
 
-- Create a note_details_container
-- Return note_detail_data
+Next, we want to display the title for the current note in the header (instead of the app name)
+
+## Create a note details container
+
+Since we are now going to be using data on this page, we need to wrap it in a container.  
+
+ ## Update our route to use the container
+ 
+ 
+ ## Display the note title
+
 - Wrap into single_column_layout
 - pass note id param into route
 - get note title using route :_id param
