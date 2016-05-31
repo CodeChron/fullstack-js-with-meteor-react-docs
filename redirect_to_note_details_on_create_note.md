@@ -40,4 +40,6 @@ export default createContainer(() => {
 
 ```
 
+First, we added a function for handling a redirect.  Then, we called the function if there were no error in creating the note.
+
 
