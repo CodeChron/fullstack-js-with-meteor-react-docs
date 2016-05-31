@@ -66,7 +66,7 @@ import React from 'react'
 export const App = (props) => props.content(props)
 ```
 
-Here, we are calling the region function that we specified in the routes file.
+Here, we are calling the region function that we specified in the routes file.  We are also passing along any props into our components.
 
 ## Remove "manual" app rendering
 
