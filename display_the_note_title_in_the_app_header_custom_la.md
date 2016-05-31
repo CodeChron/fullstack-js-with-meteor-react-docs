@@ -32,20 +32,29 @@ Since we are now going to be using data on this page, we need to wrap it in a co
 ``` /imports/componenents/containers/note_details_container.js ```
 
 ```js
-...
+import { createContainer } from 'meteor/react-meteor-data'
+import { FlowRouter } from 'meteor/kadira:flow-router'
+import { Note } from '../../api/notes/notes'
+import { App } from '../layouts/app_layout'
 
-const
-  ...
-  noteDetailsFields = {
-    title: 1
-  }
 
-...
+export default createContainer(
+	() => {
+		
+		const
+		  noteId = FlowRouter.getParam('_id'),
+		  sub = Meteor.subscribe('note.details', noteId),
+			note = sub.ready()? Note.findOne({_id: noteId }) : {}
 
-Meteor.publish('note.details', function(id) {
-  return Note.find({_id: id }, { fields: noteDetailsFields})
-})
+	  return {
+		  note
+	  }
+  },
+  App
+)
 ```
+
+Here, we are first getting the id for this note via the url (getParam.)  Then, we are subscribing to and finding the specific note once the subscribtion is ready. Finally, we are returning the note object, making it available for use in child components.
 
  ## Update our route to use the note details container
  
