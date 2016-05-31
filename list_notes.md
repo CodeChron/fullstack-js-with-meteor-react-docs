@@ -128,7 +128,7 @@ export const List = (props) =>
  ...
 ```
 
-Note that we also took the opportunity to refactor handling of props.  We are using the "copy props" spread operator, which simply passes along all props from the parent.
+Note that we also took the opportunity to refactor handling of props.  We are using the "copy props" spread operator, which simply passes along all props from the parent. This is useful for if a component is not using any props from the direct parent.
 
 
 
