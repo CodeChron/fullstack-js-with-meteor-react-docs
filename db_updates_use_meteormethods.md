@@ -35,6 +35,8 @@ Meteor.methods({
 })
 ```
 
+Note that we also are returning the note that we created, so that we, among other things, can let the client side know if there were any errors in completing the operation.
+
 ## "Call" the method from our data container
 
 ``` /imports/components/containers/homepage_container.js ```
@@ -48,11 +50,11 @@ export default createContainer(
 	() => {
 		
 		const handleCreateNote = (title) => {
-			Meteor.call('/note/create', title, (err, result) => {
-        if (err) {
-          console.log('error: ' + err.reason)
-        }
-      })
+		Meteor.call('/note/create', title, (err, result) => {
+          if (err) {
+            console.log('error: ' + err.reason)
+          }
+        })
 	  }
 
 	  return {
