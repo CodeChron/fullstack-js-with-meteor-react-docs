@@ -91,9 +91,7 @@ export const NoteDetailsPage = (props) => {
 	  
 	return  <div id="app-container">
             <AppHeaderLayout headerCenter={headerCenter} />
-            <div id="main-content" className="container">
-            {"Note details content"}
-            </div>
+            ...
           </div>
 }
 ```
