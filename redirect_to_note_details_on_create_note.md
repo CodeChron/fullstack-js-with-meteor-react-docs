@@ -21,12 +21,11 @@ export default createContainer(() => {
 
     handleCreate = (title) => {
       Meteor.call('/note/create', title, (err, result) => {
-        if (!err) {
-          //call it here
-          redirectToNoteDetail(result)
-        } else {
-          console.log('there was an error: ' + err.reason)
-        }
+      if (err) {
+	      console.log('error: ' + err.reason)
+	   } else {
+	      redirectToNoteDetails(result)
+	   }
       })
   	},
     
