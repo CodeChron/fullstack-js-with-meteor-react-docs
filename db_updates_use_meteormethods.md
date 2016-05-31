@@ -1,9 +1,12 @@
 # Make db operations secure
 
-Why is this step needed? Important?
+Currenlty, if you open the Mongol utility we just added, you'll notice that it is possible to insert and update db data directly from the browser.  This is very insecure and we do not want to allow this in a production app.
 
 ## Remove the "insecure" package
+First, we need to remove a package that Meteor includes by default, to allow for exactly the type of work we just did earliery, quickly getting dat handling up and running.  Now, however, let's update this to be more a "real" way of handling db data.  The first step is to remove this package.
+
 ```  meteor remove insecure ```
+
 
 ## Update db calls to use Meteor.call and Meteor.methods
 
