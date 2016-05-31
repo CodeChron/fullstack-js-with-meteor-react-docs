@@ -15,7 +15,33 @@ Let's create a container component that will handle data for our homepage contai
 ``` /imports/components/containers/homepage_container.js ```
 
 ```js
+import { createContainer } from 'meteor/react-meteor-data'
+import { Note } from '../../api/notes/notes'
+import { Meteor } from 'meteor/meteor'
+import { App } from '../layouts/app_layout'
 
+export default createContainer(
+	() => {
+		
+		const
+		  noteId = FlowRouter.getParam('_id'),
+		  sub = Meteor.subscribe('note.details', noteId),
+			note = sub.ready()? Note.findOne({_id: noteId }) : {},
+			handleUpdates = (collection, field, value) =>  {		
+		    const doc = {}
+		    doc[field] = value
+		    collection.set(doc)
+		    Meteor.call('/note/save', collection, (err, result) => AppLib.db.handleDbResult(err, result))
+			}
+
+	  return {
+		  note,
+		  subsReady: sub.ready(),
+		  handleUpdates
+	  }
+  },
+  AppLayout
+)
 ```
 
 
