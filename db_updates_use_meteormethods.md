@@ -9,6 +9,9 @@ First, we need to remove a package that Meteor includes by default, to allow for
 
 [Learn more here](http://docs.meteor.com/api/collections.html#Mongo-Collection-allow).
 
+## Move db operations to server side
+
+
 ## Update db calls to use Meteor.call and Meteor.methods
 
 
