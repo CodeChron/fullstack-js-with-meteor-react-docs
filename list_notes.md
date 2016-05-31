@@ -109,6 +109,8 @@ Let's also move the new note form into the list component.  This will both look 
 
 First, remove ```SingleFieldSubmit ``` (both the import statement and the component) from  ``` /imports/components/pages/homepage.jsx ```
 
+Add a copy props to the list to pass on the submit handler.
+
 Next, add it to the list component.
 
 ``` /imports/components/lists/list.jsx ```
