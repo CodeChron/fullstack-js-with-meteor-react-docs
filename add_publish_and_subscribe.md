@@ -1,4 +1,4 @@
-# Add Publish and Subscribe
+# Publish and Subscribe to Notes
 
 Why is this step needed?
 
