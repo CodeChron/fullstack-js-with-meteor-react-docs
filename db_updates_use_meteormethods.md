@@ -61,7 +61,5 @@ export default createContainer(
   },
   App
 )
-
-
 ```
 
