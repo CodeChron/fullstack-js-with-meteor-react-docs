@@ -5,6 +5,14 @@ There are a ton of options for doing this.
 
 ## Create a loader component
 
+``` /imports/components/loader/loader.jsx ```
+
+```js
+import React from 'react'
+
+export const Loader = () => <div className="loader">Loading...</div>
+```
+
 
 ### Get the css
 Go to http://projects.lukehaas.me/css-loaders/ and pick a loader of your choice.  Click on "View Source" and copy the css.
@@ -13,19 +21,29 @@ Paste the css into the following file:
 ``` /imports/stylesheets/vendor/loader.css ```
 
 
-### Create the component
 
-``` /imports/components/loader/loader.jsx ```
+
+## Display the loader in the list while waiting for data
+
+First, we need to provide the list component with a way of knowing if subcriptions are ready.  We'll pass this info down from the container.
+
+``` /imports/components/containers/homepage_container.js ```
 
 ```js
-import React from 'react'
-import '../../stylesheets/vendor/loader.css'
+...
 
-export const Loader = () => <div className="loader">Loading...</div>
+export default createContainer(
+	() => {
+  ...
+
+	  return {
+	  	subsReady: sub.ready(),
+	   ...
+	  }
+ ...
+)
 ```
 
-
-## Use the loader in the list component
 
 
 ``` /imports/components/lists/list.jsx ```
