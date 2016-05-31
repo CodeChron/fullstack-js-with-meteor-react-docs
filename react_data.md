@@ -73,16 +73,3 @@ Rather than have to keep opening a Mongo console, let's install a utlity for doi
 Simply type ``` meteor add msavin:mongol ```
 After that, you can use Ctrl + m to display an in-browser console.
 
-
-## Notes - move to later section
-Here we will create a single "Controller" component for managing:
-- Creating a note
-- Listing existing notes
-
-Add a NotesContainer
-**Render NotesContainer as a top-level component (this is new from the preview version, we need to do this because we want to have a top-level container structure to handle component state for the entire page)**
-
-(when we add users, we'll switch this to users container)
-
-
-
