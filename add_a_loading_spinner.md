@@ -134,5 +134,15 @@ Src: http://projects.lukehaas.me/css-loaders/
 Paste the css into the following file:
 ``` /imports/stylesheets/vendor/loader.css ```
 
+Then import the css into your component file:
+
+``` /imports/components/loader/loader.jsx ```
+
+```js
+...
+import '../../stylesheets/vendor/loader.css'
+```
+
+You should now see a nice animation appear while your list data loads.
 
 
