@@ -82,7 +82,7 @@ First, we need to add a delete method on the server side.
 Meteor.methods({
 ...
 ,
-  '/note/delete': (note) => Note.remove(note._id)
+  '/note/delete': (id) => Note.remove(id)
 })
 
 ```
@@ -98,7 +98,7 @@ export default createContainer(() => {
  ...
 	  ,
 	  handleDeleteNote = (note) => {
-			Meteor.call('/note/delete', note, (err, result) => {
+			Meteor.call('/note/delete', note._id, (err, result) => {
         if (err) {
           console.log('error: ' + err.reason)
         }
