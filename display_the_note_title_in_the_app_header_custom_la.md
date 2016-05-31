@@ -47,7 +47,8 @@ export default createContainer(
 			note = sub.ready()? Note.findOne({_id: noteId }) : {}
 
 	  return {
-		  note
+		  note,
+          subsReady: sub.ready()
 	  }
   },
   App
@@ -95,6 +96,7 @@ export const NoteDetailsPage = (props) => {
           </div>
 }
 ```
+
 
 
 
