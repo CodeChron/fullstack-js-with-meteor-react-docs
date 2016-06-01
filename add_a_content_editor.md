@@ -65,9 +65,4 @@ export const NoteDetailsPage = (props) => {
 
 You should now see the (still not yet functional) content editor component when viewing a note details page.
 
-## Autosave changes
-
-
-## Exit edit mode and display
-
 
