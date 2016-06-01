@@ -86,7 +86,33 @@ This is also to improve UX.  We'll display a pointer when hovering over the cont
 
 ## Display a clickable message if there is no content
 
-What if I delete all content?  I will still need something to click on so I can add content.
+What if I delete all content?  I will still need something to click on so I can add content.  Let's add content block that displays when there is no note content.
+
+```js
+...
+
+export class EditableContent extends React.Component {
+  ...
+  handleViewContent(contentValue){
+
+    const 
+      noContentMsg = "Empty note.",
+      isEmpty = contentValue === "",
+      displayedContent = isEmpty? noContentMsg : contentValue
+
+    return <span className="clickable" onClick={this.toggleEditMode.bind(this)}>{displayedContent}</span>
+  }
+
+  render() {
+      return this.state.editMode?
+        <ContentEditor doneEditing={this.toggleEditMode.bind(this)} {...this.props}  />
+      :
+        this.handleViewContent(this.props.contentValue)
+        
+  }
+}
+...
+```
 
 
 ## Use Shift + Return to exit edit mode
