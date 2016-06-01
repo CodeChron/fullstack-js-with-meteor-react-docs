@@ -56,7 +56,8 @@ export const List = (props) => {
     		</li>
           ...
  List.propTypes = {
-	linkItem:  React.PropTypes.bool
+	linkItem:  React.PropTypes.bool,
+    linkRoute: React.PropTypes.string
 }
 
 List.defaultProps = {
