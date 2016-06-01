@@ -55,9 +55,26 @@ Also, note that the Done button in the ContentEditor is really just a dummy and 
 ``` imports/components/forms/content_editor.jsx ```
 
 ```js
-.clickable {
-	cursor: pointer;
+...
+
+export class ContentEditor extends React.Component {
+ ...
+	render() {
+
+    return  <form>
+              <div className="form-group">
+                <textarea
+                ...
+                  autoFocus={true}
+                  onBlur={this.props.doneEditing}
+                />
+              </div>
+              <button className="btn btn-default">Done</button>
+            </form>
+	}
 }
+
+...
 ```
 
 ## Display a pointer cursor when (Desktop) users hover over editable content
