@@ -34,5 +34,5 @@
 * [Refactor and Optimize](refactor_and_optimize.md)
 * [JS Basics](js_basics.md)
 * [Notes](notes.md)
-* Autosave Content Changes
+* [Autosave Content Changes](autosave_content_changes.md)
 
