@@ -113,9 +113,3 @@ export class EditableContent extends React.Component {
 }
 ...
 ```
-
-
-## Use Shift + Return to exit edit mode
-
-
-
