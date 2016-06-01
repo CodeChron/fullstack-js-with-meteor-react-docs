@@ -26,4 +26,40 @@ export const List = (props) => {
           ...
 ```
 
-## This code will work, but is this good code?
+## Let's make links optional
+
+With links now being a required feature of this component, this makes the omponent less reusable, ie I cannot use this component in situations where maybe I just want to list stuff that doesn't link.
+
+Therefore, let's make this an optional feature.  This will require first moving the feature into a feature collection, and then adding a prop that allows us to turn "on" the feature.
+
+```js
+...
+
+ const listFeatures = {
+  	linkItem: (item, route) => <a href={FlowRouter.path(route , {_id: item._id})}>{item.title}</a>  	
+	}
+
+export const List = (props) => {
+	return props.subsReady? <ul className="list-group">
+    <li className="list-group-item">
+      <SingleFieldSubmit {...props} />
+    </li>
+    { 
+    	props.collection.map((item) =>
+    		<li key={item._id} className="list-group-item">
+            {props.linkItem? 
+	 	       listFeatures.linkItem(item, route)
+	 	      :
+	 	        item.title
+	 	     }
+           ....
+    		</li>
+          ...
+ List.propTypes = {
+	linkItem:  React.PropTypes.bool
+}
+
+List.defaultProps = {
+	linkItem: false
+}
+```
