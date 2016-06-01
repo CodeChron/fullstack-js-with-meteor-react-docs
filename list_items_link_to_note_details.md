@@ -63,3 +63,7 @@ List.defaultProps = {
 	linkItem: false
 }
 ```
+
+Now, since, this is an optional feature, we'll need to turn it on when we use it.
+
+
