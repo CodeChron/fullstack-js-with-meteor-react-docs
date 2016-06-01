@@ -12,6 +12,9 @@ These are our general requirements for this feature:
 
 ## Add a handler for saving content changes
 
+We need to add a function to our data container that components can call and pass content updates.
+
+
 
 ## Autosave changes
 
