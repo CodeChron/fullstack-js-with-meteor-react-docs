@@ -35,11 +35,11 @@ export class ContentEditor extends React.Component {
 }
 
 ContentEditor.propTypes = { 
-  content: React.PropTypes.string
+  contentValue: React.PropTypes.string
 }
 
 ContentEditor.defaultProps = {
-  content: "",
+  contentValue: "",
   placeholder: "Write something..."
 }
 ```
