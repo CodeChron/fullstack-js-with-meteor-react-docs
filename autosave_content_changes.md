@@ -14,6 +14,30 @@ These are our general requirements for this feature:
 
 We need to add a function to our data container that components can call and pass content updates.
 
+``` /imports/components/containers/note_details_container.js ```
+
+```js
+...
+export default createContainer(
+	() => {
+		
+		const handleCreateNote = (title) => {
+			const note = new Note()
+			note.set({
+				title,
+			  updatedAt: new Date()
+			})
+			note.save()
+		  }
+
+	  return {
+	  	handleSubmit: handleCreateNote,
+        placeholder: "New Note..."
+	  }
+  },
+  App
+)
+
 
 
 ## Autosave changes
