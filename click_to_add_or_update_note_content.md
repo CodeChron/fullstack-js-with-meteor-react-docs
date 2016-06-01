@@ -5,7 +5,6 @@ Next, we are going to allow for adding note content in the note details page.  F
 
 ## Add content to our Note model
 
-
 ``` /imports/collections/notes.js ```
 
 ```js
