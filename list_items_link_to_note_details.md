@@ -81,4 +81,7 @@ export default createContainer(() => {
 ```
 
 
+## Pop quiz: how would we make the new item form optional?
+Similar to item links, not all lists will want to have a new item form.  How would we make that feature optional?
+
 
