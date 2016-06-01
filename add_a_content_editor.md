@@ -15,7 +15,7 @@ export class ContentEditor extends React.Component {
 	constructor(props) {
     super(props);
     this.state = {
-      content: this.props.content
+      contentValue: this.props.contentValue
     }
   }
 
