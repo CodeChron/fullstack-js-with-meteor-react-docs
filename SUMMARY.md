@@ -35,5 +35,5 @@
 * [Refactor and Optimize](refactor_and_optimize.md)
 * [JS Basics](js_basics.md)
 * [Notes](notes.md)
-* Display Note Content View Mode
+* [Display Note Content View Mode](display_note_content_view_mode.md)
 
