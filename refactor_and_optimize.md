@@ -11,6 +11,7 @@ Look for other optimization opportunties.
 - get note count before create
 - set list limit to current count - via subscription
 - reset limit after redirect
+- AppLib
 
 
 
