@@ -52,7 +52,7 @@ Note that we need to add autoFocus. In order for a blur event to be triggered, t
 
 Also, note that the Done button in the ContentEditor is really just a dummy and serves no actual function.  It doesn't matter if we click on it or not.  However, it can improve the user experience to help make it clear how to exit edit mode.
 
-``` imports/stylesheets/helpers.css ```
+``` imports/components/forms/content_editor.jsx ```
 
 ```js
 .clickable {
