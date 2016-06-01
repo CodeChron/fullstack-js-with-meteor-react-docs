@@ -26,6 +26,7 @@
 * [Add note content](click_to_add_or_update_note_content.md)
 * [Add a content editor](add_a_content_editor.md)
 * [Autosave Content Changes](autosave_content_changes.md)
+* [Display Note Content View Mode](display_note_content_view_mode.md)
 * [Add a Back Button](add_a_back_button.md)
 * [Customize App Header Layout](custom_app_header.md)
 * [Click to edit the note title](click_to_edit_the_note_title.md)
@@ -35,5 +36,4 @@
 * [Refactor and Optimize](refactor_and_optimize.md)
 * [JS Basics](js_basics.md)
 * [Notes](notes.md)
-* [Display Note Content View Mode](display_note_content_view_mode.md)
 
