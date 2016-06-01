@@ -2,8 +2,7 @@
 
 Now, let's actually update note content when typing into this component
 
-
-## Add db method for updating notes
+## Add a db method for updating notes
 We first need to add a server side operation for handling note updates.
 
 ``` /imports/collections/notes.js ```
