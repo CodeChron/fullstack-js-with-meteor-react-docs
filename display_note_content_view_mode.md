@@ -1,5 +1,9 @@
 # Display Note Content View Mode
 
+We now want to be able to exit the content editor and display our notes in view mode.  Additionally, we want to be able to click on the viewer to return to edit mode.
+
+
+
 ## Exit edit mode and display
 
 These are our general requirements for this feature:
