@@ -21,18 +21,24 @@ We need to add a function to our data container that components can call and pas
 export default createContainer(
 	() => {
 		
-		const handleCreateNote = (title) => {
-			const note = new Note()
-			note.set({
-				title,
-			  updatedAt: new Date()
-			})
-			note.save()
-		  }
-
+		const
+         ...
+			,
+			handleUpdateNote = (note, field, value) => {
+			  const doc = {}
+			  doc[field] = value
+			  note.set(doc)
+		
+		      Meteor.call('/note/update', note, (err, result) => {
+	            if (err) {
+	              console.log('error: ' + err.reason)
+	            }
+	          })
+		    }
+	  
 	  return {
-	  	handleSubmit: handleCreateNote,
-        placeholder: "New Note..."
+          ...
+		  handleUpdates: handleUpdateNote
 	  }
   },
   App
