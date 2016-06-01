@@ -10,6 +10,32 @@ These are our general requirements for this feature:
 - Display a message if there is no content. (That also is clickable so you can add content.)
 - (Later, we'll add the ability to also exit edit mode by using Shift + Return.)
 
+## Add db method for updating notes
+We first need to add a server side operation for handling note updates.
+
+``` /imports/collections/notes.js ```
+
+```js
+...
+Meteor.methods({
+
+   ...
+
+	'/note/update': (note) => {
+
+		note.set({
+		  updatedAt: new Date()
+		})
+		note.save()
+		return note
+  },
+  ...
+})
+
+
+```
+
+
 ## Add a handler for saving content changes
 
 We need to add a function to our data container that components can call and pass content updates.
@@ -43,7 +69,7 @@ export default createContainer(
   },
   App
 )
-
+```
 
 
 ## Autosave changes
