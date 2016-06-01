@@ -63,11 +63,11 @@ export default createContainer(
 
 This function will allow  us to use the same handler both for note content and the note title, as well as any future note fields we might add.
 
-## Add props for the content editor
+## Pass props to the content editor
 
-We now need to pass along the necessary fields to the content editor component. 
+We now need to pass along the necessary props to the content editor component. 
 
-``` /imports/components/pages/note_details_page.js ```
+``` /imports/components/pages/note_details_page.jsx ```
 
 ```js
 ...
@@ -79,38 +79,64 @@ export const NoteDetailsPage = (props) => {
  ...
 ```
 
-## Autosave changes
+## Update content editor to auto-save changes
 
-``` /imports/components/containers/note_details_container.js ```
+``` /imports/components/forms/content_editor.jsx ```
 
 ```js
 ...
-export default createContainer(
-	() => {
-		
-		const
-         ...
-			,
-			handleUpdateNote = (note, field, value) => {
-			  const doc = {}
-			  doc[field] = value
-			  note.set(doc)
-		
-		      Meteor.call('/note/update', note, (err, result) => {
-	            if (err) {
-	              console.log('error: ' + err.reason)
-	            }
-	          })
-		    }
-	  
-	  return {
-          ...
-		  handleUpdates: handleUpdateNote
-	  }
-  },
-  App
-)
+import React from 'react'
+import debounce from 'lodash.debounce'
+
+export class ContentEditor extends React.Component {
+
+  ...
+
+  handleUpdates(updatedValue){
+
+    const
+      updateInterval = 250,
+      options = { 'maxWait': 1000 },
+      submitUpdates = (collection, field, value) => {
+        this.props.handleUpdates(collection, field, value)
+      }
+
+    this.autoSave = this.autoSave || debounce(submitUpdates, updateInterval, options)
+
+    this.autoSave(this.props.note, this.props.field, updatedValue)
+  }
+
+  handleOnChange(e) {
+    const updatedValue = e.target.value
+    this.setState({contentValue: updatedValue})
+    this.handleUpdates(updatedValue)
+  }
+
+	render() {
+    
+    return  <form>
+              <div className="form-group">
+                <textarea
+                 ...
+                  onChange={this.handleOnChange.bind(this)}
+                />
+              </div>
+              ...
+            </form>
+	}
+}
+
+ContentEditor.propTypes = { 
+  contentValue: React.PropTypes.string.isRequired,
+  field: React.PropTypes.string.isRequired,
+  handleUpdates: React.PropTypes.func.isRequired
+}
+...
 ```
+
+We made quite a few updates to this component.
+
+
 
 
 ## Exit edit mode and display
