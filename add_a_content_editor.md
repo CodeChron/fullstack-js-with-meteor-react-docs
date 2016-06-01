@@ -26,7 +26,7 @@ export class ContentEditor extends React.Component {
                 <textarea
                   className="form-control"
                   placeholder={this.props.placeholder}
-                  value={this.state.content}
+                  value={this.state.contentValue}
                 />
               </div>
               <button className="btn btn-default">Done</button>
