@@ -52,6 +52,14 @@ Note that we need to add autoFocus. In order for a blur event to be triggered, t
 
 Also, note that the Done button in the ContentEditor is really just a dummy and serves no actual function.  It doesn't matter if we click on it or not.  However, it can improve the user experience to help make it clear how to exit edit mode.
 
+``` imports/stylesheets/helpers.css ```
+
+```js
+.clickable {
+	cursor: pointer;
+}
+```
+
 ## Display a pointer cursor when (Desktop) users hover over editable content
 This is also to improve UX.  We'll display a pointer when hovering over the content.
 
@@ -61,7 +69,7 @@ This is also to improve UX.  We'll display a pointer when hovering over the cont
 .clickable {
 	cursor: pointer;
 }
-````
+```
 
 ## Display a clickable message if there is no content
 
