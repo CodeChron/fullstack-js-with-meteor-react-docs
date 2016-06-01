@@ -99,11 +99,10 @@ export class ContentEditor extends React.Component {
       options = { 'maxWait': 1000 },
       submitUpdates = (collection, field, value) => {
         this.props.handleUpdates(collection, field, value)
-      }
-
-    this.autoSave = this.autoSave || debounce(submitUpdates, updateInterval, options)
-
-    this.autoSave(this.props.note, this.props.field, updatedValue)
+      },
+      debouncedUpdates = debounce(submitUpdates, updateInterval, options)
+      
+     debouncedUpdates(this.props.note, this.props.field, updatedValue)
   }
 
   handleOnChange(e) {
