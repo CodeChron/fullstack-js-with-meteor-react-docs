@@ -64,6 +64,20 @@ List.defaultProps = {
 }
 ```
 
-Now, since, this is an optional feature, we'll need to turn it on when we use it.
+Now, since, this is an optional feature, we'll need to turn it on when we use it.  Let's do that in our container.
+
+``` /imports/components/containers/homepage_container.js ```
+
+```js
+export default createContainer(() => {
+ ...
+ return {
+   ...
+   linkItem: true,
+   linkRoute: "noteDetails"
+  }
+}, App)
+```
+
 
 
