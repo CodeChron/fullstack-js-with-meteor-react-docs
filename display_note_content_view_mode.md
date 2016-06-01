@@ -70,7 +70,6 @@ export class ContentEditor extends React.Component {
                 />
               </div>
 
-
 ...
 ```
 
