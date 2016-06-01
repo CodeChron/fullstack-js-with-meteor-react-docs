@@ -18,15 +18,6 @@ Untracked files:
 
 ```
 
-
-## Exit edit mode and display
-
-These are our general requirements for this feature:
-
-- Allow for clicking on note content to edit it.
-- Content auto-saves as you type.
-- Click on Done or anywhere outside the content to exit edit mode. (discuss: the done button is just a dummy.)
-
 ## Display a clickable message if there is no content
 
 What if I delete all content?  I will still need something to click on so I can add content.
