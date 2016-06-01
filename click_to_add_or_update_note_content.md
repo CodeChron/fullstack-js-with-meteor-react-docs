@@ -1,4 +1,4 @@
-# Add note content with auto-save
+# Add note content
 
 Next, we are going to allow for adding note content.  These are our general requirements for this feature:
 
