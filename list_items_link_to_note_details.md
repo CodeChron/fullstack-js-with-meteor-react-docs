@@ -36,7 +36,7 @@ Therefore, let's make this an optional feature.  This will require first moving 
 ...
 
  const listFeatures = {
-  	linkItem: (item, route) => <a href={FlowRouter.path(route , {_id: item._id})}>{item.title}</a>  	
+  	linkItem: (item) => <a href={FlowRouter.path(props.linkRoute , {_id: item._id})}>{item.title}</a>  	
 	}
 
 export const List = (props) => {
@@ -48,7 +48,7 @@ export const List = (props) => {
     	props.collection.map((item) =>
     		<li key={item._id} className="list-group-item">
             {props.linkItem? 
-	 	       listFeatures.linkItem(item, route)
+	 	       listFeatures.linkItem(item)
 	 	      :
 	 	        item.title
 	 	     }
