@@ -36,7 +36,7 @@ Meteor.methods({
 
 ## Add a handler for saving content changes
 
-We need to add a function to our data container that components can call and pass content updates.
+Now we can use this handler in our data continer, and add a function that components can call and pass in content updates.
 
 ``` /imports/components/containers/note_details_container.js ```
 
@@ -68,6 +68,7 @@ export default createContainer(
   App
 )
 ```
+
 
 
 ## Autosave changes
