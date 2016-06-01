@@ -10,17 +10,10 @@ For this, we will first import our router into the list component, and then upda
 
 ```js
 ...
-
-const
+import { FlowRouter } from 'meteor/kadira:flow-router'
   ...
-  noteDetailsFields = {
-    title: 1
-  }
-
+  <a href={FlowRouter.path( "noteDetail" , {_id: item._id})}>{item.title}</a> 
+  
 ...
-
-Meteor.publish('note.details', function(id) {
-  return Note.find({_id: id }, { fields: noteDetailsFields})
-})
 ```
 
