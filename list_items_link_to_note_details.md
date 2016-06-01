@@ -35,11 +35,12 @@ Therefore, let's make this an optional feature.  This will require first moving 
 ```js
 ...
 
+export const List = (props) => {
+
  const listFeatures = {
   	linkItem: (item) => <a href={FlowRouter.path(props.linkRoute , {_id: item._id})}>{item.title}</a>  	
 	}
-
-export const List = (props) => {
+    
 	return props.subsReady? <ul className="list-group">
     <li className="list-group-item">
       <SingleFieldSubmit {...props} />
