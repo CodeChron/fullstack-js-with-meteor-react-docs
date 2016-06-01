@@ -69,10 +69,7 @@ export class ContentEditor extends React.Component {
                   onBlur={this.props.doneEditing}
                 />
               </div>
-              <button className="btn btn-default">Done</button>
-            </form>
-	}
-}
+
 
 ...
 ```
