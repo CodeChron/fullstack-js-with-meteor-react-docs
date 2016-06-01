@@ -11,9 +11,19 @@ For this, we will first import our router into the list component, and then upda
 ```js
 ...
 import { FlowRouter } from 'meteor/kadira:flow-router'
-  ...
-  <a href={FlowRouter.path( "noteDetail" , {_id: item._id})}>{item.title}</a> 
-  
-...
+
+export const List = (props) => {
+	return props.subsReady? <ul className="list-group">
+    <li className="list-group-item">
+      <SingleFieldSubmit {...props} />
+    </li>
+    { 
+    	props.collection.map((item) =>
+    		<li key={item._id} className="list-group-item">
+    		   <a href={FlowRouter.path( "noteDetail" , {_id: item._id})}>{item.title}</a> 
+           ....
+    		</li>
+          ...
 ```
 
+## This code will work, but is this good code?
