@@ -57,11 +57,13 @@ import { ContentEditor } from '../forms/content_editor'
 export const NoteDetailsPage = (props) => {
   ...
             <div id="main-content" className="container">
-             <ContentEditor />
+             <ContentEditor content={props.note.content} />
             </div>
   ...
 }
 ```
+
+Here, we are inserting the content editor and passing in the new content field we just created.
 
 You should now see the (still not yet functional) content editor component when viewing a note details page.
 
