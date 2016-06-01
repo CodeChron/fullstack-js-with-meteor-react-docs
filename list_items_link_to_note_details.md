@@ -6,5 +6,21 @@ Now that we've added a details page, we want to be able to access it. Let's turn
 
 For this, we will first import our router into the list component, and then update the list item text to be a link.
 
-``` ```
+``` /imports/components/lists/list.jsx ```
+
+```js
+...
+
+const
+  ...
+  noteDetailsFields = {
+    title: 1
+  }
+
+...
+
+Meteor.publish('note.details', function(id) {
+  return Note.find({_id: id }, { fields: noteDetailsFields})
+})
+```
 
