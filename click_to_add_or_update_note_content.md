@@ -9,6 +9,24 @@ Next, we are going to allow for adding note content.  These are our general requ
 - (Later, we'll add the ability to also exit edit mode by using Shift + Return.)
 
 ## Add content to our Note model
+First, we need to add somewhere to store content.
+
+``` /imports/collections/notes.js ```
+
+```js
+...
+export const Note = Class.create({
+  ...
+	fields: {
+    ...
+    content: String
+  }
+})
+...
+```
+
+## Make the content field available to components
+
 
 ## Add a content block to the note details view
 
