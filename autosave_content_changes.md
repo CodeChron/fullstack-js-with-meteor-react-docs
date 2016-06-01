@@ -133,5 +133,9 @@ ContentEditor.propTypes = {
 ...
 ```
 
-We made quite a few updates to this component.
+We made quite a few updates to this component.  You'll need to install the [lodash.debounce](https://www.npmjs.com/package/lodash.debounce) utility for this to work.
+
+``` npm i lodash.debounce --save ```
+
+Debounce is great for handling events that are fired in rapid succession.  In our case, these are the keypress events that are fired every time the user types a key when updating note content.  We are using this utility to only submit a keypress event every 250ms, and to wait up to 1000ms (one second) to submit the keypress event if they are fired continuously.
 
