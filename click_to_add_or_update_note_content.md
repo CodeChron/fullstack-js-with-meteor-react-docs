@@ -1,10 +1,20 @@
 # Add note content with auto-save
 
-- use same click to edit component, but add a multi line option
-- add a full screen custom layout for the viewer/editor
-- add a shift + return option to exit
-- also add the display of the done button for the multi line view
-- discuss: the done button is just a dummy
+Next, we are going to allow for adding note content.  These are our general requirements for this feature:
+
+- Allow for clicking on note content to edit it.
+- Content auto-saves as you type.
+- Click on Done or anywhere outside the content to exit edit mode. (discuss: the done button is just a dummy.)
+- Display a message if there is no content. (That also is clickable so you can add content.)
+- (Later, we'll add the ability to also exit edit mode by using Shift + Return.)
+
+## Add content to our Note model
+
+## Add a content block to the note details view
+
+## Autosave changes
+
+## Exit edit mode and display
 
 
 
