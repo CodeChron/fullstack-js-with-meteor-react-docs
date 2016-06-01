@@ -25,7 +25,7 @@ export const Note = Class.create({
 ...
 ```
 
-## Make the content field available to components
+By adding this field to our data model, we will now also be able to access and update the content field in our components using ``` props.notes.content ```
 
 
 ## Add a content block to the note details view
