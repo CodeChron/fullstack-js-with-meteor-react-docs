@@ -10,6 +10,8 @@ These are our general requirements for this feature:
 - Display a message if there is no content. (That also is clickable so you can add content.)
 - (Later, we'll add the ability to also exit edit mode by using Shift + Return.)
 
+## Add a handler for saving content changes
+
 
 ## Autosave changes
 
