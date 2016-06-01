@@ -1,15 +1,10 @@
 # Add note content
 
-Next, we are going to allow for adding note content.  These are our general requirements for this feature:
+Next, we are going to allow for adding note content in the note details page.  First, we need to add somewhere to store content and then publish the new field where it will be used.
 
-- Allow for clicking on note content to edit it.
-- Content auto-saves as you type.
-- Click on Done or anywhere outside the content to exit edit mode. (discuss: the done button is just a dummy.)
-- Display a message if there is no content. (That also is clickable so you can add content.)
-- (Later, we'll add the ability to also exit edit mode by using Shift + Return.)
 
 ## Add content to our Note model
-First, we need to add somewhere to store content.
+
 
 ``` /imports/collections/notes.js ```
 
