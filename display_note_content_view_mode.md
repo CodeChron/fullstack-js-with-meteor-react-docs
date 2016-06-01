@@ -69,7 +69,6 @@ export class ContentEditor extends React.Component {
                   onBlur={this.props.doneEditing}
                 />
               </div>
-
 ...
 ```
 
