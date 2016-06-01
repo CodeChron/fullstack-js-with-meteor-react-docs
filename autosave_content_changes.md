@@ -31,8 +31,6 @@ Meteor.methods({
   },
   ...
 })
-
-
 ```
 
 
