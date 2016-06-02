@@ -84,11 +84,11 @@ Now that we are using sass, we should import all other stylesheets into the main
 ...
 // HELPERS
 // ____________________________
-@import 'helpers'
+@import 'helpers';
 
 // VENDOR
 // ____________________________
-@import 'vendor/loader'
+@import 'vendor/loader';
 
 ```
 
