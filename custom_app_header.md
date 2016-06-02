@@ -7,12 +7,12 @@ Next, we want to add a back button to our header.  But to do that, we need to fi
 We want our note title to be centered and we'll want a back icon to be left aligned. This will require customizing our app header layout. 
 
 
-## Use Sass and Autoprefixer
-This is not required for what we're doing but it will make writing styles less painful in the long run,
+## Add CSS Pre-processing
+Modern web apps use so much css that writing it all manually just doesn't make sense.  Instead, let's use some CSS tools.  Here, we'll use Sass and Autoprefixer. (What is [autoprefixing](https://css-tricks.com/autoprefixer/)?)
 
-### Install packages
+### Install Sass and Autoprefixer packages
 
-We need to first remove a package, as we're going to replace it with a community version.
+We need to first remove a package, as we're going to replace it with a community version. Then we'll install the Sass and autoprefixer packages.
 
 ``` meteor remove standard-minifier-css ```
 ```  meteor add fourseven:scss seba:minifiers-autoprefixer ```
@@ -31,7 +31,6 @@ $font-size-page-title: 1.5em;
 
 // LAYOUTS
 // ____________________________
-// Three column vertically and horizontally centered layout using Flexbox
 
 .three-col-layout {
 	display: flex;
