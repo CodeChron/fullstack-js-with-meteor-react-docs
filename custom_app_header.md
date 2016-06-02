@@ -73,34 +73,27 @@ $font-size-page-title: 1.5em;
 }
 ```
 
-## Convert loader styles to a scss partial
+## Importing existing stylesheets
+Now that we are using sass, we should import all other stylesheets into the main stylesheets.  This will ensure that everything gets combined and minified into a single css file.
 
-### Rename ``` /imports/stylesheets/vendor/loader.css ``` to ``` /imports/stylesheets/vendor/_loader.scss ```
-
-### Import the partial
-
-``` /imports/stylesheets/main.scss ```
+- Remove imports from: ``` /imports/components/loader/loader.jsx ``` and ``` /imports/components/content/editable_content.jsx ```
+- Rename these files to ``` /imports/stylesheets/vendor/_loader.scss ``` and  ``` /imports/stylesheets/_helpers.scss ``` (prefixing the name with an underscore means it will only be loaded if explicitly imported.)
+- Import them into the main scss file (add this to the end):
 
 ```scss
+...
+// HELPERS
+// ____________________________
+@import 'helpers'
+
 // VENDOR
 // ____________________________
-@import "vendor/loader";
-...
+@import 'vendor/loader'
 
 ```
-
-## Remove the stylesheet import specific to the loader component
-
-``` /imports/components/loader/loader.jsx ```
-
-```js
-import React from 'react'
-
-export const Loader = () => <div className="loader">Loading...</div>
-```
-
 
 ## Import styles on startup
+Note that this should be the first file to be loaded.
 
 ``` /imports/startup/client/index.js ```
 
