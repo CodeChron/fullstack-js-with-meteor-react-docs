@@ -6,3 +6,6 @@
 - on click of back btn, do history.back
 
 
+This next step is very similar to what we did with the DeleteBtn we created. You should try first doing this on your own and then comparing with the steps below.
+
+## A back button icon to the app header
