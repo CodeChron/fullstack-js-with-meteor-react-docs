@@ -9,14 +9,22 @@ We only want this back button to appear on the note details page.  Let's therefo
 
 ```js
 ...
+import { IconBtn } from '../buttons/icon_btn'
 
 export const NoteDetailsPage = (props) => {
 
 	const
+      handleBackBtnClick = () => history.back(),
+      backBtn = <IconBtn
+                icon="glyphicon glyphicon-menu-left"
+                btnSize="btn-lg"
+                handleClick={handleBackBtnClick}
+              />
+    ,
 	  headerCenter = props.subsReady? <PageTitle title={props.note.title} /> : null
 	  
 	return  <div id="app-container">
-            <AppHeaderLayout headerCenter={headerCenter} />
+            <AppHeaderLayout headerLeft={backBtn} headerCenter={headerCenter} />
             ...
           </div>
 }
