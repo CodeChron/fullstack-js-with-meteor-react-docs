@@ -1,5 +1,7 @@
 # Custom App Header
 
+Next, we want to add a back button to our header.  But to do that, we need to first customize the layout a bit, to center the title and make room for icons on each side.
+
 ## Update the note header to have a custom 3 column layout
 
 We want our note title to be centered and we'll want a back icon to be left aligned. This will require customizing our app header layout. 
