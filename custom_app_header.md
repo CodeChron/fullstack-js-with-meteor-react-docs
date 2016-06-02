@@ -75,6 +75,14 @@ $font-size-page-title: 1.5em;
    outline: 0;
   }
 }
+
+// HELPERS
+.centered {
+  text-align: center;
+}
+.full-width {
+  width: 100%;
+}
 ```
 
 ## Importing existing stylesheets
