@@ -142,6 +142,7 @@ AppHeaderLayout.propTypes = {
 
 AppHeaderLayout.defaultProps = { 
   headerLeft: null,
+  headerCenter: null,
   headerRight: null
 }
 ```
