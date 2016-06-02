@@ -40,6 +40,10 @@ $font-size-page-title: 1.5em;
   .main-content {
   	flex: 1;
   }
+  
+  .left-right-icons {
+    width: 3em;
+  }
 
 }
 
