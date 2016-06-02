@@ -50,15 +50,17 @@ $font-size-page-title: 1.5em;
 // APP HEADER
 // ____________________________
 
-#app-header {
-	height: $app-header-height;
+.navbar {
+  height: $app-header-height;
+ 
+  .navbar-header {
 
-	.page-title {
-		text-align: center;
-		font-size: $font-size-page-title;
-	}
+    .navbar-brand {
+      margin-top: .25em;
+      font-size: $font-size-page-title;
+    }
+  }
 }
-
 
 // BUTTONS
 // ____________________________
