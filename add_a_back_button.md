@@ -35,7 +35,6 @@ export const NoteDetailsPage = (props) => {
 
 You might have noticed that we added a ```btnSize``` attribute, so that we, for example, can have larger buttons in the app header.  Let's update the IconBtn component to support that.
 
-
 ``` /imports/components/buttons/icon_btn.jsx ```
 
 ```js
@@ -66,8 +65,6 @@ IconBtn.defaultProps = {
 }
 ```
 
+Here, we are including the npm package [classNames](https://www.npmjs.com/package/classnames), so be sure to install it:
 
-- create an IconBtn component
-- use glyphicon glyphicon-menu-left, see http://getbootstrap.com/components/
-- add IconBtn with back icon to appHeader in note details view
-- on click of back btn, do history.back
+```meteor npm install classNames --save ```
