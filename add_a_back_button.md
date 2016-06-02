@@ -11,4 +11,19 @@ This next step is very similar to what we did with the DeleteBtn we created. You
 ## A back button icon
 We only want this back button to appear on the note details page.  Let's therefore pass it into that instance of the AppHeaderLayout.
 
+ ``` /imports/components/pages/note_details_page.jsx ```
 
+```js
+...
+
+export const NoteDetailsPage = (props) => {
+
+	const
+	  headerCenter = props.subsReady? <PageTitle title={props.note.title} /> : null
+	  
+	return  <div id="app-container">
+            <AppHeaderLayout headerCenter={headerCenter} />
+            ...
+          </div>
+}
+```
