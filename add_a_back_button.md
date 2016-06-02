@@ -36,6 +36,35 @@ export const NoteDetailsPage = (props) => {
 You might have noticed that we added a ```btnSize``` attribute, so that we, for example, can have larger buttons in the app header.  Let's update the IconBtn component to support that.
 
 
+``` /imports/components/buttons/icon_btn.jsx ```
+
+```js
+...
+import classNames from 'classNames'
+
+export const IconBtn = (props) => {
+
+  const btnClasses = classNames("btn icon-btn", props.btnSize)
+  
+  return <button
+    ...
+    className={btnClasses}
+    ...
+  >
+    <span className={props.icon} aria-hidden="true"></span>
+  </button>
+
+}
+
+IconBtn.propTypes = {
+  ...
+  btnSize: React.PropTypes.string
+}
+
+IconBtn.defaultProps = {
+  btnSize: "btn-default"
+}
+```
 
 
 - create an IconBtn component
