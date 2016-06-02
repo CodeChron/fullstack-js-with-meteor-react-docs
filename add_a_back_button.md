@@ -30,6 +30,14 @@ export const NoteDetailsPage = (props) => {
 }
 ```
 
+
+## Add btn size attribute
+
+You might have noticed that we added a ```btnSize``` attribute, so that we, for example, can have larger buttons in the app header.  Let's update the IconBtn component to support that.
+
+
+
+
 - create an IconBtn component
 - use glyphicon glyphicon-menu-left, see http://getbootstrap.com/components/
 - add IconBtn with back icon to appHeader in note details view
