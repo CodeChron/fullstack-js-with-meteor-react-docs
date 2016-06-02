@@ -68,7 +68,7 @@ $font-size-page-title: 1.5em;
   border:none;
   
   margin:0;
-  padding: 0;
+   padding:.5em;
   text-align: center;
 
   &:focus {
