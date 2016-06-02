@@ -136,7 +136,7 @@ export const AppHeaderLayout = (props) => {
 
 AppHeaderLayout.propTypes = {
   headerLeft: React.PropTypes.object,
-  headerCenter: React.PropTypes.object.isRequired,
+  headerCenter: React.PropTypes.object,
   headerRight: React.PropTypes.object
 }
 
