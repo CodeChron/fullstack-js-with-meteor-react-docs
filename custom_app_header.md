@@ -107,16 +107,76 @@ import '../../stylesheets/main'
 ```
 
 
-## Apply three-column styling to app header
+
+
+## Update the app header to have a three column layout
 
 ``` /imports/components/layouts/app_header_layout.jsx ```
 
 ```js
+...
+
+export const AppHeaderLayout = (props) => {
+
+	return <nav className="navbar navbar-default three-col-layout">
+      <div className="left-right-icons">
+	    {props.headerLeft}
+	  </div>
+	  <div className="container">
+	    <div className="navbar-header">
+	      {props.headerCenter}
+	    </div>
+	 </div>
+      <div className="left-right-icons">
+	    {props.headerRight}
+	  </div>
+	</nav>
+
+}
+
+AppHeaderLayout.propTypes = {
+  headerLeft: React.PropTypes.object,
+  headerCenter: React.PropTypes.object.isRequired,
+  headerRight: React.PropTypes.object
+}
+
+AppHeaderLayout.defaultProps = { 
+  headerLeft: null,
+  headerRight: null
+}
+```
+
+
 import React from 'react'
 
-export const AppHeaderLayout = (props) =>
-<nav className="navbar navbar-default three-col-layout">
- ...
-```
+export const AppHeaderLayout = (props) => {
+	const dfltPageTitle = <h1 className="navbar-brand full-width">{"My Notes App"}</h1>
+
+	return <nav className="navbar navbar-default three-col-layout">
+	  <div className="left-right-icons">
+	    {props.headerLeft}
+	  </div>
+	  <div className="container main-content centered">
+	    <div className="navbar-header full-width">
+	      {props.headerCenter}
+	    </div>
+	 </div>
+	   <div className="left-right-icons">
+	    {props.headerRight}
+	  </div>
+	</nav>
+
+}
+
+
+AppHeaderLayout.propTypes = {
+  pageTitle: React.PropTypes.string
+}
+
+AppHeaderLayout.defaultProps = { 
+  headerLeft: null,
+  headerCenter: this.dfltPageTitle,
+  headerRight: null
+}
 
 Your page title should now appear as centered in the app header
