@@ -1,4 +1,7 @@
-# App Component Hierarchy
+# The App We'll Build
+Todo: provide a general description of the app
+
+## App Component Hierarchy
 
 React uses a hierarchical component architecture.  The React model encourages taking a visual approach to defining your app.  (See [Thinking in React - “Start with a mock”](https://facebook.github.io/react/docs/thinking-in-react.html).) Therefore, let's start with some mockups of the app views we'll be creating.
 
