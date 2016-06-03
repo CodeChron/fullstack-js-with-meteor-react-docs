@@ -5,10 +5,6 @@ In this workshop, we’re going to build a a basic web app using using Meteor an
 
 TODO: insert an overview of the main features and area of focus.
 
-## The app we'll build
-
-TODO: Insert screen cap of the finished app
-
 ##Prerequisites 
 - Basic knowledge of HTML, JavaScript, and use of a command line terminal.
 - A laptop with a code editor of your choice.  We’ll be using [Sublime Text](http://www.sublimetext.com/3 ).
