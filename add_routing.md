@@ -6,6 +6,9 @@ Routing should be added very early on in your app development. One reason for th
 
 Even though we currently only will have a single page, we still want to add routing, because we know we'll have multiple pages eventually.
 
+If you are using React and planning to use FlowRouter (which we are doing), you should intall FlowRouter first.  Otherwise, in order to ensure your React installation is working, you will need to create files that you will then need to remove after installing FlowRouter.
+
+
 
 ## Install the routing package
 
