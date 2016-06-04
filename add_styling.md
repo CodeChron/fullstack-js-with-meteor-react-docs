@@ -46,6 +46,7 @@ With this in mind, copy and paste normalize into a local file and import it at t
 If your web page now updates to be a sans serif font, then you know everything has been hooked up properly.
 
 
+## Add Base Layout Styling
 
 
 ## Add Custom Styling
