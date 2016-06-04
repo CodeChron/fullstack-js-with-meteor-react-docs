@@ -2,6 +2,9 @@
 
 We are going create our styling from scratch and not use, for example, Bootstrap.  While Bootstrap is great, creating a framework on your own is great for learning purposes.  Additionally, for larger apps, if you started out with Bootstrap, you might find yourself "figthing" or constantly over-riding what Bootstrap did with every new customization.
 
+## Remove the default css file
+It doesn't do anything, but we don't want "dead" files in our app.
+
 ## Add a css preprocessor and auto-prefixer
 Modern web apps use so much css that writing it all manually just doesn't make sense.  Instead, let's use some CSS tools.  Here, we'll use Sass and Autoprefixer. (What is [autoprefixing](https://css-tricks.com/autoprefixer/)?)
 
@@ -9,6 +12,9 @@ We need to first remove a package, as we're going to replace it with a community
 
 ``` meteor remove standard-minifier-css ```
 ```  meteor add fourseven:scss seba:minifiers-autoprefixer ```
+
+## What is our css strategy/approach?
+
 
 # Create a master stylesheet
 We now want to creat a main stylesheet file, into which we'll import any global styles.
@@ -20,7 +26,7 @@ At this point, still won't see any actual changes to your design.  That's ok, si
 
 If you are creating your css framework, the very thing you will want to do is to normalize your css across browsers and devices.  Let's therefore add  that.  (Learn more about Normalize)
 
-_insert what I wrote before about Normalize_
+
 
 Imo, you should always include <a href="https://necolas.github.io/normalize.css/">normalize</a> when building a web app, because, as stated in the project description...
 <blockquote><a href="https://github.com/necolas/normalize.css/">Normalize.css</a> makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing.</blockquote>
@@ -33,6 +39,9 @@ With this in mind, copy and paste normalize into a local file and import it at t
 ```@import "normalize.css";```
 If your web page now updates to be a sans serif font, then you know everything has been hooked up properly.
 
+```scss
+@import "vendor/normalize";
+```
 
 
 ### Notes
