@@ -5,7 +5,6 @@
 * [The App We'll Build](app_component_hierarchy.md)
 * [Setting up your project](setting_up_your_project.md)
 * [Add React and FlowRouter](add_routing.md)
-* [OLD -Add React](install_react.md)
 * [Add Styling](add_styling.md)
 * [Add an App Header](add_an_app_header.md)
 * [Adding Data](adding_data.md)
@@ -35,6 +34,7 @@
 * [Refactor and Optimize](refactor_and_optimize.md)
 * [JS Basics](js_basics.md)
 * [Notes](notes.md)
+* [OLD -Add React](install_react.md)
 * [OLD Add React and React Router](add_react_and_react_router.md)
 * [OLD - Add Styling with Bootstrap](add_styling_with_bootstrap.md)
 
