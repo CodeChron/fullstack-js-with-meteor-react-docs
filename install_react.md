@@ -29,6 +29,12 @@ Even though we currently only will have a single page, we still want to add rout
 This will be our "render target" for React components.
 
 
+## Create a routes file
+
+
+## Import the routes file
+
+
 ## Add a top-level React component
 
 ``` /imports/components/layouts/app_layout.jsx ```
