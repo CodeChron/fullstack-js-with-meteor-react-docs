@@ -129,7 +129,7 @@ Don't forget to import the file into the master stylesheet before any other styl
 export const AppLayout = (props) => <div id="app-container">{props.content(props)}</div>
 ```
 
-(You might be wondering why we are not naming this component "AppContainer" to be consistent.  This is, in part, due to that we will soon be creating data containers, and would then end up with components of the same name.)
+(You might be wondering why we are not naming this component "AppContainer" to be consistent.  This is, in part, due to that we will soon be creating a data container that will wrap around this component, called AppContainer.)
 
 This is just a foundation.  We'll add more styling as we build the app itself.
 
