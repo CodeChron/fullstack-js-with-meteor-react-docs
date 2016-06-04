@@ -39,11 +39,14 @@ In the FlowRouter model, we have a top-level template or componente, in which we
 ```js
 import React from 'react'
 
-export const Homepage = () => <div>{"Homepage content goes here"}</div>
+export const AppLayout = (props) => <div>{props.content(props)}</div>
 ```
+
+Here we are doing something different from what you might see in the FlowRouter documentation.  Instead of just passing in whatever regions we have defined, we are passing in an object, which can contain much more than that, such as reactive data.  Similarly, we are then also passing that object into the region itself, making it available to child components.
 
 
 ## Create a homepage component
+Let's create a placeholder component for the homepage.
 
 ``` /imports/components/pages/homepage.jsx ```
 
@@ -51,7 +54,7 @@ export const Homepage = () => <div>{"Homepage content goes here"}</div>
 ```js
 import React from 'react'
 
-export const Homepage = () => <div>{"Homepage content goes here"}</div>
+export const Homepage = (props) => <div>{"Homepage content goes here"}</div>
 ```
 
 ## Create a routes file and a homepage route
