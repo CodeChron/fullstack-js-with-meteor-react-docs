@@ -62,8 +62,27 @@ If your web page now updates to be a sans serif font, then you know everything h
 Next, let's add styling for our app container, which effectively is our global styling.
 
 
+## Add a variables files
+One of the many great advantages of using a preprocessor, such as Sass, is that we can define variables.
+One great use for variables are values that basically are arbitrary.  In our case, the width the app container is just a number I picked.  If we were working with a designer, then they could help determine the specific value.  When using a variables file, we can collect all these in one place.
+
+
+``` /imports/stylesheets/_variables.scss ```
 
 ```scss
+// LAYOUT
+// ____________________________
+$app-container-width: 50em;
+```
+
+Don't forget to import the file into the master stylesheet before any other styles that will make use of the variables.
+``` /imports/stylesheets/main.scss ```
+
+```scss
+@import "variables";
+...
+```
+
 
 // VARIABLES
 // ____________________________
