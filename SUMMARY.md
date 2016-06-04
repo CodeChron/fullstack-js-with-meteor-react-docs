@@ -4,7 +4,6 @@
 * [Introduction](README.md)
 * [The App We'll Build](app_component_hierarchy.md)
 * [Setting up your project](setting_up_your_project.md)
-* [Move app files into the "imports" directory"](move_app_files_into_the_imports_directory.md)
 * [Add Styling](add_styling.md)
 * [Add React](install_react.md)
 * [Add Routing (Homepage)](add_routing.md)
