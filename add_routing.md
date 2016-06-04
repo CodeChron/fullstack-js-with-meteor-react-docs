@@ -1,4 +1,4 @@
-# Add Routing
+# Add Routing and a Homepage
 
 Routing is basically the ability to have multiple pages in your app, and to be able to display different content based on the URL in your browser.
 
