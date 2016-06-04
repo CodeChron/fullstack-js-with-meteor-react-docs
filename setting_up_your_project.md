@@ -56,6 +56,6 @@ import './main.js'
 import '/imports/startup/client'
 ```
 
-You should now see the same welcome info you see by default.  If so, you know your imports are set up properly.
+You should now just see a blank white page.  That's ok.  It just means everything is working but nothing is being rendered to the screen.
 
 
