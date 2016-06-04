@@ -1,9 +1,28 @@
-# Introduction
+# Full-stack JS With Meteor and React - Free Preview
 
-# Full-stack JS Workshop Preview
-In this workshop, we’re going to build a a basic web app using using Meteor and React.
+In this tutorial, we're going to build a simple web app from scratch. Topics covered will include:
+- Setting up your development environment.
+- Installing and setting up React in Meteor.
+- Creating a basic and a more advanced React UI component.
+- Using data in React components.
+- Routing
+- Creating a data model
+- Introduction to the JavaScript ES6 syntax.
 
-TODO: insert an overview of the main features and area of focus.
+
+## The Full Length Tutorial
+The app we build here will be the starting point for a production-ready app that we will build in the full-length tutorial.  Additional topics covered include:
+- The Publish and Subscribe paradigm.
+- Adding an animated loading indicator.
+- Creating an auto-saving content editor.
+- Creating a click-to-edit React component.
+- Creating components with optional features.
+- Adding login and registration.
+- Making content private to a specific user.
+- Deploying your app.
+- Adding custom styling with Sass and Autoprefixer.
+- App security.
+
 
 ##Prerequisites 
 - Basic knowledge of HTML, JavaScript, and use of a command line terminal.
