@@ -5,6 +5,7 @@
 * [The App We'll Build](app_component_hierarchy.md)
 * [Setting up your project](setting_up_your_project.md)
 * [Add React](install_react.md)
+* [Add React and React Router](add_react_and_react_router.md)
 * [Add Routing (Homepage)](add_routing.md)
 * [Add Styling](add_styling.md)
 * [Add an App Header](add_an_app_header.md)
@@ -36,5 +37,4 @@
 * [JS Basics](js_basics.md)
 * [Notes](notes.md)
 * [OLD - Add Styling with Bootstrap](add_styling_with_bootstrap.md)
-* [Add React and React Router](add_react_and_react_router.md)
 
