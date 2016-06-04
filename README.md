@@ -29,7 +29,7 @@ The app we build here will be the starting point for a production-ready app that
 - A laptop with a code editor of your choice.  We’ll be using [Sublime Text](http://www.sublimetext.com/3 ).
 - Be sure to [install Meteor](https://www.meteor.com/install). We’ll be using Mac OSX. However, Meteor is available for Windows and Linux as well.
 
-## Getting Started
+## Get the code on Github
 Each step in the tutorial has a corresponding branch in the [github repo](https://github.com/CodeChron/fullstack-js-preview).  I highly recommend that you create the app on your own, but if you should get stuck, you can always check out the branch from the previous step to get caught up.
 
 ### Getting caught up using git branches.
