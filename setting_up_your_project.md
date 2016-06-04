@@ -30,6 +30,8 @@ Create the Meteor app and cd into it:
 Before continuing, let's remove the default files and content created by Meteor.
 
 Remove ``` main.css ```
+Clear out all content in ``` main.js ``` and ``` main.html ```
+
 
 ## Move app files into the "imports" directory"
 
@@ -42,7 +44,7 @@ After the release of Meteor 1.3, it's generally considered good practice to plac
 ``` /imports/startup/client/index.js ```
 
 ```js
-import './main.css'
+import './main.html'
 import './main.js'
 ```
 
