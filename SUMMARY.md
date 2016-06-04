@@ -36,5 +36,5 @@
 * [JS Basics](js_basics.md)
 * [Notes](notes.md)
 * [OLD - Add Styling with Bootstrap](add_styling_with_bootstrap.md)
-* Add React and React Router
+* [Add React and React Router](add_react_and_react_router.md)
 
