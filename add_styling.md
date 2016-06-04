@@ -57,6 +57,62 @@ With this in mind, copy and paste normalize into a local file and import it at t
 
 If your web page now updates to be a sans serif font, then you know everything has been hooked up properly.
 
+
+# Add Global/App Container Styling
+Next, let's add styling for our app container, which effectively is our global styling.
+
+```scss
+
+// VARIABLES
+// ____________________________
+$app-container-width: 50em;
+
+// GLOBAL LAYOUT
+// ____________________________
+
+// Apply a natural box layout model to all elements, but allowing components to change - http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+
+html,body {
+  box-sizing: border-box;
+}
+*, *:before, *:after { box-sizing: inherit; }
+
+//Full height app layout
+html {
+  height: 100%;
+}
+
+body {
+  // min-height is needed for pages that might scroll, ie they may contain _more_ than 100% of viewport height
+  min-height: 100%;
+}
+
+
+
+// LAYOUTS
+// ____________________________
+
+//Full height app layout
+html {
+  height: 100%;
+}
+
+body {
+  // min-height is needed for pages that might scroll, ie they may contain _more_ than 100% of viewport height
+  min-height: 100%;
+}
+
+#app-container {
+  //set the app container to fill the viewport height
+ height: 100vh;
+
+ //center the app in larger viewports
+ max-width: $app-container-width;
+ margin: 0 auto;
+
+}
+```
+
 This is just a foundation.  We'll add more styling as we build the app itself.
 
 
