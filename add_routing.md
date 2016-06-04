@@ -38,13 +38,7 @@ After installing this we should see message from flow-router that there is no 'r
 ```js
 import React from 'react'
 
-export const Homepage = () => 
-
-<div id="app-container">
-  <div id="main-content" className="container">
-    Homepage content
-  </div>
-</div>
+export const Homepage = () => <div>{"Homepage content goes here"}</div>
 ```
 
 ## Create a routes file and a homepage route
