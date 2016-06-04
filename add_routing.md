@@ -45,6 +45,9 @@ export const AppLayout = (props) => <div>{props.content(props)}</div>
 Here we are doing something different from what you might see in the FlowRouter documentation.  Instead of just passing in whatever regions we have defined, we are passing in an object, which can contain much more than that, such as reactive data.  Similarly, we are then also passing that object into the region itself, making it available to child components.
 
 
+Here, we are calling the region function that we specified in the routes file.  We are also passing along any props into our components.
+
+
 ## Create a homepage component
 Let's create a placeholder component for the homepage.
 
@@ -56,6 +59,8 @@ import React from 'react'
 
 export const Homepage = (props) => <div>{"Homepage content goes here"}</div>
 ```
+
+Note that we are passing in the props object from before, though we're not yet making use of it.
 
 ## Create a routes file and a homepage route
 
@@ -80,37 +85,9 @@ FlowRouter.route('/', {
 })
 ```
 
-## Update the App to render route regions
 
-``` /imports/components/layouts/app_layout.jsx ```
 
-```js
-import React from 'react'
-
-export const App = (props) => props.content(props)
-```
-
-Here, we are calling the region function that we specified in the routes file.  We are also passing along any props into our components.
-
-## Remove "manual" app rendering
-
-FlowRouter handles this for us.
-
-_delete_ the following files:
-```/imports/startup/client/main.html ```
-```/imports/startup/client/main.js ```
-
-## Import routes on startup
-
-Also, be sure to remove the old main.js import in this file
-
-``` /imports/startup/client/index.js ```
-
-```js
-import '../../routes.jsx'
-```
-
-In your browser, you should now see "Homepage content" instead of "React placeholder"
+In your browser, you should now see "Homepage content goes here"
 
 If you trying going to a different URL, you will now see that you just get a blank page and a message from Flow-Router.
 
