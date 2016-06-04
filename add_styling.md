@@ -75,45 +75,17 @@ One great use for variables are values that basically are arbitrary.  In our cas
 $app-container-width: 50em;
 ```
 
-Don't forget to import the file into the master stylesheet before any other styles that will make use of the variables.
-``` /imports/stylesheets/main.scss ```
+## Add App Container Styling
+
+``` /imports/stylesheets/_app_container.scss ```
 
 ```scss
-@import "variables";
-...
-```
-
-
-// VARIABLES
-// ____________________________
-$app-container-width: 50em;
-
-// GLOBAL LAYOUT
-// ____________________________
-
 // Apply a natural box layout model to all elements, but allowing components to change - http://www.paulirish.com/2012/box-sizing-border-box-ftw/
-
 html,body {
   box-sizing: border-box;
 }
 *, *:before, *:after { box-sizing: inherit; }
 
-//Full height app layout
-html {
-  height: 100%;
-}
-
-body {
-  // min-height is needed for pages that might scroll, ie they may contain _more_ than 100% of viewport height
-  min-height: 100%;
-}
-
-
-
-// LAYOUTS
-// ____________________________
-
-//Full height app layout
 html {
   height: 100%;
 }
@@ -124,7 +96,7 @@ body {
 }
 
 #app-container {
-  //set the app container to fill the viewport height
+ //set the app container to fill the viewport height
  height: 100vh;
 
  //center the app in larger viewports
@@ -133,6 +105,19 @@ body {
 
 }
 ```
+
+## Import the files into the main stylesheet
+
+Don't forget to import the file into the master stylesheet before any other styles that will make use of the variables.
+
+``` /imports/stylesheets/main.scss ```
+
+```scss
+@import "variables";
+@import "vendor/normalize";
+@import "app_container";
+```
+
 
 This is just a foundation.  We'll add more styling as we build the app itself.
 
