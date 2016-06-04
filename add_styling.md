@@ -22,8 +22,20 @@ If you are creating your css framework, the very thing you will want to do is to
 
 _insert what I wrote before about Normalize_
 
+Imo, you should always include <a href="https://necolas.github.io/normalize.css/">normalize</a> when building a web app, because, as stated in the project description...
+<blockquote><a href="https://github.com/necolas/normalize.css/">Normalize.css</a> makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing.</blockquote>
+A couple more pointers:
+<ul>
+ 	<li>This should be the first css that loads.</li>
+ 	<li>Do not link directly to an online stylesheet, but instead copy and paste the current version of <a href="https://necolas.github.io/normalize.css/4.0.0/normalize.css">the raw normalize css</a> into a local file.  You don't want to risk the remote stylesheet not loading, or be updated, without you knowing it, since this could impact your entire design.</li>
+</ul>
+With this in mind, copy and paste normalize into a local file and import it at the beginning of the file.
+```@import "normalize.css";```
+If your web page now updates to be a sans serif font, then you know everything has been hooked up properly.
 
 
+
+### Notes
 Next, we want to add a back button to our header.  But to do that, we need to first customize the layout a bit, to center the title and make room for icons on each side.
 
 ## Update the note header to have a custom 3 column layout
