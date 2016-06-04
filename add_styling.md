@@ -10,11 +10,17 @@ We need to first remove a package, as we're going to replace it with a community
 ``` meteor remove standard-minifier-css ```
 ```  meteor add fourseven:scss seba:minifiers-autoprefixer ```
 
+# Create a master stylesheet
+We now want to creat a main stylesheet file, into which we'll import any global styles.
 
-Add autoprefixing.
-Add normalize
+Finally, we now need to import our master stylesheet on startup.
 
-Create a master stylesheet
+## Add Normalize
+At this point, still won't see any actual changes to your design.  That's ok, since we're still working on the foundation.  
+
+If you are creating your css framework, the very thing you will want to do is to normalize your css across browsers and devices.  Let's therefore add  that.  (Learn more about Normalize)
+
+
 
 
 Next, we want to add a back button to our header.  But to do that, we need to first customize the layout a bit, to center the title and make room for icons on each side.
