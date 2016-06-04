@@ -23,6 +23,12 @@ import '/imports/startup/client'
 
 You should now see the same welcome info you see by default.  If so, you know your imports are set up properly.
 
+## Remove default app content
+
+Before continuing, let's remove the default files and content created by Meteor.
+
+
+
 ## Discussion Topics
  - Lazy vs eager loading.
  - Import/Export and the module system.
