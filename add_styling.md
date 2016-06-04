@@ -57,7 +57,7 @@ With this in mind, copy and paste normalize into a local file and import it at t
 
 If your web page now updates to be a sans serif font, then you know everything has been hooked up properly.
 
-This is just a foundation.  We'll add more styling while building the app itself.
+This is just a foundation.  We'll add more styling as we build the app itself.
 
 
 
