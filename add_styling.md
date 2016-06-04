@@ -20,6 +20,7 @@ At this point, still won't see any actual changes to your design.  That's ok, si
 
 If you are creating your css framework, the very thing you will want to do is to normalize your css across browsers and devices.  Let's therefore add  that.  (Learn more about Normalize)
 
+_insert what I wrote before about Normalize_
 
 
 
@@ -28,11 +29,6 @@ Next, we want to add a back button to our header.  But to do that, we need to fi
 ## Update the note header to have a custom 3 column layout
 
 We want our note title to be centered and we'll want a back icon to be left aligned. This will require customizing our app header layout. 
-
-
-## Add CSS Pre-processing
-
-### Install Sass and Autoprefixer packages
 
 
 
