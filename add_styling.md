@@ -37,12 +37,15 @@ A couple more pointers:
 </ul>
 With this in mind, copy and paste normalize into a local file and import it at the beginning of the file.
 ```@import "normalize.css";```
-If your web page now updates to be a sans serif font, then you know everything has been hooked up properly.
+
 
 ```scss
 @import "vendor/normalize";
 ```
 
+(Why 'vendor'?  This is a common way of referring to code that was written by someone else that we are making use of.)
+
+If your web page now updates to be a sans serif font, then you know everything has been hooked up properly.
 
 ### Notes
 Next, we want to add a back button to our header.  But to do that, we need to first customize the layout a bit, to center the title and make room for icons on each side.
