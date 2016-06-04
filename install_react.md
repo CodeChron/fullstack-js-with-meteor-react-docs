@@ -2,7 +2,7 @@
 
 Starting with Meteor 1.3, we install React packages using npm.
 
-```meteor npm install react react-dom --save```
+```meteor npm install react react-dom react-router --save```
 
 - Why are we using npm instead of a Meteor package?
 - What is the react-dom package?
@@ -18,12 +18,11 @@ Even though we currently only will have a single page, we still want to add rout
 
 ## Add a render target
 
-Replace everything in the file ``` /imports/startup/client/main.html ``` with the following:
-
+``` /imports/startup/client/main.html ```
 
 ```html
 <body>
-  <div id="app"></div>
+  <div id="react-root"></div>
 </body>
 ```
 
