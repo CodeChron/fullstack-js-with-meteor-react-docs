@@ -4,7 +4,7 @@
 * [Introduction](README.md)
 * [The App We'll Build](app_component_hierarchy.md)
 * [Setting up your project](setting_up_your_project.md)
-* [Add Routing (Homepage)](add_routing.md)
+* [Add React and FlowRouter](add_routing.md)
 * [Add React](install_react.md)
 * [Add Styling](add_styling.md)
 * [Add an App Header](add_an_app_header.md)
