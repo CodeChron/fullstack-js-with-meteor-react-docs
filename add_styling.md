@@ -26,8 +26,6 @@ At this point, still won't see any actual changes to your design.  That's ok, si
 
 If you are creating your css framework, the very thing you will want to do is to normalize your css across browsers and devices.  Let's therefore add  that.  (Learn more about Normalize)
 
-
-
 Imo, you should always include <a href="https://necolas.github.io/normalize.css/">normalize</a> when building a web app, because, as stated in the project description...
 <blockquote><a href="https://github.com/necolas/normalize.css/">Normalize.css</a> makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing.</blockquote>
 A couple more pointers:
@@ -46,13 +44,6 @@ With this in mind, copy and paste normalize into a local file and import it at t
 (Why 'vendor'?  This is a common way of referring to code that was written by someone else that we are making use of.)
 
 If your web page now updates to be a sans serif font, then you know everything has been hooked up properly.
-
-### Notes
-Next, we want to add a back button to our header.  But to do that, we need to first customize the layout a bit, to center the title and make room for icons on each side.
-
-## Update the note header to have a custom 3 column layout
-
-We want our note title to be centered and we'll want a back icon to be left aligned. This will require customizing our app header layout. 
 
 
 
