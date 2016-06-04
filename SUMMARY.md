@@ -6,7 +6,7 @@
 * [Setting up your project](setting_up_your_project.md)
 * [Add Routing (Homepage)](add_routing.md)
 * [Add React](install_react.md)
-* [Add React and React Router](add_react_and_react_router.md)
+* [OLD Add React and React Router](add_react_and_react_router.md)
 * [Add Styling](add_styling.md)
 * [Add an App Header](add_an_app_header.md)
 * [Adding Data](adding_data.md)
