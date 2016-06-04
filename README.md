@@ -12,6 +12,8 @@ In this tutorial, we're going to build a simple web app from scratch. Topics cov
 
 ## The Full Length Tutorial
 The app we build here will be the starting point for a production-ready app that we will build in the full-length tutorial.  Additional topics covered include:
+_just list the chapters?_
+
 - The Publish and Subscribe paradigm.
 - Adding an animated loading indicator.
 - Creating an auto-saving content editor.
