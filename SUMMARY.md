@@ -35,6 +35,6 @@
 * [App Security](app_security.md)
 * [Refactor and Optimize](refactor_and_optimize.md)
 * [JS Basics](js_basics.md)
-* [OLD - Add Styling with Bootstrap](add_styling_with_bootstrap.md)
 * [Notes](notes.md)
+* [OLD - Add Styling with Bootstrap](add_styling_with_bootstrap.md)
 
