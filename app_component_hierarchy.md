@@ -9,6 +9,5 @@ A key purpose of doing this is to think about what each component will be respon
 **TODO: update this hierarchy to match the finished app.
 **
 
-TODO: Combine this with the app we'll build.
 
 This is essential when building an app, to help with planning and think through your component hierarchy.  
