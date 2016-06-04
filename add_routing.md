@@ -4,7 +4,7 @@
 ## Install React 
 Starting with Meteor 1.3, we install React packages using npm.
 
-```meteor npm install react react-dom react-router --save```
+```meteor npm install react react-dom --save```
 
 - Why are we using npm instead of a Meteor package?
 - What is the react-dom package?
@@ -23,10 +23,10 @@ If you are using React and planning to use FlowRouter (which we are doing), you 
 
 Even though we currently only will have a single page, we still want to add routing, because we know we'll have multiple pages eventually.
 
-
-
 ``` meteor add kadira:flow-router ```
 ``` npm i react-mounter --save ```
+
+
 
 After installing this we should see message from flow-router that there is no 'root route' or basically no homepage.  Let's therefore add a homepage as our first route.
 
