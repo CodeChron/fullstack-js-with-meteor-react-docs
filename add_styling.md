@@ -5,6 +5,18 @@ We are going create our styling from scratch and not use, for example, Bootstrap
 ## Remove the default css file
 It doesn't do anything, but we don't want "dead" files in our app.
 
+## Add mobile meta tags
+This helps ensure proper rendering on mobile devices.
+In Meteor, there is no need to include the html tags.  Meteor will do that for you.
+
+``` /client/head.html ```
+
+```html
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+```
+
 ## Add a css preprocessor and auto-prefixer
 Modern web apps use so much css that writing it all manually just doesn't make sense.  Instead, let's use some CSS tools.  Here, we'll use Sass and Autoprefixer. (What is [autoprefixing](https://css-tricks.com/autoprefixer/)?)
 
