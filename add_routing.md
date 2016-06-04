@@ -30,6 +30,19 @@ Even though we currently only will have a single page, we still want to add rout
 
 After installing this we should see message from flow-router that there is no 'root route' or basically no homepage.  Let's therefore add a homepage as our first route.
 
+## Create an AppLayout component
+In the FlowRouter model, we have a top-level template or componente, in which we define regions where we can insert page-specific content. (This model is somewhat Rails-y, and not really consistent with the React way, but we'll work around those issues as we go.
+
+``` /imports/components/layouts/app_layout.jsx ```
+
+
+```js
+import React from 'react'
+
+export const Homepage = () => <div>{"Homepage content goes here"}</div>
+```
+
+
 ## Create a homepage component
 
 ``` /imports/components/pages/homepage.jsx ```
