@@ -1,4 +1,4 @@
-# Form for creating notes
+# Create notes
 
 A good approach to implementing a feature is often to "follow the data."  Here, we'll do so first creating a form for creating a note and then adding a handler for inserting that note into our database.
 
