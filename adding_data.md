@@ -43,7 +43,7 @@ export const Note = Class.create({
 
 Note that we are now exporting our *Note* schema rather than the Notes collection. 
 
-# Make db operations secure
+## Make db operations secure
 
 Currenlty, if you open the Mongol utility we just added, you'll notice that it is possible to insert and update db data directly from the browser.  This is very insecure and we do not want to allow this in a production app.
 
