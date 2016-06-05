@@ -1,6 +1,8 @@
 # Add Styling
 
-_update this to use SMACCS_ structure
+_update this to use SMACCS_ structure_
+
+**TODO: Update this to include the update scss structure**
 
 We are going create our styling from scratch and not use, for example, Bootstrap.  While Bootstrap is great, creating a framework on your own is great for learning purposes.  Additionally, for larger apps, if you started out with Bootstrap, you might find yourself "figthing" or constantly over-riding what Bootstrap did with every new customization.
 
@@ -34,7 +36,8 @@ For structuring our css, we will use the [SMACCS](https://smacss.com/) model. I 
 
 # Create a master stylesheet
 We now want to creat a main stylesheet file, into which we'll import any global styles.
-_insert main stylesheet_
+
+```
 
 
 Finally, we now need to import our master stylesheet on startup.
