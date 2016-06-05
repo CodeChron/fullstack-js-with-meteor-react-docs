@@ -49,6 +49,7 @@ Additionally, we have added a  ```propTypes`` object to our component.  Here, we
 
 One can think of this as a mini API for a component.  In other words, it allows a developer to look at a component and determine what props can be passed in and how they should be named.
 
+_TODO: discuss ``isRequired```_ 
 
 ## Naming components
 _turn this into a blog post_
@@ -89,8 +90,6 @@ PageTitle.propTypes = {
 	title: React.PropTypes.string.isRequired
 }
 ```
-
-Here, we see somthing new``isRequired``` _TODO discuss this._
 
 Next, we'll pass this component in as a prop on the homepage.
 
