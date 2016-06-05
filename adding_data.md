@@ -82,38 +82,6 @@ Meteor.methods({
 
 Note that we also are returning the note that we created, so that we, among other things, can let the client side know if there were any errors in completing the operation.
 
-## "Call" the method from our data container
-
-``` /imports/components/containers/homepage_container.js ```
-
-```js
-...
-import { Meteor } from 'meteor/meteor'
-...
-
-export default createContainer(
-	() => {
-		
-		const handleCreateNote = (title) => {
-		Meteor.call('/note/create', title, (err, result) => {
-          if (err) {
-            console.log('error: ' + err.reason)
-          }
-        })
-	  }
-
-	  return {
-	  	handleSubmit: handleCreateNote
-	  }
-  },
-  App
-)
-```
-
-The call method has three parts:
-- Which db method are we using?
-- What data are we passing in?
-- How should we handle the result of the db operation?
 
 ## Make the collection available on the server
 
