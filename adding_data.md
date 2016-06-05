@@ -8,7 +8,7 @@ Before we can start creating notes, we need to add support for use of data, both
 ```js
 import { Mongo } from 'meteor/mongo'
 
-export const Notes = new Mongo.Collection('notes')
+const Notes = new Mongo.Collection('notes')
 ```
 
 # Add a data model layer
