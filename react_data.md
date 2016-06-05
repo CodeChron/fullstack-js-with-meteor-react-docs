@@ -56,7 +56,7 @@ We now need to update our route to use this wrapping container rather than the a
 
 ```js
 ...
-import HomepageContainer from './components/containers/homepage_container'
+import HomepageContainer from '/imports/components/containers/homepage_container'
 
 FlowRouter.route('/', {
   name: 'homepage',
