@@ -61,37 +61,58 @@ In general, I recommend naming a component based on its responsibility. If a com
 
 ```js
 ...
-import { AppHeaderLayout } from '../layouts/app_header_layout'
-import { PageTitle } from '../content/page_title'
+import React from 'react'
+import { ThreeColumnLayout } from '../layouts/three_column_layout'
 
-export const Homepage = () => {
-	const 
-	  appName = "My Notes App",
-	  pageTitle = <PageTitle title={appName} />
-      
-	return  <div id="app-container">
-              <AppHeaderLayout headerCenter={pageTitle} />
-            <div id="main-content" className="container">
-              Main content
-            </div>
-          </div>
+export const Homepage = (props) =>
+  <div id="app-container">
+     <ThreeColumnLayout />
+    <div id="main-content">
+      {"Homepage content goes here"}
+    </div>
+  </div>
 }
 ```
 
+If you look in your browser, you'll see that nothing is displayed. This is because we need to pass in content for this component to display.  Let's create a PageTitle component and pass it into the center column..
 
 ## Add the PageTitle Component
+First, we'll create the component.
 
 ``` /imports/components/content/page_title.jsx ```
 
 ```js
 import React from 'react'
 
-export const PageTitle = (props) => <h1 className="navbar-brand">{props.pageTitle}</h1>
+export const PageTitle = (props) => <h1>{props.title}</h1>
 
 PageTitle.propTypes = {
-	pageTitle: React.PropTypes.string.isRequired
+	title: React.PropTypes.string.isRequired
 }
 ```
+
+Here, we see somthing new``isRequired``` TODO discuss this.
+
+Next, we'll pass this component in as a prop on the homepage.
+
+
+``` /imports/components/content/page_title.jsx ```
+
+```js
+...
+import React from 'react'
+import { ThreeColumnLayout } from '../layouts/three_column_layout'
+
+export const Homepage = (props) =>
+  <div id="app-container">
+     <ThreeColumnLayout />
+    <div id="main-content">
+      {"Homepage content goes here"}
+    </div>
+  </div>
+}
+```
+
 
 
 We are adding the AppHeader only to the homepage because we will want to be able to pass in different data into this and other components depending on the page being viewed.
