@@ -40,6 +40,40 @@ export default createContainer(
 )
 ```
 
+
+## "Call" the method from our data container
+
+``` /imports/components/containers/homepage_container.js ```
+
+```js
+...
+import { Meteor } from 'meteor/meteor'
+...
+
+export default createContainer(
+	() => {
+		
+		const handleCreateNote = (title) => {
+		Meteor.call('/note/create', title, (err, result) => {
+          if (err) {
+            console.log('error: ' + err.reason)
+          }
+        })
+	  }
+
+	  return {
+	  	handleSubmit: handleCreateNote
+	  }
+  },
+  App
+)
+```
+
+The call method has three parts:
+- Which db method are we using?
+- What data are we passing in?
+- How should we handle the result of the db operation?
+
 Here we are "wrapping" the App component in a container for handling data.  We only have one handler so far, for creating a new note.
 
 ## Update our homepage route to use the data container and pass along props from the container into a page
