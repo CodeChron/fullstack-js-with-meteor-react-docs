@@ -8,7 +8,7 @@
 * [Add Styling](add_styling.md)
 * [Add an App Header](add_an_app_header.md)
 * [Adding Data](adding_data.md)
-* [Form for creating notes](04_create_notes.md)
+* [Create Notes](04_create_notes.md)
 * [Handle Data (Containers)](react_data.md)
 * [Make db operations secure](db_updates_use_meteormethods.md)
 * [List Notes](list_notes.md)
