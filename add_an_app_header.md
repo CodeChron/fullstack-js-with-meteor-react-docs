@@ -37,7 +37,7 @@ export const ThreeColLayout = (props) => {
 
 ThreeColLayout.propTypes = {
   leftCol: React.PropTypes.object,
-  middleCol: React.PropTypes.object,
+  middleCol: React.PropTypes.object.isRequired,
   rightCol: React.PropTypes.object
 }
 ```
@@ -54,24 +54,8 @@ One can think of this as a mini API for a component.  In other words, it allows 
 _turn this into a blog post_
 In general, I recommend naming a component based on its responsibility. If a component becomes difficult to name, that might be a "smell" that it is responsible for too much and should be divided into multiple components.
 
-## Add the component to the homepage.
 
-## Add the PageTitle Component
-
-``` /imports/components/content/page_title.jsx ```
-
-```js
-import React from 'react'
-
-export const PageTitle = (props) => <h1 className="navbar-brand">{props.pageTitle}</h1>
-
-PageTitle.propTypes = {
-	pageTitle: React.PropTypes.string.isRequired
-}
-```
-
-
-## Add the App Header to Homepage
+## Add the Component to Homepage
 
 ``` /imports/components/pages/homepage.jsx ```
 
@@ -93,6 +77,22 @@ export const Homepage = () => {
           </div>
 }
 ```
+
+
+## Add the PageTitle Component
+
+``` /imports/components/content/page_title.jsx ```
+
+```js
+import React from 'react'
+
+export const PageTitle = (props) => <h1 className="navbar-brand">{props.pageTitle}</h1>
+
+PageTitle.propTypes = {
+	pageTitle: React.PropTypes.string.isRequired
+}
+```
+
 
 We are adding the AppHeader only to the homepage because we will want to be able to pass in different data into this and other components depending on the page being viewed.
 
