@@ -71,7 +71,6 @@ export const Homepage = (props) =>
       {"Homepage content goes here"}
     </div>
   </div>
-}
 ```
 
 If you look in your browser, you'll see that nothing is displayed. This is because we need to pass in content for this component to display.  Let's create a PageTitle component and pass it into the center column..
@@ -91,21 +90,23 @@ PageTitle.propTypes = {
 }
 ```
 
-Here, we see somthing new``isRequired``` TODO discuss this.
+Here, we see somthing new``isRequired``` _TODO discuss this._
 
 Next, we'll pass this component in as a prop on the homepage.
 
 
-``` /imports/components/content/page_title.jsx ```
+``` /imports/components/pages/homepage.jsx ```
 
 ```js
 ...
-import React from 'react'
-import { ThreeColumnLayout } from '../layouts/three_column_layout'
+import { PageTitle } from '../content/page_title'
 
-export const Homepage = (props) =>
+export const Homepage = (props) => {
+
+ const pageTitle = <PageTitle title={"My Notes App"} />
+
   <div id="app-container">
-     <ThreeColumnLayout />
+     <ThreeColumnLayout middleCol={pageTitle} />
     <div id="main-content">
       {"Homepage content goes here"}
     </div>
@@ -113,7 +114,7 @@ export const Homepage = (props) =>
 }
 ```
 
-
+_Discuss: we are assigning the PageTitle component to a variable and passing in a hard-coded prop.  This is something we would want to refactor.  Any time you see hard-coded text that is a smell.  If this were a real project, I would likely add a todo item to the backlog to define this value in an App library or other general configuration, where we would set the app name globally.
 
 We are adding the AppHeader only to the homepage because we will want to be able to pass in different data into this and other components depending on the page being viewed.
 
