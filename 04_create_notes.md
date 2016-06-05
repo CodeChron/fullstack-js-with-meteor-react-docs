@@ -69,7 +69,7 @@ TODO: Be sure to discuss usage of this and bind(this)
 ...
 import { SingleFieldSubmit } from '../forms/single_field_submit'
 
-export const Homepage = () => {
+export const Homepage = (props) => {
 
   ...
             <div id="main-content" className="container">
