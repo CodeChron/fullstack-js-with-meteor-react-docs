@@ -82,8 +82,6 @@ export const Homepage = (props) => {
 
 ```
 
-Be sure to pass in props as an arg.
-
 Now, if you try entering some text, you'll notice that it just disappears after you hit return.  Let's make sure we actually inserted some data...
 
 ## Install a utility for viewing db info in the browser
@@ -92,6 +90,9 @@ Rather than have to keep opening a Mongo console, let's install a utlity for doi
 
 Simply type ``` meteor add msavin:mongol ```
 After that, you can use Ctrl + m to display an in-browser console.
+
+![mongol-console](https://cloud.githubusercontent.com/assets/819213/15807700/e535c3c2-2b32-11e6-85d0-01c9890788cb.png)
+
 
 
 
