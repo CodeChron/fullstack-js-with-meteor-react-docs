@@ -29,6 +29,7 @@ We need to first remove a package, as we're going to replace it with a community
 
 ## What is our css strategy/approach?
 
+For our css, we will use the [SMACCS](https://smacss.com/) model.  I encourage you to take a little time to read through the material on that website.  Additionally, there are many other models to look at, such as [BEM](http://getbem.com/introduction/). On top of that, you should be aware that there is lots of [debate](https://css-tricks.com/the-debate-around-do-we-even-need-css-anymore/) if we should even be using css when building with React.
 
 # Create a master stylesheet
 We now want to creat a main stylesheet file, into which we'll import any global styles.
