@@ -21,7 +21,7 @@ In other words, we want to create a Three Column Layout Component
 ## Create the Three Column Layout Components
 Naming a component in this way reminds us of its responsibility. If a component becomes difficult to name, that might be a "smell" that it is responsible for too much.
 
-``` /imports/components/layouts/three_col_layout.jsx ```
+``` /imports/components/layouts/three_column_layout.jsx ```
 
 ```js
 import React from 'react'
