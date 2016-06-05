@@ -96,7 +96,7 @@ FlowRouter.route('/', {
   name: 'homepage',
   action() {
     mount(App, {
-      content: () => <Homepage />
+      page: () => <Homepage />
     })
   }
 })
