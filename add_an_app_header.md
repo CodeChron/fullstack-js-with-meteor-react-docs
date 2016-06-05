@@ -122,4 +122,10 @@ Also, note that since our function now is a multi-statement function, we cannot 
 
 You should now see the app header appear in the browser.
 
-![App Header added](https://raw.githubusercontent.com/CodeChron/fullstack-js-preview-docs/master/images/add-app-header.png)
+![page-title-added](https://cloud.githubusercontent.com/assets/819213/15806827/91043486-2b1a-11e6-833f-27a6d79105b5.png)
+
+## Add AppHeader Styling
+Next, let's add styling to the app header.
+
+
+
