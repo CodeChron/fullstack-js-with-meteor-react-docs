@@ -72,7 +72,7 @@ export const Homepage = (props) => {
                 placeholder={"New Note..."}
                 handleSubmit={props.handleSubmit}
               />
-             <List collection={props.collection} />
+             <List collection={props.notes} />
             </div>
           </div>
 }
