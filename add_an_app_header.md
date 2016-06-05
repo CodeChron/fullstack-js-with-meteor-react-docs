@@ -18,22 +18,21 @@ Generally, this means we want to create a component with left, middle, and right
 
 In other words, we want to create a Three Column Layout Component
 
-## Create the Three Column Layout Components
-Naming a component in this way reminds us of its responsibility. If a component becomes difficult to name, that might be a "smell" that it is responsible for too much.
+## Create the App Header Component
 
-``` /imports/components/layouts/three_column_layout.jsx ```
+``` /imports/components/layouts/app_header.jsx ```
 
 ```jsx
 import React from 'react'
 
-export const ThreeColumnLayout = (props) =>
+export const AppHeader = (props) =>
   <div>
 	<div>{props.leftCol}</div>
 	<div>{props.middleCol}</div>
 	<div>{props.rightCol}</div>
  </div>
 
-ThreeColLayout.propTypes = {
+AppHeader.propTypes = {
   leftCol: React.PropTypes.object,
   middleCol: React.PropTypes.object.isRequired,
   rightCol: React.PropTypes.object
@@ -63,11 +62,11 @@ In general, I recommend naming a component based on its responsibility. If a com
 ```js
 ...
 import React from 'react'
-import { ThreeColumnLayout } from '../layouts/three_column_layout'
+import { AppHeader } from '../layouts/app_header'
 
 export const Homepage = (props) =>
   <div id="app-container">
-     <ThreeColumnLayout />
+     <AppHeader />
     <div id="main-content">
       {"Homepage content goes here"}
     </div>
@@ -105,7 +104,7 @@ export const Homepage = (props) => {
  const pageTitle = <PageTitle title={"My Notes App"} />
 
   return <div id="app-container">
-     <ThreeColumnLayout middleCol={pageTitle} />
+     <AppHeader middleCol={pageTitle} />
     <div id="main-content">
       {"Homepage content goes here"}
     </div>
