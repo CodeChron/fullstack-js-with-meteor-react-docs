@@ -28,17 +28,14 @@ import React from 'react'
 
 export const ThreeColLayout = (props) => {
 
-	return <nav className="navbar navbar-default">
-	  <div className="container">
-	    <div className="navbar-header">
-	      {props.headerCenter}
-	    </div>
-	 </div>
-	</nav>
-
+	return  <div className="flex-row-centered">
+	          <div className="flex-left-right-icons">{props.leftCol}</div>
+	          <div className="flex-main-content">{props.middleCol}</div>
+	          <div className="flex-left-right-icons">{props.rightCol}</div>
+	        </div>
 }
 
-AppHeaderLayout.propTypes = {
+ThreeColLayout.propTypes = {
   leftCol: React.PropTypes.object,
   middleCol: React.PropTypes.object,
   rightCol: React.PropTypes.object
