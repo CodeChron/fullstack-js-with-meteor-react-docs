@@ -26,7 +26,7 @@ Naming a component in this way reminds us of its responsibility. If a component 
 ```js
 import React from 'react'
 
-export const ThreeColLayout = (props) => {
+export const ThreeColumnLayout = (props) => {
 
 	return  <div className="flex-row-centered">
 	          <div className="flex-left-right-icons">{props.leftCol}</div>
