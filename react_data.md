@@ -16,6 +16,7 @@ Let's create a container component that will handle data for our homepage contai
 
 ```js
 import { createContainer } from 'meteor/react-meteor-data'
+import { Meteor } from 'meteor/meteor'
 import { Note } from '../../collections/notes'
 import { App } from '../app'
 
@@ -23,16 +24,15 @@ export default createContainer(
 	() => {
 		
 		const handleCreateNote = (title) => {
-			const note = new Note()
-			note.set({
-				title,
-			  updatedAt: new Date()
-			})
-			note.save()
-		cont  }
+		  Meteor.call('/note/create', title, (err, result) => {
+            if (err) {
+              console.log('error: ' + err.reason)
+            }
+          })
+		}
 
 	  return {
-	  	handleSubmit: handleCreateNote,
+	  	handleCreateNote,
         placeholder: "New Note..."
 	  }
   },
@@ -41,7 +41,6 @@ export default createContainer(
 ```
 
 
-## "Call" the method from our data container
 
 ``` /imports/components/containers/homepage_container.js ```
 
@@ -85,7 +84,6 @@ We now need to update our route to use this wrapping container rather than the a
 ```js
 ...
 import HomepageContainer from './components/containers/homepage_container'
-import { Homepage } from './components/pages/homepage'
 
 FlowRouter.route('/', {
   name: 'homepage',
