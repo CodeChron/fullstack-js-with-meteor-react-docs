@@ -67,6 +67,7 @@ FlowRouter.route('/', {
   }
 })
 ```
+(Also, note that you can remove the ```App`` import since that is being passed in through ```HomepageContainer```
 
 Note that we are _not_ using curly braces for the ``` HomepageContainer ```. This is because it uses ``` export default ``` meaning only one item is exported from the file, and we can name it on import.  We could have named this ``` BaconContainer ``` if we wanted.
 
