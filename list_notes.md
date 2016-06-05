@@ -50,6 +50,7 @@ export default createContainer(
   App
 )
 ```
+_todo: explain object reference shortcut_
 
 ## Add the list to the homepage
 
