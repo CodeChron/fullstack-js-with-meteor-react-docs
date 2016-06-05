@@ -50,7 +50,7 @@ export default createContainer(
   App
 )
 ```
-_todo: explain object reference shortcut_
+_todo: explain object reference shortcut, explain need for fetch_
 
 ## Add the list to the homepage
 
