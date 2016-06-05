@@ -1,6 +1,11 @@
-# Add an App Header Layout Component
+# Add an App Header
 
 This component should only be responsible for layout.  However, we are also going to add a default page title, since that will be used in most cases when using this component.
+
+_reference back to the mockups_
+
+
+## Create the App Header Components
 
 ``` /imports/components/layouts/app_header_layout.jsx ```
 
@@ -27,6 +32,8 @@ AppHeaderLayout.propTypes = {
 ```
 
 - What are props, propTypes, and defaultProps?
+
+
 
 ## Add the PageTitle Component
 
