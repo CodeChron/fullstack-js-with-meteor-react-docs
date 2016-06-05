@@ -7,6 +7,7 @@
 * [Add React and FlowRouter](add_routing.md)
 * [Add Styling](add_styling.md)
 * [Add an App Header](add_an_app_header.md)
+* Feature Overview: Creating a Note
 * [Adding Data](adding_data.md)
 * [Handle Data (Containers)](react_data.md)
 * [Create Notes](04_create_notes.md)
@@ -36,5 +37,4 @@
 * [OLD -Add React](install_react.md)
 * [OLD Add React and React Router](add_react_and_react_router.md)
 * [OLD - Add Styling with Bootstrap](add_styling_with_bootstrap.md)
-* Feature Overview: Creating a Note
 
