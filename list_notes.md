@@ -11,11 +11,11 @@ Now that we've created some data, let's display it.
 import React from 'react'
 
 export const List = (props) =>
-  <ul className="list-group">
+  <ul>
     { 
-    	props.collection.map((item) =>
-    		<li key={item._id} className="list-group-item">
-    		  {item.title}
+    	props.collection.map((row) =>
+    		<li key={row._id}>
+    		  {row.title}
     		</li>
       )
 	   }
