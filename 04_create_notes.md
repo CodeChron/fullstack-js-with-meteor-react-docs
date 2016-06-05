@@ -72,7 +72,7 @@ import { SingleFieldSubmit } from '../forms/single_field_submit'
 export const Homepage = (props) => {
 
   ...
-            <div id="main-content" className="container">
+            <div id="main-content">
               <SingleFieldSubmit
                 placeholder={"New Note..."}
                 handleSubmit={props.handleCreateNote}
