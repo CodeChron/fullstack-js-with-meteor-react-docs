@@ -75,7 +75,7 @@ export const Homepage = () => {
             <div id="main-content" className="container">
               <SingleFieldSubmit
                 placeholder={"New Note..."}
-                handleSubmit={props.handleSubmit}
+                handleSubmit={props.handleCreateNote}
               />
             </div>
  ....
