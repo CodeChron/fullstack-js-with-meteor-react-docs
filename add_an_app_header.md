@@ -2,7 +2,9 @@
 
 This component should only be responsible for layout.  However, we are also going to add a default page title, since that will be used in most cases when using this component.
 
-_reference back to the mockups_
+## App Header Requirements
+
+_reference back to the mockups - include mockup pic_
 
 
 ## Create the App Header Components
