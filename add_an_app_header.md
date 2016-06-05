@@ -122,35 +122,37 @@ You should now see the app header appear in the browser.
 
 ![page-title-added](https://cloud.githubusercontent.com/assets/819213/15806827/91043486-2b1a-11e6-833f-27a6d79105b5.png)
 
-## Add AppHeader Styling
+## Add AppHeader Layout Styling
 Next, let's add styling to the app header.  First, let's add the following styles.
 
 Here, we're using flexbox for the layout.
 
+_TODO: insert styling css_
 
 
 Next, add the appropriate classes to the component to apply the styling.
 
 
-``` /imports/components/layouts/three_column_layout.jsx ```
+``` /imports/components/layouts/app_header.jsx ```
 
 ```js
+
+```
 import React from 'react'
 
-export const ThreeColumnLayout = (props) => {
+export const AppHeader = (props) => {
 
-	return  <div className="flex-row-centered">
+	return  <div className="l-flex-row-centered">
 	          <div className="flex-left-right-icons">{props.leftCol}</div>
-	          <div className="flex-main-content">{props.middleCol}</div>
+	          <div classNbame="l-flex-main-content">{props.middleCol}</div>
 	          <div className="flex-left-right-icons">{props.rightCol}</div>
 	        </div>
 }
 
-ThreeColLayout.propTypes = {
+AppHeader.propTypes = {
   leftCol: React.PropTypes.object,
   middleCol: React.PropTypes.object.isRequired,
   rightCol: React.PropTypes.object
 }
-```
 
 
