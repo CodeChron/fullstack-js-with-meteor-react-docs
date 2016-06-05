@@ -82,7 +82,15 @@ export const Homepage = () => {
 
 ```
 
-If you remove the  ``` handleSubmit={props.handleSubmit}  ``` portion, the component displays on the homepage, but if you try typing in something, you'll notice nothing happens and we get some warnings and errors in our client console.  Let's fix that...
+Now, if you try entering some text, you'll notice that it just disappears after you hit return.  Let's make sure we actually inserted some data...
+
+## Install a utility for viewing db info in the browser
+
+Rather than have to keep opening a Mongo console, let's install a utlity for doing this directly in the browser.  [Mongol](https://github.com/msavin/Mongol) is great for this.
+
+Simply type ``` meteor add msavin:mongol ```
+After that, you can use Ctrl + m to display an in-browser console.
+
 
 
 
