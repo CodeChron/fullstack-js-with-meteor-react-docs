@@ -29,7 +29,7 @@ export default createContainer(
 			  updatedAt: new Date()
 			})
 			note.save()
-		  }
+		cont  }
 
 	  return {
 	  	handleSubmit: handleCreateNote,
