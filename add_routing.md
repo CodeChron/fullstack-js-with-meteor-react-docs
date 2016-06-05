@@ -48,10 +48,6 @@ Here we are defining a component whose only job is to return a single region, th
 
 The way we are doing this is somewhat different from what you might see in the FlowRouter documentation.  Instead of just passing in whatever regions we have defined, we are passing in an object, ```props```, which can contain much more than that, such as reactive data.  Similarly, we are then also passing that object into the region itself, making it available to child components.
 
-
-Here, we are calling the region function that we specified in the routes file.  We are also passing along any props into our components.
-
-
 ## Create a homepage component
 Let's create a placeholder component for the homepage.
 
@@ -61,8 +57,25 @@ Let's create a placeholder component for the homepage.
 ```js
 import React from 'react'
 
-export const Homepage = (props) => <div>{"Homepage content goes here"}</div>
+import React from 'react'
+
+export const Homepage = (props) =>
+  <div id="app-container">
+     {"App Header will go here"}
+    <div id="main-content">
+      {"Homepage content goes here"}
+    </div>
+  </div>
 ```
+
+Now, you might look at this and say that it doesn't look very [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself).  In  other words, by setting things up in this way, it means we will need to include the ```app-container`` block on every page. 
+
+Yes, that is true, but by doing so we will be able to have a top-level "page" component from which we can manag state for the entire page.
+
+_explain this futher_
+
+
+As we will see, having a top-level "controller" component is a very effective pattern when working with react.
 
 Note that we are passing in the props object from before, though we're not yet making use of it.
 
