@@ -150,4 +150,5 @@ export const AppHeader = (props) => {
 ```
 
 
-
+Your page title should now appear centered in the app header.
+We will add more styling, such as theme coloring, later.
