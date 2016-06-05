@@ -23,17 +23,15 @@ Naming a component in this way reminds us of its responsibility. If a component 
 
 ``` /imports/components/layouts/three_column_layout.jsx ```
 
-```js
+```jsx
 import React from 'react'
 
-export const ThreeColumnLayout = (props) => {
-
-	return  <div>
-	          <div>{props.leftCol}</div>
-	          <div>{props.middleCol}</div>
-	          <div">{props.rightCol}</div>
-	        </div>
-}
+export const ThreeColumnLayout = (props) =>
+  <div>
+	<div>{props.leftCol}</div>
+	<div>{props.middleCol}</div>
+	<div>{props.rightCol}</div>
+ </div>
 
 ThreeColLayout.propTypes = {
   leftCol: React.PropTypes.object,
