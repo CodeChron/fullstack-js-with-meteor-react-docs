@@ -73,10 +73,10 @@ export const Homepage = (props) => {
 
   ...
             <div id="main-content">
-              <SingleFieldSubmit
-                placeholder={"New Note..."}
-                handleSubmit={props.handleCreateNote}
-              />
+             <SingleFieldSubmit
+               handleSubmit={props.handleCreateNote}
+               placeholder={"New Note..."}
+             />
             </div>
  ....
 
