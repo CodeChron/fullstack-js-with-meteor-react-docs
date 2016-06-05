@@ -10,16 +10,12 @@ Now that we've created some data, let's display it.
 ```js
 import React from 'react'
 
-export const List = (props) =>
-  <ul>
-    { 
-    	props.collection.map((row) =>
-    		<li key={row._id}>
-    		  {row.title}
-    		</li>
-      )
-	   }
-  </ul>
+export const List = (props) => {
+  
+  const list_rows = props.collection.map((row) => <li key={row._id}>{row.title}</li>)
+
+  return <ul>{list_rows}</ul>
+}
 
 List.propTypes = {
 	collection: React.PropTypes.array.isRequired
