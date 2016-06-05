@@ -41,33 +41,6 @@ export default createContainer(
 ```
 
 
-
-``` /imports/components/containers/homepage_container.js ```
-
-```js
-...
-import { Meteor } from 'meteor/meteor'
-...
-
-export default createContainer(
-	() => {
-		
-		const handleCreateNote = (title) => {
-		Meteor.call('/note/create', title, (err, result) => {
-          if (err) {
-            console.log('error: ' + err.reason)
-          }
-        })
-	  }
-
-	  return {
-	  	handleSubmit: handleCreateNote
-	  }
-  },
-  App
-)
-```
-
 The call method has three parts:
 - Which db method are we using?
 - What data are we passing in?
@@ -89,7 +62,7 @@ FlowRouter.route('/', {
   name: 'homepage',
   action() {
     mount(HomepageContainer, {
-      content: (props) => <Homepage {...props} />
+      page: (props) => <Homepage {...props} />
     })
   }
 })
