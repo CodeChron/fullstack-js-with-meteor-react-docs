@@ -42,11 +42,19 @@ ThreeColLayout.propTypes = {
 }
 ```
 
-- What are props, propTypes, and defaultProps?
+## Props and PropTypes
+Notice that we are passing in argument called ```props```. This is an object passed in from a parent component that contains everything we might want to provide to this component, and any child components.  We'll see more about how this works when we start actually passing in components, functions, and more.
+
+Additionally, we have added a  ```propTypes`` object to our component.  Here, we are defining the type of props that this component will accept.  As you can see it only accepts object props, meaning that we can only pass into it other components.  If we were to attempt to pass in a component of a different type, this would still work, but we would get a warning in our console.
+
+One can think of this as a mini API for a component.  In other words, it allows a developer to look at a component and determine what props can be passed in and how they should be named.
 
 
 ## Naming components
+_turn this into a blog post_
 In general, I recommend naming a component based on its responsibility. If a component becomes difficult to name, that might be a "smell" that it is responsible for too much and should be divided into multiple components.
+
+## Add the component to the homepage.
 
 ## Add the PageTitle Component
 
