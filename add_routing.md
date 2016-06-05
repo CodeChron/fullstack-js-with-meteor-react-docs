@@ -72,7 +72,9 @@ Now, you might look at this and say that it doesn't look very [DRY](https://en.w
 
 Yes, that is true, but by doing so we will be able to have a top-level "page" component from which we can manag state for the entire page.
 
-_explain this futher_
+_explain this futher_ - basically, you want to have a single component hierarchy for every page.  React is one-way top-down.  This is part of what allows for keeping React simple and prevents callback soup.  But it also means that if you want to control state for an entire page, your page component needs to be at the very top.
+
+There is a little bit of repetition, but a couple divs is not so bad and I think the trade-off is an easy call.
 
 
 As we will see, having a top-level "controller" component is a very effective pattern when working with react.
