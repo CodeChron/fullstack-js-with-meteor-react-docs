@@ -104,7 +104,7 @@ FlowRouter.route('/', {
 
 
 
-In your browser, you should now see "Homepage content goes here"
+In your browser, you should now see "App Header will go here" and "Homepage content goes here."  These are placeholders which we'll soon replace with actual content.
 
 If you trying going to a different URL, you will now see that you just get a blank page and a message from Flow-Router.
 
