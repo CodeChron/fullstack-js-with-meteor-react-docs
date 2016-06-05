@@ -82,6 +82,8 @@ export const Homepage = (props) => {
 
 ```
 
+Be sure to pass in props as an arg.
+
 Now, if you try entering some text, you'll notice that it just disappears after you hit return.  Let's make sure we actually inserted some data...
 
 ## Install a utility for viewing db info in the browser
