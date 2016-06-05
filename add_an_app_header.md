@@ -21,14 +21,12 @@ In other words, we want to create a Three Column Layout Component
 ## Create the Three Column Layout Components
 Naming a component in this way reminds us of its responsibility. If a component becomes difficult to name, that might be a "smell" that it is responsible for too much.
 
-``` /imports/components/layouts/app_header_layout.jsx ```
+``` /imports/components/layouts/three_col_layout.jsx ```
 
 ```js
 import React from 'react'
-import { PageTitle } from '../content/page_title'
 
-
-export const AppHeaderLayout = (props) => {
+export const ThreeColLayout = (props) => {
 
 	return <nav className="navbar navbar-default">
 	  <div className="container">
@@ -41,7 +39,9 @@ export const AppHeaderLayout = (props) => {
 }
 
 AppHeaderLayout.propTypes = {
-  headerCenter: React.PropTypes.object
+  leftCol: React.PropTypes.object,
+  middleCol: React.PropTypes.object,
+  rightCol: React.PropTypes.object
 }
 ```
 
