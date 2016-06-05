@@ -37,8 +37,6 @@ For structuring our css, we will use the [SMACCS](https://smacss.com/) model. I 
 # Create a master stylesheet
 We now want to creat a main stylesheet file, into which we'll import any global styles.
 
-```
-
 
 Finally, we now need to import our master stylesheet on startup.
 
