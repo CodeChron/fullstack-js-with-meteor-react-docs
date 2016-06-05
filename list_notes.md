@@ -43,7 +43,7 @@ export default createContainer(
 		  ...
 
 	  return {
-	  	collection: notes,
+	  	notes,
 	  	...
 	  }
   },
