@@ -105,7 +105,7 @@ export const Homepage = (props) => {
 
  const pageTitle = <PageTitle title={"My Notes App"} />
 
-  <div id="app-container">
+  return <div id="app-container">
      <ThreeColumnLayout middleCol={pageTitle} />
     <div id="main-content">
       {"Homepage content goes here"}
@@ -114,9 +114,11 @@ export const Homepage = (props) => {
 }
 ```
 
-_Discuss: we are assigning the PageTitle component to a variable and passing in a hard-coded prop.  This is something we would want to refactor.  Any time you see hard-coded text that is a smell.  If this were a real project, I would likely add a todo item to the backlog to define this value in an App library or other general configuration, where we would set the app name globally.
+_Discuss: we are assigning the PageTitle component to a variable and passing in a hard-coded prop.  This is something we would want to refactor.  Any time you see hard-coded text that is a smell.  If this were a real project, I would likely add a todo item to the backlog to define this value in an App library or other general configuration, where we would set the app name globally._
 
-We are adding the AppHeader only to the homepage because we will want to be able to pass in different data into this and other components depending on the page being viewed.
+Then, we are passing in  the pageTitle object as our prop for the middleCol prop of the ThreeColumnLayout container.
+
+Also, note that since our function now is a multi-statement function, we cannot use the implicit return shorthand, but need to instead enclose it in curly braces and add an explicit return.
 
 You should now see the app header appear in the browser.
 
