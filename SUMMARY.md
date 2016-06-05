@@ -11,7 +11,6 @@
 * [Adding Data](adding_data.md)
 * [Handle Data (Containers)](react_data.md)
 * [Create Notes](04_create_notes.md)
-* [Make db operations secure](db_updates_use_meteormethods.md)
 * [List Notes](list_notes.md)
 * [Add Publish and Subscribe](add_publish_and_subscribe.md)
 * [Add a loading spinner](add_a_loading_spinner.md)
