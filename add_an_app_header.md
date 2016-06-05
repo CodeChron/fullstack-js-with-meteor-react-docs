@@ -5,7 +5,7 @@ This component should only be responsible for layout.  However, we are also goin
 ## App Header Requirements
 
 _reference back to the mockups - include mockup pic_
-
+![App Header Component - default state](images/app-header-dflt.png)
 
 ## Create the App Header Components
 
