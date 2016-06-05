@@ -27,13 +27,15 @@ We need to first remove a package, as we're going to replace it with a community
 ``` meteor remove standard-minifier-css ```
 ```  meteor add fourseven:scss seba:minifiers-autoprefixer ```
 
-## What is our css strategy/approach?
+## What is our css strategy?
 
 For structuring our css, we will use the [SMACCS](https://smacss.com/) model. I encourage you to take a little time to read through the material on that website.  Additionally, there are many other models to look at, such as [BEM](http://getbem.com/introduction/). On top of that, you should be aware that there is lots of [debate](https://css-tricks.com/the-debate-around-do-we-even-need-css-anymore/) if we should even be using css when building with React.
 
 
 # Create a master stylesheet
 We now want to creat a main stylesheet file, into which we'll import any global styles.
+_insert main stylesheet_
+
 
 Finally, we now need to import our master stylesheet on startup.
 
