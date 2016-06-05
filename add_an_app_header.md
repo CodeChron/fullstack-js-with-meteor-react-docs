@@ -48,6 +48,8 @@ AppHeaderLayout.propTypes = {
 - What are props, propTypes, and defaultProps?
 
 
+## Naming components
+In general, I recommend naming a component based on its responsibility. If a component becomes difficult to name, that might be a "smell" that it is responsible for too much and should be divided into multiple components.
 
 ## Add the PageTitle Component
 
