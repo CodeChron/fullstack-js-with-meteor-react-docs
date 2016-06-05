@@ -26,23 +26,27 @@ Even though we currently only will have a single page, we still want to add rout
 ``` meteor add kadira:flow-router ```
 ``` npm i react-mounter --save ```
 
-
-
 After installing this we should see message from flow-router that there is no 'root route' or basically no homepage.  Let's therefore add a homepage as our first route.
 
 ## Create an AppLayout component
-In the FlowRouter model, we have a top-level template or componente, in which we define regions where we can insert page-specific content. (This model is somewhat Rails-y, and not really consistent with the React way, but we'll work around those issues as we go.
+In the FlowRouter model, we have a top-level template or componente, in which we define regions where we can insert page-specific content. This is based on a template model, in which we have areas of an app that are global, and in which then define regions where we insert page-specific content.  This model is more suitable for view tools like Blaze, and not really suited for React.  
 
-``` /imports/components/layouts/app_layout.jsx ```
+_talk more here about why this is the case?_
+
+For this reason, we don't want to use this for layout.  Let's instead just create a minimal top-level "App" component.
+
+``` /imports/components/app.jsx ```
 
 
 ```js
 import React from 'react'
 
-export const AppLayout = (props) => <div>{props.content(props)}</div>
+export const App = (props) => props.page(props)
 ```
 
-Here we are doing something different from what you might see in the FlowRouter documentation.  Instead of just passing in whatever regions we have defined, we are passing in an object, which can contain much more than that, such as reactive data.  Similarly, we are then also passing that object into the region itself, making it available to child components.
+Here we are defining a component whose only job is to return a single region, the "page."  
+
+The way we are doing this is somewhat different from what you might see in the FlowRouter documentation.  Instead of just passing in whatever regions we have defined, we are passing in an object, ```props```, which can contain much more than that, such as reactive data.  Similarly, we are then also passing that object into the region itself, making it available to child components.
 
 
 Here, we are calling the region function that we specified in the routes file.  We are also passing along any props into our components.
