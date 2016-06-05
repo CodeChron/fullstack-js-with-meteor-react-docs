@@ -124,10 +124,10 @@ You should now see the app header appear in the browser.
 ![page-title-added](https://cloud.githubusercontent.com/assets/819213/15806827/91043486-2b1a-11e6-833f-27a6d79105b5.png)
 
 ## Add AppHeader Styling
-Next, let's add styling to the app header.
+Next, let's add styling to the app header.  First, let's add the following styles.
 
+Here, we're using flexbox for the layout.
 
-First, let's add the following styles.
 
 
 Next, add the appropriate classes to the component to apply the styling.
