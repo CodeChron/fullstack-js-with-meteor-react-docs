@@ -70,13 +70,3 @@ FlowRouter.route('/', {
 (Also, note that you can remove the ```App`` import since that is being passed in through ```HomepageContainer```
 
 Note that we are _not_ using curly braces for the ``` HomepageContainer ```. This is because it uses ``` export default ``` meaning only one item is exported from the file, and we can name it on import.  We could have named this ``` BaconContainer ``` if we wanted.
-
-Now, if you try entering some text, you'll notice that it just disappears after you hit return.  Let's make sure we actually inserted some data...
-
-## Install a utility for viewing db info in the browser
-
-Rather than have to keep opening a Mongo console, let's install a utlity for doing this directly in the browser.  [Mongol](https://github.com/msavin/Mongol) is great for this.
-
-Simply type ``` meteor add msavin:mongol ```
-After that, you can use Ctrl + m to display an in-browser console.
-
