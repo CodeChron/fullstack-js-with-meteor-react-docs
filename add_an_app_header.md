@@ -28,10 +28,10 @@ import React from 'react'
 
 export const ThreeColumnLayout = (props) => {
 
-	return  <div className="flex-row-centered">
-	          <div className="flex-left-right-icons">{props.leftCol}</div>
-	          <div className="flex-main-content">{props.middleCol}</div>
-	          <div className="flex-left-right-icons">{props.rightCol}</div>
+	return  <div>
+	          <div>{props.leftCol}</div>
+	          <div>{props.middleCol}</div>
+	          <div">{props.rightCol}</div>
 	        </div>
 }
 
@@ -41,6 +41,8 @@ ThreeColLayout.propTypes = {
   rightCol: React.PropTypes.object
 }
 ```
+
+This is a very bare-bones component but it is sufficient for now.
 
 ## Props and PropTypes
 Notice that we are passing in argument called ```props```. This is an object passed in from a parent component that contains everything we might want to provide to this component, and any child components.  We'll see more about how this works when we start actually passing in components, functions, and more.
@@ -127,5 +129,32 @@ You should now see the app header appear in the browser.
 ## Add AppHeader Styling
 Next, let's add styling to the app header.
 
+
+First, let's add the following styles.
+
+
+Next, add the appropriate classes to the component to apply the styling.
+
+
+``` /imports/components/layouts/three_column_layout.jsx ```
+
+```js
+import React from 'react'
+
+export const ThreeColumnLayout = (props) => {
+
+	return  <div className="flex-row-centered">
+	          <div className="flex-left-right-icons">{props.leftCol}</div>
+	          <div className="flex-main-content">{props.middleCol}</div>
+	          <div className="flex-left-right-icons">{props.rightCol}</div>
+	        </div>
+}
+
+ThreeColLayout.propTypes = {
+  leftCol: React.PropTypes.object,
+  middleCol: React.PropTypes.object.isRequired,
+  rightCol: React.PropTypes.object
+}
+```
 
 
