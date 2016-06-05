@@ -2,6 +2,8 @@
 
 A good approach to implementing a feature is often to "follow the data."  Here, we'll do so first creating a form for creating a note and then adding a handler for inserting that note into our database.
 
+_discuss why we'll first create a simpler form for creating notes and then add the more advanced UI later_
+
 ## Create a form that submits input when using the return key
 
 We want to be able to create a new note just by typing and hitting return.  Let's create a component specifically intended for that.
