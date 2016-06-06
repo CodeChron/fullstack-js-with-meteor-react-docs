@@ -7,7 +7,17 @@ We're going to need a button with a delete icon that accepts a click event.
 
 ## Link to an icon library
 
-We'll use Google's [Material Design Icons](https://design.google.com/icons/).  Here we will simply link to the icon font.  However, for a production app, you are strongly recommended to either store the icons on your server or use service such as IcoMoon
+We need access to a collection of icons for this and other UI controls.  We'll use Google's [Material Design Icons](https://design.google.com/icons/).  Here we will simply link to the icon font.  However, for a production app, you should consider either storing the icons on your server or using a service such as [IcoMoon](https://icomoon.io/).
+
+``` /client/head.html ```
+
+```html
+<head>
+  ...
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+```
 Let's first create a generic icon button.
 
 ``` /imports/components/buttons/icon_btn.jsx ```
