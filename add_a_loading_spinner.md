@@ -153,6 +153,6 @@ Then import the css into your master stylesheet file:
 
 ```
 
-You should now see a nice animation appear while your list data loads.
+You should now see an animation appear while your list data loads.
 
 
