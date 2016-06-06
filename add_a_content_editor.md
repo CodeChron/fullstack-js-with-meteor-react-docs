@@ -1,6 +1,70 @@
 # Add a content editor
 Next, let's create a simple content editor component and insert it into the note details page.
 
+## Add the EditableContent component to the note details page and display note content
+
+``` imports/components/forms/content_editor.jsx ```
+
+```js
+...
+
+export class ContentEditor extends React.Component {
+ ...
+	render() {
+
+    return  <form>
+              <div className="form-group">
+                <textarea
+                ...
+                  autoFocus={true}
+                  onBlur={this.props.doneEditing}
+                />
+              </div>
+...
+```
+
+Here, we are "wrapping" the ``` ContentEditor ``` component in a ``` EditableContent ``` component that has a  ```editMode``` state.  Clicking on the content block will switch the state to edit mode.  Then, we are passing a callback prop to the ContentEditor that will toggle edit mode again when the form input is blurred.
+
+## Toggle Edit Mode when the ContentEditor form blurs
+
+Note that we need to add autoFocus. In order for a blur event to be triggered, the input needs to be in focus.
+
+Also, note that the Done button in the ContentEditor is really just a dummy and serves no actual function.  It doesn't matter if we click on it or not.  However, it can improve the user experience to help make it clear how to exit edit mode.
+
+``` imports/components/forms/content_editor.jsx ```
+
+```js
+...
+
+export class ContentEditor extends React.Component {
+ ...
+	render() {
+
+    return  <form>
+              <div className="form-group">
+                <textarea
+                ...
+                  autoFocus={true}
+                  onBlur={this.props.doneEditing}
+                />
+              </div>
+...
+```
+
+## Display a pointer cursor when (Desktop) users hover over editable content
+This is also to improve UX.  We'll display a pointer when hovering over the content.
+
+``` imports/stylesheets/helpers.css ```
+
+```css
+.clickable {
+	cursor: pointer;
+}
+```
+
+
+
+
 ## Add a content editor component we can use for the note details view
 
 We need a component that allows for editing content.  Let's add that now.
