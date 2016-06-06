@@ -3,6 +3,7 @@
 This next step is very similar to what we did with the DeleteBtn we created. You should try first doing this on your own and then comparing with the steps below.
 
 These are your requirements:
+_todo: think of earlier places where I can start to take this approach_
 
 
 ## Add back button icon
