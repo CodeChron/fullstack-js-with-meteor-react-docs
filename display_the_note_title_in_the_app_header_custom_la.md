@@ -1,4 +1,5 @@
-# Display the note title in the note detail header (custom layout)
+# Display note detail content
+
 
 Next, we want to display the title for the current note in the header (instead of the app name)
 
