@@ -1,7 +1,7 @@
 # Add a content editor
 Next, let's create a simple content editor component and insert it into the note details page.
 
-## Add the EditableContent component to the note details page and display note content
+
 
 ``` imports/components/forms/content_editor.jsx ```
 
