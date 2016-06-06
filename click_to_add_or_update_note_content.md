@@ -50,6 +50,7 @@ EditableContent.defaultProps = {
 
 _is this the first actual React Component we've created?_
 
+Discuss components and state.
 
 Here, we are "wrapping" the ``` ContentEditor ``` component in a ``` EditableContent ``` component that has a  ```editMode``` state.  Clicking on the content block will switch the state to edit mode.  Then, we are passing a callback prop to the ContentEditor that will toggle edit mode again when the form input is blurred.
 
