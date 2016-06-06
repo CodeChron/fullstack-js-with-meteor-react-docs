@@ -1,6 +1,7 @@
 # Add Styling
 
-_update this to use SMACCS_ structure_
+_update this to use SMACCS structure_
+_possibly just add all the styles here_
 
 **TODO: Update this to include the update scss structure**
 
