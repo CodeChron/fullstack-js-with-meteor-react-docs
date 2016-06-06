@@ -40,47 +40,53 @@ List.defaultProps = {
 }
 ```
 
-## Add delete to the features list
+## Refactoring opportunity: Make delete an optional feature
 
-With links now being a required feature of this component, this makes the omponent less reusable, ie I cannot use this component in situations where maybe I just want to list stuff that doesn't link.
-
-Therefore, let's make this an optional feature.  This will require first moving the feature into a feature collection, and then adding a prop that allows us to turn "on" the feature.
+Now that we've made linking list items an optional feature, let's use the opportunity to also make deleting of items optional. This will make our list more reuasable.
 
 ```js
-...
+import React from 'react'
+import { FlowRouter } from 'meteor/kadira:flow-router'
+import { DeleteBtn }  from '../buttons/delete_btn'
 
 export const List = (props) => {
 
- const listFeatures = {
-  	linkItem: (item) => <a href={FlowRouter.path(props.linkRoute , {_id: item._id})}>{item.title}</a>  	
+	 const listFeatures = {
+  	linkItem: (item) => <a href={FlowRouter.path(props.linkRoute , {_id: item._id})}>{item.title}</a>,
+  	deleteItem: (item) => <DeleteBtn handleDelete={props.handleDeleteNote} itemToDelete={item} />	
 	}
-    
-	return props.subsReady? <ul className="list-group">
-    <li className="list-group-item">
-      <SingleFieldSubmit {...props} />
-    </li>
-    { 
-    	props.collection.map((item) =>
-    		<li key={item._id} className="list-group-item">
-            {props.linkItem? 
-	 	       listFeatures.linkItem(item)
+  
+  const displayList = props.collection.map((item) => 
+    	<li key={item._id}>
+    	  {props.linkItem? 
+	 	      listFeatures.linkItem(item)
 	 	      :
-	 	        item.title
-	 	     }
-           ....
-    		</li>
-          ...
- List.propTypes = {
-	linkItem:  React.PropTypes.bool,
-    linkRoute: React.PropTypes.string
+	 	       item.title
+	 	    }
+	 	    {props.deleteItem? 
+	 	      listFeatures.deleteItem(item)
+	 	      :
+	 	       null
+	 	    }
+    	</li>)
+
+  return <ul>{displayList}</ul>
+}
+
+List.propTypes = {
+	collection: React.PropTypes.array.isRequired,
+	linkItem: React.PropTypes.array.bool
 }
 
 List.defaultProps = {
-	linkItem: false
+	linkItem: false,
+	deleteItem: false
 }
 ```
 
-Now, since, this is an optional feature, we'll need to turn it on when we use it.  Let's do that in our container.
+## 'Turn on' desired list features
+
+Now, since, these are optional feature, we'll need to turn them on.  Let's do that in our container.
 
 ``` /imports/components/containers/homepage_container.js ```
 
@@ -89,6 +95,7 @@ export default createContainer(() => {
  ...
  return {
    ...
+   deleteItem: true,
    linkItem: true,
    linkRoute: "noteDetails"
   }
