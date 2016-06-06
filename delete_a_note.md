@@ -135,15 +135,18 @@ export default createContainer(() => {
 
 ```js
 ...
-import { DeleteBtn } from '../buttons/delete_btn'
+import { DeleteBtn }  from '../buttons/delete_btn'
 
-export const List = (props) =>{
-   ...
-	    	props.collection.map((item) => {
-            return <li key={item._id} className="list-group-item">{item.content}
-	 	      <span className="pull-right"><DeleteBtn itemToDelete={item} {...props} /></span>
-	 	      </li>
-           ...
+export const List = (props) => {
+  
+  const displayList = props.collection.map((item) => 
+    	...
+    	   <DeleteBtn handleDelete={props.handleDeleteNote} itemToDelete={item} />
+    	</li>)
+
+...
+}
+...
 ```
 
 ##  Pass through delete props to the delete component
