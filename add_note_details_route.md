@@ -30,7 +30,7 @@ export const NoteDetails = (props) => {
 
 ```js
 ...
-import { NoteDetailsPage } from './components/pages/note_details_page'
+import { NoteDetailsPage } from '/imports/components/pages/note_details'
 
 FlowRouter.route('/notes/:_id', {
   name: 'noteDetails',
