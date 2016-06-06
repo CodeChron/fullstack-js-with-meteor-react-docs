@@ -32,11 +32,13 @@ export const List = (props) => {
 
 List.propTypes = {
 	...
-	linkItem: React.PropTypes.array.bool
+	linkItem: React.PropTypes.array.bool,
+    linkRoute: React.PropTypes.array.string
 }
 
 List.defaultProps = {
-	linkItem: false
+	linkItem: false,
+    linkRoute: null
 }
 ```
 
