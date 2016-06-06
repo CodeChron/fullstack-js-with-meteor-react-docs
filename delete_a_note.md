@@ -95,7 +95,7 @@ Next, we need to add a delete method on the server side.
 Meteor.methods({
 ...
 ,
-  '/note/delete': (id) => Note.remove(id)
+  'note.delete': (id) => Note.remove(id)
 })
 
 ```
