@@ -9,7 +9,7 @@ Next, we want to display note details content.  More specifically, we want to di
 
 title for the current note in the header (instead of the app name)
 
-## Add content to our Note model
+## Add a content field to the Note schema
 
 ``` /imports/collections/notes.js ```
 
@@ -43,20 +43,27 @@ meteor:PRIMARY> exit
 bye
 ```
 
-## Update our note details publication
+## Create a note details publication
 Next, we need to make sure we also publish this new field to the note details page.
 
 ``` /imports/collections/server/publications.js ```
 
 ```js
 ...
+
 const
-  ...
-  noteDetailsFields = {
-    ...
-    content: 1
-  }
 ...
+  ,
+  noteDetailsFields = {
+    title: 1,
+    content: 1
+  } 
+
+...
+
+Meteor.publish('note.details', function() {
+  return Note.find({}, { fields: noteDetailsFields})
+})
 ```
 
 
