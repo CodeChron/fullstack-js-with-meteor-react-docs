@@ -104,3 +104,55 @@ Here, we are inserting the content editor and passing in the new content field w
 You should now see the (still not yet functional) content editor component when viewing a note details page.
 
 
+## TODO: Add support for updating content in the container and provide a db method
+
+```js
+...
+
+Meteor.methods({
+
+  ...
+  ,
+	'note.update': (note) => {
+			note.set({
+			  updatedAt: new Date()
+			})
+			note.save()
+			return note
+  }
+...
+})
+```
+
+
+```js
+export default createContainer(
+	() => {
+		
+		const
+        ...
+			,
+			handleUpdateNote = (collection, field, value) => {
+			  const doc = {}
+			  doc[field] = value
+			  collection.set(doc)
+		
+	      Meteor.call('note.update', collection, (err, result) => {
+          if (err) {
+            console.log('error: ' + err.reason)
+          }
+        })
+		  }
+
+	  return {
+	  	note,
+	  	handleUpdateNote,
+	  	subsReady: sub.ready()
+	  }
+  },
+  App
+)
+```
+
+
+
