@@ -109,7 +109,7 @@ Earlier, we made use of the Homepage containter to display our placeholder note 
 
 ```js
 ...
-import NoteDetailsContainer from './components/containers/note_details_container'
+import NoteDetailsContainer from '/imports/components/containers/note_details_container'
 ...
 
 FlowRouter.route('/notes/:_id', {
