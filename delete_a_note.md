@@ -83,9 +83,9 @@ DeleteBtn.defaultProps = {
 Why the need for ```{() => callFunction()}```? See http://stackoverflow.com/questions/33846682/react-onclick-fuction-fires-on-render (TL;DR "Because you want to pass a call to the function rather than the function directly.")
  
  
-## Add Support in our data container for deleting notes
+## Add db handlers for deleting notes
 
-First, we need to add a delete method on the server side.
+Next, we need to add a delete method on the server side.
 
 ``` /imports/collections/notes.js```
 
@@ -100,7 +100,7 @@ Meteor.methods({
 
 ```
 
-Next, we add a delete handler to our container.
+Then, we add a delete handler to our container.
 
 ``` /imports/containers/homepage_container.jsx ```
 
