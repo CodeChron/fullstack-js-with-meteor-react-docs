@@ -109,17 +109,19 @@ Then, we add a delete handler to our container.
 
 export default createContainer(() => {
  ...
-	  ,
-	  handleDeleteNote = (note) => {
-			Meteor.call('/note/delete', note._id, (err, result) => {
-        if (err) {
-          console.log('error: ' + err.reason)
-        }
-      })
-	  }		  
+ ,
+ handleDeleteNote = (note) => {
+   Meteor.call('note.delete', note._id, (err, result) => {
+     if (err) {
+       console.log('error: ' + err.reason)
+      }
+    })
+  }
+	  
   return {
     ...
-	  handleDelete: handleDeleteNote,
+	handleDeleteNote,
+    ...
   }
 
 }, App)
