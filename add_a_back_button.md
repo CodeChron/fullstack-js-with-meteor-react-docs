@@ -18,20 +18,22 @@ import { IconBtn } from '../buttons/icon_btn'
 export const NoteDetailsPage = (props) => {
 
 	const
-      handleBackBtnClick = () => history.back(),
-      backBtn = <IconBtn
-                icon="glyphicon glyphicon-menu-left"
-                btnSize="btn-lg"
-                handleClick={handleBackBtnClick}
-              />
+    handleBackBtnClick = () => history.back(),
+    backBtn = <IconBtn
+              icon="arrow_back"
+              handleClick={handleBackBtnClick}
+            />
     ,
-	  headerCenter = props.subsReady? <PageTitle title={props.note.title} /> : null
-	  
-	return  <div id="app-container">
-            <AppHeaderLayout headerLeft={backBtn} headerCenter={headerCenter} />
-            ...
-          </div>
+	...
+
+  return <div id="app-container" className="l-app-full-height l-app-centered">
+           <AppHeader leftCol={backBtn} middleCol={pageTitle} />
+           <div id="main-content">
+           {noteContent()}
+           </div>
+         </div>	
 }
+
 ```
 
 ## Add btn size attribute
