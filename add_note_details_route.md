@@ -1,6 +1,6 @@
 # Add Note Details Page
 
-## Add a note details placeholder page
+## Create a note details placeholder page
 
 ``` /imports/components/pages/note_details.jsx ```
 
