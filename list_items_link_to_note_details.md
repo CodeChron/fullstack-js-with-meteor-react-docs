@@ -4,7 +4,7 @@ Now that we've added a details page, we want to be able to access it. Let's turn
 
 ## Update lists items to include a link
 
-For this, we will first import our router into the list component, and then update the list item text to be a link.
+For this, we will first import our router into the list component, then add list items that link as an optional feature of the list. 
 
 ``` /imports/components/lists/list.jsx ```
 
@@ -13,20 +13,34 @@ For this, we will first import our router into the list component, and then upda
 import { FlowRouter } from 'meteor/kadira:flow-router'
 
 export const List = (props) => {
-	return props.subsReady? <ul className="list-group">
-    <li className="list-group-item">
-      <SingleFieldSubmit {...props} />
-    </li>
-    { 
-    	props.collection.map((item) =>
-    		<li key={item._id} className="list-group-item">
-    		   <a href={FlowRouter.path( "noteDetail" , {_id: item._id})}>{item.title}</a> 
-           ....
-    		</li>
-          ...
+
+	 const listFeatures = {
+  	linkItem: (item) => <a href={FlowRouter.path(props.linkRoute , {_id: item._id})}>{item.title}</a>  	
+	}
+  
+  const displayList = props.collection.map((item) => 
+    	<li key={item._id}>
+    	  {props.linkItem? 
+	 	      listFeatures.linkItem(item)
+	 	      :
+	 	       item.title
+	 	    }
+    	  <DeleteBtn handleDelete={props.handleDeleteNote} itemToDelete={item} />
+    	</li>)
+    ...
+}
+
+List.propTypes = {
+	...
+	linkItem: React.PropTypes.array.bool
+}
+
+List.defaultProps = {
+	linkItem: false
+}
 ```
 
-## Let's make links optional
+## Add delete to the features list
 
 With links now being a required feature of this component, this makes the omponent less reusable, ie I cannot use this component in situations where maybe I just want to list stuff that doesn't link.
 
