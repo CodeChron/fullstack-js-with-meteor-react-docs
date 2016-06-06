@@ -2,6 +2,8 @@
 
 _update this to use SMACCS structure_
 _possibly just add all the styles here_
+_blog post: discuss how I would normally do styling, not adding it all at once in the beginning, but in fact doing the opposite.  Get much of the basic functionality in place and then focus on styling. Styling can be a huge time suck.  If you start doing styling of just one small part of the app, you may find yourself having to undo it.  This is not about the visible layer but really about underlying structure.  They way, for example, your markup is structured can significantly impact your CSS.  On top of this, React imposes certain requirements on your markup, such as that each component must be enclosed in a node block.  This means you may end up with extra div blocks or the like._
+
 
 **TODO: Update this to include the update scss structure**
 
