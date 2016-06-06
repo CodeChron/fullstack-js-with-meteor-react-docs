@@ -24,25 +24,38 @@ export const NoteDetails = (props) => {
 ```
 ## Create a note details container page
 
-``` /imports/components/containers/note_details.jsx ```
+``` /imports/components/containers/note_details_container.jsx ```
 
 ```js
-import React from 'react'
-import { AppHeader } from '../layouts/app_header'
-import { PageTitle } from '../content/page_title'
+import { createContainer } from 'meteor/react-meteor-data'
+import { FlowRouter } from 'meteor/kadira:flow-router'
+import { Note } from '../../api/notes/notes'
+import { Meteor } from 'meteor/meteor'
+import { AppLayout } from '../layouts/app_layout'
+import { AppLib } from '../../lib/app_lib'
 
-export const NoteDetails = (props) => {
+export default createContainer(
+	() => {
+		
+		const
+		  noteId = FlowRouter.getParam('_id'),
+		  sub = Meteor.subscribe('note.details', noteId),
+			note = sub.ready()? Note.findOne({_id: noteId }) : {},
+			handleUpdates = (collection, field, value) =>  {		
+		    const doc = {}
+		    doc[field] = value
+		    collection.set(doc)
+		    Meteor.call('/note/save', collection, (err, result) => AppLib.db.handleDbResult(err, result))
+			}
 
-	const
-	  pageTitle = <PageTitle title={"Note Details"} />
-
-  return <div id="app-container" className="l-app-full-height l-app-centered">
-           <AppHeader middleCol={pageTitle} />
-           <div id="main-content">
-           {"Note details content."}
-           </div>
-         </div>	
-}
+	  return {
+		  note,
+		  subsReady: sub.ready(),
+		  handleUpdates
+	  }
+  },
+  AppLayout
+)
 ```
 
 
