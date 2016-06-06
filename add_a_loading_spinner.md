@@ -3,17 +3,17 @@
 Let's display an animation while we wait for our subscription to be ready. This may not seem important when running locally, but when running on a slow network connection, it can be good to provide some feedback.
 There are a ton of options for doing this.  
 
-## Create a loader component
+## Create a loading feedback component
 
-``` /imports/components/loader/loader.jsx ```
+``` /imports/components/utlity/loading_feedback.jsx ```
 
 ```js
 import React from 'react'
 
-export const Loader = () => <div className="loader">Loading...</div>
+export const LoadingFeedback = () => <div className="loader">Loading...</div>
 ```
 
-## Display the loader in the list while waiting for data
+## Pass down a prop we can use to tell if subscriptions are ready
 
 First, we need to provide the list component with a way of knowing if subcriptions are ready.  We'll pass this info down from the container.
 
@@ -34,32 +34,38 @@ export default createContainer(
 )
 ```
 
-Next, add the Loader component to the List and display it if subs are not ready.
+Next, add the Loading feedback component to the Homepage and add a handler for displaying it if subs are not ready.
 
 
-``` /imports/components/lists/list.jsx ```
+``` /imports/components/pages/homepage.jsx ```
 
 ```js
 ...
-import { Loader } from '../loader/loader.jsx'
+import { LoadingFeedback } from '../utility/loading_feedback'
 
-export const List = (props) =>{
+export const Homepage = (props) => {
 
-   ...
-	return  props.subsReady?
-   ...
-    :
-    <Loader />
-}
+	const
+     ...
+     ,
+	  displayList = () => props.subsReady? <List collection={props.notes} /> : <LoadingFeedback />
 
-...
 
+  return <div id="app-container" className="l-app-full-height l-app-centered">
+         ...
+             <SingleFieldSubmit
+               handleSubmit={props.handleCreateNote}
+               placeholder={"New Note..."}
+             />
+            {displayList()}
+           </div>
+     ...
 ```
 
-Now, in your browser, you should "Loading" display briefly before the list loads.
+Now, in your browser, you should see "Loading" display briefly before the list loads.
 
 
-## Add a loading animation
+## Add a loading animation styling
 
 There are many ways you can add a loading animation.  Here, we'll go to   http://projects.lukehaas.me/css-loaders/ and pick a loader.  Click on "View Source" and copy the css.
 
@@ -132,15 +138,19 @@ Src: http://projects.lukehaas.me/css-loaders/
 ```
 
 Paste the css into the following file:
-``` /imports/stylesheets/vendor/loader.css ```
+``` /imports/stylesheets/_loader.scss ```
 
-Then import the css into your component file:
+Then import the css into your master stylesheet file:
 
-``` /imports/components/loader/loader.jsx ```
+``` /imports/stylesheets/mains.scss ```
 
-```js
-...
-import '../../stylesheets/vendor/loader.css'
+```scss
+
+//VENDOR 
+// 3rd party styling 
+// __________________________________________________________________
+@import "loader";
+
 ```
 
 You should now see a nice animation appear while your list data loads.
