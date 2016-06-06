@@ -17,7 +17,7 @@ We need access to a collection of icons for this and other UI controls.  We'll u
 </head>
 ```
 
-## Add an Icon Button component
+## Create an Icon Button component
 We're going to need a button with a delete icon that accepts a click event. Let's first create a generic icon button and then use that to create a delete button.
 
 ``` /imports/components/buttons/icon_btn.jsx ```
@@ -41,7 +41,7 @@ IconBtn.propTypes = {
 }
 ```
 
- ## Add a DeleteBtn Component
+ ## Create a DeleteBtn Component
  Next, let's use our IconBtn to create a button specifically for deleting stuff.
  
  ``` /imports/components/buttons/delete_btn.jsx ```
@@ -146,7 +146,17 @@ export const List = (props) =>{
            ...
 ```
 
-## Handle deletion of a note
+##  Pass through delete props to the delete component
+
+``` /imports/components/pages/homepage.jsx ```
+```js
+...
+export const Homepage = (props) => {
+ ...
+	  displayList = () => props.subsReady? <List collection={props.notes} {...props} /> : <LoadingFeedback />
+...
+}
+```
 
 
 
