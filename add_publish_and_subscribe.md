@@ -61,6 +61,8 @@ export default createContainer(() => {
 }, App)
 ```
 
+TODO: explain sub.ready() and use of empty array
+
 Your notes should now re-appear in your browser.
 
 
