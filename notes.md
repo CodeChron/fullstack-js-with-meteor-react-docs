@@ -1,5 +1,81 @@
 # Notes
 
+``` imports/components/forms/content_editor.jsx ```
+
+```js
+...
+
+export class ContentEditor extends React.Component {
+ ...
+	render() {
+
+    return  <form>
+              <div className="form-group">
+                <textarea
+                ...
+                  autoFocus={true}
+                  onBlur={this.props.doneEditing}
+                />
+              </div>
+...
+```
+
+## Display a pointer cursor when (Desktop) users hover over editable content
+This is also to improve UX.  We'll display a pointer when hovering over the content.
+
+``` imports/stylesheets/helpers.css ```
+
+```css
+.clickable {
+	cursor: pointer;
+}
+```
+
+
+## Add a content editor component we can use for the note details view
+
+
+``` /imports/components/forms/content_editor.jsx ```
+
+```js
+import React from 'react'
+
+export class ContentEditor extends React.Component {
+
+	constructor(props) {
+    super(props);
+    this.state = {
+      contentValue: this.props.contentValue
+    }
+  }
+
+	render() {
+
+    return  <form>
+              <div className="form-group">
+                <textarea
+                  className="form-control"
+                  placeholder={this.props.placeholder}
+                  value={this.state.contentValue}
+                />
+              </div>
+              <button className="btn btn-default">Done</button>
+            </form>
+	}
+}
+
+ContentEditor.propTypes = { 
+  contentValue: React.PropTypes.string
+}
+
+ContentEditor.defaultProps = {
+  contentValue: "",
+  placeholder: "Write something..."
+}
+```
+
+This is a basic form that doesn't actually do anything yet.  However, it's easier to work with something we can actually play with, so let's  render it into our page, and then make it funcional (eg. save content entered into the form.)
+
 ## Move the new note form into the list component
 
 Let's also move the new note form into the list component.  This will both look a little nicer and later we'll be able to make this an optional feature of a list.
