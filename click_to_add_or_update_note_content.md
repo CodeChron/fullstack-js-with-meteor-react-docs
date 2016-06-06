@@ -1,5 +1,7 @@
-# Add note content
+# View note content
 
-Next, we are going to allow for adding note content in the note details page.  First, we need to add somewhere to store content and then publish the new field where it will be used.
+Next, let's display note content.
+
+We'll create an EditableContent component that display content in view mode by default and then switches to edit mode on click/tap.  if there is no content, we'll display a clickable message  Clicking on the message displays the content editor.
 
 
