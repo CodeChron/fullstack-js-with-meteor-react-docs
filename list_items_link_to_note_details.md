@@ -47,14 +47,12 @@ List.defaultProps = {
 Now that we've made linking list items an optional feature, let's use the opportunity to also make deleting of items optional. This will make our list more reuasable.
 
 ```js
-import React from 'react'
-import { FlowRouter } from 'meteor/kadira:flow-router'
-import { DeleteBtn }  from '../buttons/delete_btn'
+...
 
 export const List = (props) => {
 
 	 const listFeatures = {
-  	linkItem: (item) => <a href={FlowRouter.path(props.linkRoute , {_id: item._id})}>{item.title}</a>,
+  	...
   	deleteItem: (item) => <DeleteBtn handleDelete={props.handleDeleteNote} itemToDelete={item} />	
 	}
   
@@ -76,12 +74,12 @@ export const List = (props) => {
 }
 
 List.propTypes = {
-	collection: React.PropTypes.array.isRequired,
-	linkItem: React.PropTypes.array.bool
+  ...
+  deleteItem: React.PropTypes.array.bool
 }
 
 List.defaultProps = {
-	linkItem: false,
+	...
 	deleteItem: false
 }
 ```
