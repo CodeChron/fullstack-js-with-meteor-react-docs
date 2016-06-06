@@ -17,7 +17,7 @@ We need access to a collection of icons for this and other UI controls.  We'll u
 ```
 
 ## Add an Icon Button component
-We're going to need a button with a delete icon that accepts a click event. Let's first create a generic icon button and then use that to create a button specifically for delete functions.
+We're going to need a button with a delete icon that accepts a click event. Let's first create a generic icon button and then use that to create a delete button.
 
 ``` /imports/components/buttons/icon_btn.jsx ```
 
