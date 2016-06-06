@@ -21,7 +21,6 @@
 * [Display note detail content](display_the_note_title_in_the_app_header_custom_la.md)
 * [Add note content](click_to_add_or_update_note_content.md)
 * [Add a content editor](add_a_content_editor.md)
-* [Autosave Content Changes](autosave_content_changes.md)
 * [Display Note Content View Mode](display_note_content_view_mode.md)
 * [Redirect to Note Details on Create Note](redirect_to_note_details_on_create_note.md)
 * [Customize App Header Layout](custom_app_header.md)
