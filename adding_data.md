@@ -67,7 +67,7 @@ import { Meteor } from 'meteor/meteor'
 ...
 Meteor.methods({
 
-	'/note/create': (title) => {
+	'note.create': (title) => {
       const note = new Note()
 			note.set({
 			  title,
