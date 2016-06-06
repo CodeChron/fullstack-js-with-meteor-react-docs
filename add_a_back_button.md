@@ -2,6 +2,9 @@
 
 This next step is very similar to what we did with the DeleteBtn we created. You should try first doing this on your own and then comparing with the steps below.
 
+These are your requirements:
+
+
 ## Add back button icon
 We only want this back button to appear on the note details page.  Let's therefore pass it into that instance of the AppHeaderLayout.
 
