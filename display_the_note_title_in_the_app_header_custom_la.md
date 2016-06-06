@@ -66,29 +66,6 @@ Meteor.publish('note.details', function() {
 })
 ```
 
-
-## Add a note details publication
-
-``` /imports/collections/server/publications.js ```
-
-```js
-...
-
-const
-  ...
-  noteDetailsFields = {
-    title: 1
-  }
-
-...
-
-Meteor.publish('note.details', function(id) {
-  return Note.find({_id: id }, { fields: noteDetailsFields})
-})
-```
-
-
-
 Here, we are requiring a specific id in order to subscribe to the publication. Also, note that even though we only want one note document, we don't use  ``` findOne ``` since a publication needs to return a cursor and cannot return a specific document.
 
 ## Create a note details container
