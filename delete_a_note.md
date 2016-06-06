@@ -27,11 +27,10 @@ import React from 'react'
 export const IconBtn = (props) =>
   <button
     onClick={props.handleClick}
-    className="btn btn-default btn-xs"
     title={props.title}
-     alt={props.title}
+    alt={props.title}
   >
-    <span className={props.icon} aria-hidden="true"></span>
+    <i className="material-icons">{props.icon}</i>
   </button>
 
 IconBtn.propTypes = {
