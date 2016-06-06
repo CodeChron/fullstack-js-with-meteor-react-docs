@@ -22,40 +22,6 @@ export const NoteDetails = (props) => {
          </div>	
 }
 ```
-## Create a note details container page
-
-``` /imports/components/containers/note_details_container.jsx ```
-
-```js
-import { createContainer } from 'meteor/react-meteor-data'
-import { FlowRouter } from 'meteor/kadira:flow-router'
-import { Note } from '../../api/notes/notes'
-import { Meteor } from 'meteor/meteor'
-import { App} from '../app'
-
-export default createContainer(
-	() => {
-		
-		const
-		  noteId = FlowRouter.getParam('_id'),
-		  sub = Meteor.subscribe('note.details', noteId),
-			note = sub.ready()? Note.findOne({_id: noteId }) : {},
-			handleUpdates = (collection, field, value) =>  {		
-		    const doc = {}
-		    doc[field] = value
-		    collection.set(doc)
-		    Meteor.call('/note/save', collection, (err, result) => AppLib.db.handleDbResult(err, result))
-			}
-
-	  return {
-		  note,
-		  subsReady: sub.ready(),
-		  handleUpdates
-	  }
-  },
-  AppLayout
-)
-```
 
 
 ## Add a note details route
