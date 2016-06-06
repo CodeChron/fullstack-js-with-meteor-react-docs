@@ -123,6 +123,8 @@ FlowRouter.route('/notes/:_id', {
  
  
  ## Display the note title
+ Now that we have the note data, displaying the note title is quite easy.
+ 
  
  ``` /imports/components/pages/note_details_page.jsx ```
 
