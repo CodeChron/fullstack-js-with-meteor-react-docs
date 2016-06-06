@@ -4,6 +4,10 @@ Next, let's add the ability to delete a note.
 
 ## Add an Icon Button component
 We're going to need a button with a delete icon that accepts a click event. 
+
+## Link to an icon library
+
+We'll use Google's [Material Design Icons](https://design.google.com/icons/).  Here we will simply link to the icon font.  However, for a production app, you are strongly recommended to either store the icons on your server or use service such as IcoMoon
 Let's first create a generic icon button.
 
 ``` /imports/components/buttons/icon_btn.jsx ```
