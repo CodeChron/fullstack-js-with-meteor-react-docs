@@ -18,7 +18,7 @@
 * [Feature Overview: Note Details](feature_overview_note_details.md)
 * [Add Note Details Route](add_note_details_route.md)
 * [List items link to note details](list_items_link_to_note_details.md)
-* [Display title in note detail header](display_the_note_title_in_the_app_header_custom_la.md)
+* [Displa note detail content](display_the_note_title_in_the_app_header_custom_la.md)
 * [Add note content](click_to_add_or_update_note_content.md)
 * [Add a content editor](add_a_content_editor.md)
 * [Autosave Content Changes](autosave_content_changes.md)
