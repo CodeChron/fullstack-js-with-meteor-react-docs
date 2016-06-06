@@ -32,6 +32,7 @@ Meteor.publish('notes.all', function() {
 ```
 
 TODO: change meteor methods naming convention to be consistent.
+TODO: discuss - why are we not using arrow function?
 
 Why the server directory?
 Why only publish certain fields?
