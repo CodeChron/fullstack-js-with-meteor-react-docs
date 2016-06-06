@@ -66,21 +66,26 @@ Discuss what we did above, eg that we are checking for if content is empty.
 
 ```js
 ...
+import { EditableContent } from '../content/editable_content'
+import { LoadingFeedback } from '../utility/loading_feedback'
 
-export class ContentEditor extends React.Component {
- ...
-	render() {
+export const NoteDetailsPage = (props) => {
 
-    return  <form>
-              <div className="form-group">
-                <textarea
-                ...
-                  autoFocus={true}
-                  onBlur={this.props.doneEditing}
-                />
-              </div>
-...
+	const
+	  ...
+      ,
+	  noteContent = () => props.subsReady? <EditableContent contentValue={props.note.content} /> : <LoadingFeedback />
+
+
+  return <div id="app-container" className="l-app-full-height l-app-centered">
+           ...
+           <div id="main-content">
+           {noteContent()}
+           </div>
+         </div>	
+}
+
 ```
 
-
+Similarly to on the homepage, we need to check if subscriptions are ready before displaying the content.
 
