@@ -6,15 +6,13 @@ We'll create an EditableContent component that display content in view mode by d
 
 We now want to be able to exit the content editor and display our notes in view mode.  Additionally, we want to be able to click on the viewer to return to edit mode.
 
-## Add a content viewer
+## Add an EditableContent component 
 First, let's create a component we can use to view note content. This content will make the content editable by clicking/tapping on, hence the name.
 
 ``` /imports/components/content/editable_content.jsx ```
 
 ```js
 import React from 'react'
-import { ContentEditor } from '../forms/content_editor'
-import '../../stylesheets/helpers.css'
 
 export class EditableContent extends React.Component {
 
@@ -29,12 +27,20 @@ export class EditableContent extends React.Component {
     this.setState({ editMode: !this.state.editMode })
   }
 
+  displayContent(contentValue){
+    const
+      noContentMsg = "Empty note.",
+      isEmpty = contentValue === "",
+      displayedContent = isEmpty? noContentMsg : contentValue
+
+    return <span className="clickable" onClick={this.toggleEditMode.bind(this)}>{displayedContent}</span>
+  }
+
   render() {
       return this.state.editMode?
-        <ContentEditor doneEditing={this.toggleEditMode.bind(this)} {...this.props}  />
+        <div>{"Content editor placeholder"}</div>
       :
-        <span className="clickable" onClick={this.toggleEditMode.bind(this)}>{this.props.contentValue}</span>
-        
+        {displayContent(this.props.note.content)}   
   }
 }
 
