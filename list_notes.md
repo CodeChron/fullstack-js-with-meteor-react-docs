@@ -1,5 +1,8 @@
 # List Notes
 
+TODO: change row back to item in list
+
+
 Now that we've created some data, let's display it.
 
 
