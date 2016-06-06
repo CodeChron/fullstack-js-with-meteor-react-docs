@@ -52,8 +52,9 @@ import { IconBtn } from './icon_btn'
 export const DeleteBtn = (props) => {
 
   const handleDelete = (item) => {
-    const confirmDelete = confirm(props.confirmMsg)
 
+    const confirmDelete = confirm(props.confirmMsg)
+    
     if (confirmDelete) {
       props.handleDelete(item)
     }
@@ -73,7 +74,7 @@ DeleteBtn.propTypes = {
 }
 
 DeleteBtn.defaultProps = {
-  icon: "glyphicon glyphicon-remove",
+  icon: "delete",
   title: "Delete...",
   confirmMsg: "Really delete this?"
 }
