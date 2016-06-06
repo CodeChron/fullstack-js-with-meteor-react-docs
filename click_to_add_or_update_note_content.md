@@ -40,7 +40,7 @@ export class EditableContent extends React.Component {
       return this.state.editMode?
         <div>{"Content editor placeholder"}</div>
       :
-        {displayContent(this.props.note.content)}   
+        this.displayContent(this.props.contentValue)   
   }
 }
 
@@ -57,6 +57,30 @@ EditableContent.defaultProps = {
 _is this the first actual React Component we've created?_
 
 Discuss components and state.
+
+Discuss what we did above, eg that we are checking for if content is empty.
+
+## Add the EditableContent component to the note details page and display note content
+
+``` imports/components/forms/content_editor.jsx ```
+
+```js
+...
+
+export class ContentEditor extends React.Component {
+ ...
+	render() {
+
+    return  <form>
+              <div className="form-group">
+                <textarea
+                ...
+                  autoFocus={true}
+                  onBlur={this.props.doneEditing}
+                />
+              </div>
+...
+```
 
 Here, we are "wrapping" the ``` ContentEditor ``` component in a ``` EditableContent ``` component that has a  ```editMode``` state.  Clicking on the content block will switch the state to edit mode.  Then, we are passing a callback prop to the ContentEditor that will toggle edit mode again when the form input is blurred.
 
