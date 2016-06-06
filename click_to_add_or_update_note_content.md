@@ -60,5 +60,27 @@ Discuss components and state.
 
 Discuss what we did above, eg that we are checking for if content is empty.
 
+## Add the EditableContent component to the note details page and display note content
+
+``` imports/components/pages/note_details_page.jsx ```
+
+```js
+...
+
+export class ContentEditor extends React.Component {
+ ...
+	render() {
+
+    return  <form>
+              <div className="form-group">
+                <textarea
+                ...
+                  autoFocus={true}
+                  onBlur={this.props.doneEditing}
+                />
+              </div>
+...
+```
+
 
 
