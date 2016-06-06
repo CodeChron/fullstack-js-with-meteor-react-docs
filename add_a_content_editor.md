@@ -1,7 +1,7 @@
 # Add a content editor
-Next, let's create a simple content editor component and insert it into the note details page.
+Next, let's create a simple for updating note content.  This form will autosave content that is typed into it.
 
-``` imports/components/forms/content_editor.jsx ```
+``` imports/components/forms/autosave_input.jsx ```
 
 ```js
 ...
