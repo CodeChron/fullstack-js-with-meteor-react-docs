@@ -1,5 +1,6 @@
 # Delete a Note
 
+
 Next, let's add the ability to delete a note.
 
 ## Link to an icon library
