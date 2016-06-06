@@ -3,7 +3,6 @@
 
 Next, we want to display note details content.  More specifically, we want to display the note title in the header and note content in the main content block.
 
-
 - Update our Note schema to include a content field 
 - add a note details publication
 - create a data container for note details to subscribe to and handle note detail data
