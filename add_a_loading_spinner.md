@@ -145,10 +145,11 @@ Then import the css into your master stylesheet file:
 ``` /imports/stylesheets/mains.scss ```
 
 ```scss
+...
 
 //VENDOR 
 // 3rd party styling 
-// __________________________________________________________________
+// _____________________________________________________________
 @import "loader";
 
 ```
