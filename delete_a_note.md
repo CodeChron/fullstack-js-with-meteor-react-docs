@@ -83,7 +83,7 @@ DeleteBtn.defaultProps = {
 Why the need for ```{() => callFunction()}```? See http://stackoverflow.com/questions/33846682/react-onclick-fuction-fires-on-render (TL;DR "Because you want to pass a call to the function rather than the function directly.")
  
  
-## Add Support for deleting notes
+## Add Support in our data container for deleting notes
 
 First, we need to add a delete method on the server side.
 
