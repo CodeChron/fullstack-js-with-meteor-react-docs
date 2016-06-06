@@ -31,6 +31,8 @@ Meteor.publish('notes.all', function() {
 })
 ```
 
+TODO: change meteor methods naming convention to be consistent.
+
 Why the server directory?
 Why only publish certain fields?
 
