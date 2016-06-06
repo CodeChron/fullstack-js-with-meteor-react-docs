@@ -78,9 +78,9 @@ Since we are now going to be using data on this page, we need to wrap it in a co
 ```js
 import { createContainer } from 'meteor/react-meteor-data'
 import { FlowRouter } from 'meteor/kadira:flow-router'
+import { Meteor } from 'meteor/meteor'
 import { Note } from '../../collections/notes'
 import { App } from '../app'
-
 
 export default createContainer(
 	() => {
@@ -91,8 +91,8 @@ export default createContainer(
 			note = sub.ready()? Note.findOne({_id: noteId }) : {}
 
 	  return {
-		  note,
-          subsReady: sub.ready()
+	  	note,
+	  	subsReady: sub.ready()
 	  }
   },
   App
