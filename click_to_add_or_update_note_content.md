@@ -7,7 +7,7 @@ We'll create an EditableContent component that display content in view mode by d
 We now want to be able to exit the content editor and display our notes in view mode.  Additionally, we want to be able to click on the viewer to return to edit mode.
 
 ## Add a content viewer
-First, let's create a component we can use to view note content.
+First, let's create a component we can use to view note content. This content will make the content editable by clicking/tapping on, hence the name.
 
 ``` /imports/components/content/editable_content.jsx ```
 
@@ -47,6 +47,9 @@ EditableContent.defaultProps = {
   editMode: false
 }
 ```
+
+_is this the first actual React Component we've created?_
+
 
 Here, we are "wrapping" the ``` ContentEditor ``` component in a ``` EditableContent ``` component that has a  ```editMode``` state.  Clicking on the content block will switch the state to edit mode.  Then, we are passing a callback prop to the ContentEditor that will toggle edit mode again when the form input is blurred.
 
