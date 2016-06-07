@@ -1,6 +1,6 @@
-# Custom App Header
+# Add Custom Styling
 
-Next, we want to add a back button to our header.  But to do that, we need to first customize the layout a bit, to center the title and make room for icons on each side.
+
 
 ## Update the note header to have a custom 3 column layout
 
