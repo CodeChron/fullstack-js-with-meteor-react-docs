@@ -1,5 +1,8 @@
 # Publish and Subscribe to Notes
 
+
+**TODO: wait for all subs to be ready, need a better loading strategy  - might be a blog post and something I can use for the talk**
+
 Currently we are automatically publishing data from the server.  That's fine for prototyping purposes, but for a real app, we want control what is published and what the client subscribes to.
 
 ## Remove the 'autopublish' package
