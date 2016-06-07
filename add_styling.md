@@ -1,4 +1,10 @@
 # Add Styling
+You can add this styling now, though I recommend not adding it until the end.  This is much more realistic in terms of how a web app is built.  Spending time early on focusing on styling is likely to be a huge waste.
+
+
+- add app container styling
+- add main content styling
+- add app header styling
 
 _update this to use SMACCS structure_
 _possibly just add all the styles here_
