@@ -24,6 +24,7 @@
 * [Add a Back Button](add_a_back_button.md)
 * [Click to edit the note title](click_to_edit_the_note_title.md)
 * [Redirect to Note Details on Create Note](redirect_to_note_details_on_create_note.md)
+* Fix Empty Note title bug
 * [Customize App Header Layout](custom_app_header.md)
 * [Feature Overview: Private Notes](feature_overview_private_notes.md)
 * [App Security](app_security.md)
@@ -34,5 +35,4 @@
 * [OLD -Add React](install_react.md)
 * [OLD Add React and React Router](add_react_and_react_router.md)
 * [OLD - Add Styling with Bootstrap](add_styling_with_bootstrap.md)
-* Fix Empty Note title bug
 
