@@ -9,3 +9,9 @@ One thing to keep in mind: in contrast to note content, a note title can't be em
 - update title on keypress
 - exit click to edit on return/submit or blur
 
+
+This will be the most advanced component created so far.  It will have three levels:
+- ClickToEditContainer
+- EditableComponent
+
+
