@@ -24,7 +24,7 @@
 * [Add a Back Button](add_a_back_button.md)
 * [Click to edit the note title](click_to_edit_the_note_title.md)
 * [Redirect to Note Details on Create Note](redirect_to_note_details_on_create_note.md)
-* Fix Empty Note title bug
+* [Fix Empty Note title bug](fix_empty_note_title_bug.md)
 * [Customize App Header Layout](custom_app_header.md)
 * [Feature Overview: Private Notes](feature_overview_private_notes.md)
 * [App Security](app_security.md)
