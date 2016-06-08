@@ -1,9 +1,10 @@
 # TODO
 
 - NEXT:
+- update ReadMe
 - go back and apply the corresponding css classes the various elements as they are added
 - move add new into list in that step
-- make sure styles are available, maybe as a separate repo?  YES
+- make sure styles are available as a separate repo?  YES
 
 - add full screen styling to content editor
 - get content viewer working
