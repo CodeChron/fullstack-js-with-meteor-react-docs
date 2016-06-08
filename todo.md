@@ -1,5 +1,10 @@
 # TODO
-- LOGISTICS: will there be a whiteboard?  Assuming there will be a projector in the room.
+
+- NEXT:
+- go back and apply the corresponding css classes the various elements as they are added
+- move add new into list in that step
+- make sure styles are available, maybe as a separate repo? 
+
 - add full screen styling to content editor
 - get content viewer working
 - **make notes private**
