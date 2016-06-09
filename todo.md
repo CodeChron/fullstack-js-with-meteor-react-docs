@@ -1,39 +1,26 @@
 # TODO
 
-- NEXT:
-- update ReadMe
-- go back and apply the corresponding css classes the various elements as they are added
-- move add new into list in that step
-- make sure styles are available as a separate repo?  YES
+- code cleanup: clean up scss files especially
+- Add info to [ReadMe doc](https://github.com/CodeChron/meteor-react-tutorial-notes-app/blob/master/README.md): link to the blog post and tutorial, instructions for how to get the code, a link to the stylesheets only repo.
+- Styling updates: go back and apply the corresponding css classes the various elements as they are added
+- Update create note to include making it a part of the list component
+- Add ReadMe for Stylesheets repo
+- **Visualize passing data down through container via route into page**
+- List possibly accompanying blog posts.
+ - What is JSX actually doing?
+ - Integrating Styling into your development process
+ - The ES6 Arrow function
+ - Keeping functions pure
+ - 
 
-- add full screen styling to content editor
-- get content viewer working
-- **make notes private**
-- deploy to heroku
-- secure the app
-- add a small loading indicator
+## Road Map
+- Once this tutorial ships it is considered final.  Any updates will only be to fix errors, bugs, etc.
+- List nice-to-haves that we would want to have be part of this app. 
+- Create a new repo with this code based and use that as a starting point for a paid version of the tutorial.  Features would include:
+- Adding Login/Registration
+- Making notes private
+- scalable lists (eg with load more)
+- deploying the app
+- app security
+- app refactoring
 
-- - **Visualize passing data down through container via route into page**
-- Review workshop description: update to mention that it will be an intro to JS?
-- Work on intro to JS part
-- Think about how to make course flexible
-- Update this repo based on changes from the other repo
-- Git branches/numbers should match chapters/numbers
-- Make the preview course public.
-
-
-## Intro topics
-JS Basics Topics
-
-- Understanding JS functions
-- Functions and scope
-- Keeping functions 'pure'
-
-ES6
-- the 'arrow function'
-- ES6 variables: const and let
-
-
-## Add to course:
-React basics - what is JSX actually?
- - show JS version and JSX version
