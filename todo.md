@@ -20,6 +20,9 @@
 - Adding Login/Registration
 - Making notes private
 - fixed header
+- advanced add new components
+- advanced options menu component
+- exit editor using shift + return
 - adding markdown support
 - scalable lists (eg with load more)
 - deploying the app
