@@ -1,6 +1,5 @@
 # TODO
 
-- code cleanup: clean up scss files especially
 - Add info to [ReadMe doc](https://github.com/CodeChron/meteor-react-tutorial-notes-app/blob/master/README.md): link to the blog post and tutorial, instructions for how to get the code, a link to the stylesheets only repo.
 - Styling updates: go back and apply the corresponding css classes the various elements as they are added
 - Update create note to include making it a part of the list component
