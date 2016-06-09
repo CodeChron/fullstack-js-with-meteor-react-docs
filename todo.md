@@ -19,6 +19,7 @@
 - Create a new repo with this code based and use that as a starting point for a paid version of the tutorial.  Features would include:
 - Adding Login/Registration
 - Making notes private
+- fixed header
 - scalable lists (eg with load more)
 - deploying the app
 - app security
