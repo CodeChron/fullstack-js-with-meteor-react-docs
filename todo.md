@@ -20,6 +20,7 @@
 - Adding Login/Registration
 - Making notes private
 - fixed header
+- adding markdown support
 - scalable lists (eg with load more)
 - deploying the app
 - app security
